@@ -131,10 +131,11 @@ async function scrapeBattersea() {
 async function scrapeCatsProtection() {
     try {
         console.log('Fetching Cats Protection...');
-        const { data } = await axios.get(SOURCES.CATS_PROTECTION.url, { headers: HEADERS });
+        const { data } = await axios.get(SOURCES.CATS_PROTECTION_SOUTH_LONDON.url, { headers: HEADERS });
         const $ = cheerio.load(data);
-        const cats = [];
 
+        const cats = [];
+        // Note: The structure of CP site uses specific ASP.NET popup links
         const catLinks = $('a[href*="RenderCatForAdoptionPopup"]').toArray();
         console.log(`Found ${catLinks.length} potential CP cat links.`);
 
@@ -145,13 +146,11 @@ async function scrapeCatsProtection() {
 
             const text = $(el).text().trim();
             const firstLine = text.split('\n')[0].trim();
-
             const nameMatch = firstLine.match(/^(.*?)\s+(\d+[ym])\s+(?:old\s+)?(male|female)/i);
 
             let name = 'Unknown';
             let age = 'Unknown';
             let gender = 'Unknown';
-
             if (nameMatch) {
                 name = nameMatch[1];
                 age = nameMatch[2];
@@ -161,26 +160,29 @@ async function scrapeCatsProtection() {
             }
 
             const isReserved = text.includes('RESERVED');
-
             let image = 'https://placekitten.com/300/300';
             let description = '';
 
             try {
                 const { data: popupData } = await axios.get(fullLink, { headers: HEADERS });
                 const $pop = cheerio.load(popupData);
+
                 const imgSrc = $pop('img').first().attr('src');
                 if (imgSrc) {
                     if (imgSrc.startsWith('http')) {
                         image = imgSrc;
                     } else if (imgSrc.startsWith('..')) {
+                        // Handle relative path ../uploads
                         image = 'https://www.cats.org.uk' + imgSrc.replace(/^\.\./, '');
                     } else {
                         image = 'https://www.cats.org.uk' + (imgSrc.startsWith('/') ? '' : '/') + imgSrc;
                     }
                 }
-                description = $pop('body').text().trim().replace(/\s+/g, ' ').substring(0, 500);
-            } catch (err) {
-                console.error(`Failed to fetch CP detail for ${name}: ${err.message}`);
+
+                description = $pop('body').text().trim().substring(0, 500);
+
+            } catch (e) {
+                console.log(`Error fetching details for ${name}: ${e.message}`);
             }
 
             if (gender && gender.toLowerCase() === 'female') gender = 'Female';
@@ -201,7 +203,7 @@ async function scrapeCatsProtection() {
                 coloring: gender,
                 gender: gender || 'Unknown',
                 location: 'South London',
-                sourceType: 'Rehoming Network',
+                sourceType: 'Physical Center',
                 sourceId: 'cats_protection',
                 preferences: [],
                 description,
@@ -210,10 +212,10 @@ async function scrapeCatsProtection() {
                 originalImage: image,
                 dateListed: new Date().toISOString(),
                 dateReserved: isReserved ? new Date().toISOString() : null,
-                dateReserved: isReserved ? new Date().toISOString() : null,
-                link: 'https://www.cats.org.uk/southlondon'
+                link: fullLink // Use the specific cat link!
             });
 
+            // Be polite
             await new Promise(r => setTimeout(r, 200));
         }
 
@@ -225,7 +227,10 @@ async function scrapeCatsProtection() {
     }
 }
 
-
+async function scrapeMayhew() {
+    console.log('Fetching The Mayhew (Placeholder)...');
+    return [];
+}
 // Helper: Merge new cat with existing record
 function mergeCatData(newCat, existingCat) {
     if (!existingCat) {
