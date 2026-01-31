@@ -1,0 +1,92 @@
+{
+    "BATTERSEA": {
+        "name": "Battersea Dogs & Cats Home",
+        "url": "https://www.battersea.org.uk/cats/cat-rehoming-gallery",
+        "type": "Physical Center",
+        "location": "Battersea"
+    },
+    "CATS_PROTECTION_SOUTH_LONDON": {
+        "name": "Cats Protection (South London)",
+        "url": "https://www.cats.org.uk/southlondon",
+        "type": "Physical Center",
+        "location": "South London"
+    },
+    "THE_MAYHEW": {
+        "name": "The Mayhew",
+        "url": "https://themayhew.org/adopt/cats/",
+        "type": "Physical Center",
+        "location": "Kensal Green"
+    },
+    "BLUE_CROSS_LONDON": {
+        "name": "Blue Cross (London)",
+        "url": "https://www.bluecross.org.uk/rehome/cat",
+        "type": "Physical Center",
+        "location": "London"
+    },
+    "RSPCA_FRIERN_BARNET": {
+        "name": "RSPCA (Friern Barnet)",
+        "url": "https://www.rspca.org.uk/local/friern-barnet-adoption-centre",
+        "type": "Physical Center",
+        "location": "Friern Barnet"
+    },
+    "CATCUDDLES": {
+        "name": "Catcuddles (North & SE London)",
+        "url": "https://www.catcuddles.org.uk/",
+        "type": "Hybrid (Shelter/Foster)",
+        "location": "London"
+    },
+    "CELIA_HAMMOND_CANNING_TOWN": {
+        "name": "Celia Hammond (Canning Town)",
+        "url": "https://www.celiahammond.org/animals-seeking-homes/canning-town/",
+        "type": "Hybrid (Shelter/Foster)",
+        "location": "Canning Town"
+    },
+    "LICK": {
+        "name": "London Inner City Kitties (L.I.C.K.)",
+        "url": "https://www.london-inner-city-kitties.org/adopt",
+        "type": "Foster-Only",
+        "location": "London"
+    },
+    "FELINE_FRIENDS_LONDON": {
+        "name": "Feline Friends London",
+        "url": "https://www.felinefriendslondon.uk/adoption",
+        "type": "Foster-Only",
+        "location": "London"
+    },
+    "LULUBELLS_RESCUE": {
+        "name": "Lulubells Rescue",
+        "url": "https://www.lulubellsrescue.com/",
+        "type": "Foster-Only",
+        "location": "London"
+    },
+    "ARC": {
+        "name": "Animal Rescue and Care (ARC)",
+        "url": "https://animalrescueandcare.org.uk/",
+        "type": "Community Foster",
+        "location": "Richmond"
+    },
+    "HAWS": {
+        "name": "Hounslow Animal Welfare (HAWS)",
+        "url": "https://www.haws-animals.org.uk/",
+        "type": "Community Foster",
+        "location": "Hounslow"
+    },
+    "GUARDIAN_ANGELS": {
+        "name": "Guardian Angels (West London)",
+        "url": "https://www.guardianangels-animalsupport.co.uk/",
+        "type": "Community Foster",
+        "location": "Hayes"
+    },
+    "CATCHAT": {
+        "name": "CatChat",
+        "url": "https://catchat.org/find-a-shelter/england/greater-london",
+        "type": "Aggregator",
+        "location": "London"
+    },
+    "PETS4HOMES": {
+        "name": "Pets4Homes",
+        "url": "https://www.pets4homes.co.uk/adoption/cats/near-me/united-kingdom/england/greater-london/london/",
+        "type": "Aggregator",
+        "location": "London"
+    }
+}
