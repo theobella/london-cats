@@ -2,11 +2,17 @@ import React from 'react';
 
 import { CATS } from '../data/mockData';
 
+import metadata from '../data/meta.json';
+
 const Header = ({ currentView, onViewChange }) => {
-    // Determine last refreshed date from data
+    // Determine last refreshed date
     const lastRefreshed = React.useMemo(() => {
+        if (metadata && metadata.lastScraped) {
+            return new Date(metadata.lastScraped);
+        }
+
+        // Fallback logic
         if (!CATS || CATS.length === 0) return new Date();
-        // Find most recent list date
         const dates = CATS.map(c => new Date(c.dateListed).getTime());
         return new Date(Math.max(...dates));
     }, []);

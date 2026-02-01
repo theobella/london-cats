@@ -593,6 +593,12 @@ async function main() {
 
     await fs.writeFile(outputPath, JSON.stringify(finalCats, null, 2));
     console.log(`Saved ${finalCats.length} cats to ${outputPath}`);
+
+    // Update Metadata for "Last Updated" UI
+    const metaPath = path.join(__dirname, '../src/data/meta.json');
+    const metadata = { lastScraped: new Date().toISOString() };
+    await fs.writeFile(metaPath, JSON.stringify(metadata, null, 2));
+    console.log(`Updated metadata to ${metaPath}`);
 }
 
 main();
