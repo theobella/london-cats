@@ -77,10 +77,9 @@ async function scrapeBattersea() {
 
             let linkHref = $(el).attr('href');
             if (!linkHref) linkHref = $(el).find('a').attr('href');
-            if (!linkHref) linkHref = $(el).parent('a').attr('href'); // Check parent
+            if (!linkHref) linkHref = $(el).parent('a').attr('href');
             const link = linkHref ? (linkHref.startsWith('http') ? linkHref : 'https://www.battersea.org.uk' + linkHref) : null;
 
-            // Filter out non-cat pages (stories, shop, fostering, etc.)
             if (!link || !link.includes('/cats/cat-rehoming-gallery/')) continue;
 
             let image = $(el).find('img').attr('src');
@@ -93,12 +92,46 @@ async function scrapeBattersea() {
             if (ageMatch) ageVal = ageMatch[1].trim();
 
             if (name && link) {
+                // Fetch Details for Gender and Location
+                let gender = 'Unknown';
+                let location = 'Battersea (London)'; // Default
+                let detailDesc = '';
+
+                try {
+                    // console.log(`Fetching details for ${name}...`);
+                    const { data: detailData } = await axios.get(link, { headers: HEADERS });
+                    const $d = cheerio.load(detailData);
+                    const bodyText = $d('body').text().replace(/\s+/g, ' ');
+
+                    // Regex for Sex/Gender
+                    // Matches "Sex Female" or "Sex: Female"
+                    const sexMatch = bodyText.match(/Sex\s*:?\s*(Female|Male)/i);
+                    if (sexMatch) {
+                        gender = sexMatch[1].charAt(0).toUpperCase() + sexMatch[1].slice(1).toLowerCase(); // Female/Male
+                    }
+
+                    // Regex for Centre
+                    // Matches "Centre Old Windsor"
+                    const centerMatch = bodyText.match(/Centre\s*:?\s*([A-Za-z\s]+)(?:-|$)/i);
+                    if (centerMatch) {
+                        const rawCenter = centerMatch[1].trim();
+                        if (rawCenter.includes('Windsor')) location = 'Old Windsor';
+                        else if (rawCenter.includes('Brands Hatch')) location = 'Brands Hatch';
+                        else if (rawCenter.includes('London')) location = 'London';
+                        else location = rawCenter;
+                    }
+
+                    detailDesc = $d('div.field-name-body').text().trim() || '';
+
+                } catch (e) {
+                    console.log(`Warning: Could not fetch details for ${name}`);
+                }
+
                 // Download Image
                 let localImage = 'https://placekitten.com/300/300';
                 let originalImage = image ? ('https://www.battersea.org.uk' + image) : 'https://placekitten.com/300/300';
 
                 if (image) {
-                    // Force jpg extension because Battersea serves JPEGs even if URL is .webp
                     const ext = 'jpg';
                     const filename = `bat-${i}.${ext}`;
                     const realUrl = image.startsWith('http') ? image : 'https://www.battersea.org.uk' + image;
@@ -106,8 +139,6 @@ async function scrapeBattersea() {
                 }
 
                 const idSlug = link ? link.split('/').pop().toLowerCase() : name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
-
-                // Stable ID: bat-name-slug
                 const stableId = `bat-${idSlug}`;
 
                 cats.push({
@@ -115,11 +146,13 @@ async function scrapeBattersea() {
                     name,
                     age: ageVal,
                     breed: 'Domestic Short-hair',
-                    coloring: 'Unknown',
-                    location: 'Battersea',
+                    coloring: gender, // Legacy mapping to coloring if needed, but we prefer gender
+                    gender: gender,
+                    location: location,
                     sourceType: 'Shelter',
                     sourceId: 'battersea',
                     preferences: [],
+                    description: detailDesc,
                     status: isReserved ? 'Reserved' : 'Available',
                     image: localImage ? `${localImage}?v=3` : localImage,
                     originalImage: originalImage,
@@ -127,6 +160,9 @@ async function scrapeBattersea() {
                     dateReserved: isReserved ? new Date().toISOString() : null,
                     link
                 });
+
+                // Be polite to Battersea server
+                await new Promise(r => setTimeout(r, 200));
             }
         }
         console.log(`Found ${cats.length} cats at Battersea.`);

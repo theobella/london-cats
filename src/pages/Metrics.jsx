@@ -39,7 +39,12 @@ const Metrics = () => {
                 if (value === '2-4 Weeks' && (days < 14 || days >= 30)) return false;
                 if (value === '1 Month+' && days < 30) return false;
             } else {
-                const catValue = cat[key] || 'Unknown';
+                let catValue = cat[key] || 'Unknown';
+                if (key === 'sourceId') {
+                    if (catValue === 'battersea') catValue = 'Battersea';
+                    else if (catValue === 'cats_protection') catValue = 'Cats Protection';
+                    else if (catValue === 'lick') catValue = 'L.I.C.K.';
+                }
                 if (catValue !== value) return false;
             }
         }
