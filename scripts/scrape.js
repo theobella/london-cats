@@ -80,6 +80,9 @@ async function scrapeBattersea() {
             if (!linkHref) linkHref = $(el).parent('a').attr('href'); // Check parent
             const link = linkHref ? (linkHref.startsWith('http') ? linkHref : 'https://www.battersea.org.uk' + linkHref) : null;
 
+            // Filter out non-cat pages (stories, shop, fostering, etc.)
+            if (!link || !link.includes('/cats/cat-rehoming-gallery/')) continue;
+
             let image = $(el).find('img').attr('src');
             if (!image) image = $(el).find('img').attr('data-src');
 
@@ -102,8 +105,13 @@ async function scrapeBattersea() {
                     localImage = await downloadImage(realUrl, filename);
                 }
 
+                const idSlug = link ? link.split('/').pop().toLowerCase() : name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+
+                // Stable ID: bat-name-slug
+                const stableId = `bat-${idSlug}`;
+
                 cats.push({
-                    id: `bat-${i}`,
+                    id: stableId,
                     name,
                     age: ageVal,
                     breed: 'Domestic Short-hair',
@@ -194,18 +202,38 @@ async function scrapeCatsProtection(config) {
             if (gender && gender.toLowerCase() === 'male') gender = 'Male';
 
             // Generate a specialized ID suffix based on location to avoid collisions
-            // e.g. cp-north-0 or cp-south-london-0
-            const idSuffix = location.toLowerCase().replace(/[^a-z0-9]/g, '-');
+            // Generate Stable ID based on Cats Protection ID in URL (catId=XXXX)
+            // URL format: ...&catId=58797
+            let cpId = 'unknown';
+            const idMatch = fullLink.match(/catId=(\d+)/);
+            if (idMatch) {
+                cpId = idMatch[1];
+            } else {
+                // Fallback to name slug if no ID found
+                cpId = name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+            }
+
+            // e.g. cp-58797
+            // We don't strictly need location in ID if the number is unique globally for CP, 
+            // but let's keep it simple: CP tends to use unique IDs system-wide.
+            const stableId = `cp-${cpId}`;
 
             let localImage = 'https://placekitten.com/300/300';
             if (image && !image.includes('placekitten')) {
                 const ext = image.split('.').pop().split('?')[0] || 'jpg';
-                const filename = `cp-${idSuffix}-${i}.${ext}`;
+                // Use stable ID for filename to avoid re-downloading!
+                const filename = `${stableId}.${ext}`;
                 localImage = await downloadImage(image, filename);
             }
 
+            // NEW LINK FORMAT: https://www.cats.org.uk/southlondon#adopt-58943
+            // Base URL is config.url (e.g., https://www.cats.org.uk/southlondon)
+            // We need to strip trailing slashes just in case
+            const baseUrl = url.replace(/\/$/, '');
+            const newLink = `${baseUrl}#adopt-${cpId}`;
+
             cats.push({
-                id: `cp-${idSuffix}-${i}`,
+                id: stableId,
                 name,
                 age,
                 breed: 'Domestic Short-hair',
@@ -221,7 +249,7 @@ async function scrapeCatsProtection(config) {
                 originalImage: image,
                 dateListed: new Date().toISOString(),
                 dateReserved: isReserved ? new Date().toISOString() : null,
-                link: fullLink
+                link: newLink
             });
 
             // Be polite
@@ -297,8 +325,11 @@ async function scrapeLick() {
                         localImage = await downloadImage(image, filename);
                     }
 
+                    // Stable ID: lick-name
+                    const stableId = `lick-${name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`;
+
                     cats.push({
-                        id: `lick-${i}`,
+                        id: stableId,
                         name: name.charAt(0).toUpperCase() + name.slice(1), // Capitalize
                         age: age,
                         breed: 'Domestic Short-hair',
@@ -465,13 +496,63 @@ async function main() {
     const lickCats = await scrapeLick();
 
     // Combine all
+    // Combine all new scrapes
     const allScrapedCats = [...batterseaCats, ...cpSouthCats, ...lickCats];
 
-    // Merge and Enrich
-    const finalCats = allScrapedCats.map(scrapedCat => {
-        const existing = existingCatsMap.get(scrapedCat.id);
-        const merged = mergeCatData(scrapedCat, existing);
-        return extractMetadata(merged);
+    // Map for quick lookup of new cats
+    const scrapedIds = new Set(allScrapedCats.map(c => c.id));
+
+    // Track IDs that were migrated from old (index-based) to new (stable)
+    // so we don't duplicate them or mark them as adopted.
+    const migratedOldIds = new Set();
+
+    const finalCats = [];
+
+    // 1. Process New Scraped Cats (Merge with Existing or Migrate)
+    allScrapedCats.forEach(newCat => {
+        let existing = existingCatsMap.get(newCat.id);
+
+        // MIGRATION LOGIC:
+        // If exact ID match missing, check for a "Ghost" match by Name + Source
+        // (Handling the transition from bat-0 -> bat-bruno)
+        if (!existing) {
+            // Find a cat with same Name and Source that doesn't share this ID
+            // and looks like an old-style ID (optional check, but safer)
+            const ghostMatch = [...existingCatsMap.values()].find(oldCat =>
+                oldCat.name.toLowerCase() === newCat.name.toLowerCase() &&
+                oldCat.sourceId === newCat.sourceId &&
+                !scrapedIds.has(oldCat.id) // Ensure we don't steal an ID that actually exists in new set (unlikely with change)
+            );
+
+            if (ghostMatch) {
+                console.log(`Migrating history: ${ghostMatch.id} (${ghostMatch.name}) -> ${newCat.id}`);
+                existing = ghostMatch;
+                migratedOldIds.add(ghostMatch.id);
+            }
+        }
+
+        const merged = mergeCatData(newCat, existing);
+        finalCats.push(extractMetadata(merged));
+    });
+
+    // 2. Process Missing Cats (Soft Delete / Adopted)
+    existingCatsMap.forEach((existingCat, id) => {
+        // If this cat was NOT found in the new scrape AND it wasn't migrated to a new ID
+        if (!scrapedIds.has(id) && !migratedOldIds.has(id)) {
+
+            // It's gone from the site!
+            if (existingCat.status !== 'Adopted') {
+                console.log(`Marking as Adopted: ${existingCat.name} (${id})`);
+                existingCat.status = 'Adopted';
+                if (!existingCat.dateAdopted) {
+                    existingCat.dateAdopted = new Date().toISOString();
+                }
+                // Clear reservation date if they are now adopted? 
+                // Usually reserved -> adopted. Keep reserved date for "Time to Reserve" metric.
+            }
+
+            finalCats.push(existingCat);
+        }
     });
 
     await fs.writeFile(outputPath, JSON.stringify(finalCats, null, 2));

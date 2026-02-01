@@ -86,6 +86,9 @@ function App() {
       // Status Filter
       if (filters.statuses && filters.statuses.length > 0) {
         if (!filters.statuses.includes(cat.status)) return false;
+      } else {
+        // Default: available or reserved, NOT adopted
+        if (cat.status === 'Adopted') return false;
       }
 
       return true;

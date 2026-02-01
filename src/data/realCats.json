@@ -1,6 +1,6 @@
 [
   {
-    "id": "bat-0",
+    "id": "bat-shadow",
     "name": "Shadow",
     "age": "2 Years, 3 Months",
     "breed": "Domestic Short-hair",
@@ -21,7 +21,7 @@
     "ageCategory": "Kitten"
   },
   {
-    "id": "bat-1",
+    "id": "bat-tinkerbell",
     "name": "Tinkerbell",
     "age": "12 Years, 4 Months",
     "breed": "Domestic Short-hair",
@@ -42,7 +42,7 @@
     "ageCategory": "Kitten"
   },
   {
-    "id": "bat-2",
+    "id": "bat-naya",
     "name": "Naya",
     "age": "6 Months",
     "breed": "Domestic Short-hair",
@@ -63,7 +63,7 @@
     "ageCategory": "Kitten"
   },
   {
-    "id": "bat-3",
+    "id": "bat-delight",
     "name": "Delight",
     "age": "3 Years, 7 Months",
     "breed": "Domestic Short-hair",
@@ -84,7 +84,7 @@
     "ageCategory": "Kitten"
   },
   {
-    "id": "bat-4",
+    "id": "bat-felix",
     "name": "Felix",
     "age": "4 Years, 8 Months",
     "breed": "Domestic Short-hair",
@@ -105,7 +105,7 @@
     "ageCategory": "Kitten"
   },
   {
-    "id": "bat-5",
+    "id": "bat-monkey",
     "name": "Monkey",
     "age": "2 Months",
     "breed": "Domestic Short-hair",
@@ -126,7 +126,7 @@
     "ageCategory": "Kitten"
   },
   {
-    "id": "bat-6",
+    "id": "bat-pink-and-blue",
     "name": "Pink (and blue)",
     "age": "1 Year",
     "breed": "Domestic Short-hair",
@@ -147,7 +147,7 @@
     "ageCategory": "Young Adult"
   },
   {
-    "id": "bat-7",
+    "id": "bat-blue-and-pink",
     "name": "Blue (and pink)",
     "age": "1 Year",
     "breed": "Domestic Short-hair",
@@ -168,7 +168,7 @@
     "ageCategory": "Young Adult"
   },
   {
-    "id": "bat-8",
+    "id": "bat-princess",
     "name": "Princess",
     "age": "1 Year, 10 Months",
     "breed": "Domestic Short-hair",
@@ -189,7 +189,7 @@
     "ageCategory": "Kitten"
   },
   {
-    "id": "bat-9",
+    "id": "bat-fluffy",
     "name": "Fluffy",
     "age": "7 Years, 10 Months",
     "breed": "Domestic Short-hair",
@@ -210,7 +210,7 @@
     "ageCategory": "Kitten"
   },
   {
-    "id": "bat-10",
+    "id": "bat-pumpkin",
     "name": "Pumpkin",
     "age": "1 Year, 4 Months",
     "breed": "Domestic Short-hair",
@@ -231,7 +231,7 @@
     "ageCategory": "Kitten"
   },
   {
-    "id": "bat-11",
+    "id": "bat-izzy",
     "name": "Izzy",
     "age": "8 Years, 6 Months",
     "breed": "Domestic Short-hair",
@@ -252,7 +252,7 @@
     "ageCategory": "Kitten"
   },
   {
-    "id": "bat-12",
+    "id": "bat-benson",
     "name": "Benson",
     "age": "9 Years",
     "breed": "Domestic Short-hair",
@@ -273,7 +273,7 @@
     "ageCategory": "Adult"
   },
   {
-    "id": "bat-13",
+    "id": "bat-bruno",
     "name": "Bruno",
     "age": "2 Years, 2 Months",
     "breed": "Domestic Short-hair",
@@ -294,7 +294,7 @@
     "ageCategory": "Kitten"
   },
   {
-    "id": "bat-14",
+    "id": "bat-bao",
     "name": "Bao",
     "age": "7 Years, 7 Months",
     "breed": "Domestic Short-hair",
@@ -315,7 +315,7 @@
     "ageCategory": "Kitten"
   },
   {
-    "id": "bat-15",
+    "id": "bat-sissy",
     "name": "Sissy",
     "age": "1 Year, 1 Month",
     "breed": "Domestic Short-hair",
@@ -336,7 +336,7 @@
     "ageCategory": "Kitten"
   },
   {
-    "id": "bat-16",
+    "id": "bat-leo",
     "name": "Leo",
     "age": "8 Years, 9 Months",
     "breed": "Domestic Short-hair",
@@ -357,7 +357,7 @@
     "ageCategory": "Kitten"
   },
   {
-    "id": "bat-17",
+    "id": "bat-ripley",
     "name": "Ripley",
     "age": "9 Years, 8 Months",
     "breed": "Domestic Short-hair",
@@ -378,7 +378,7 @@
     "ageCategory": "Kitten"
   },
   {
-    "id": "bat-18",
+    "id": "bat-patchy",
     "name": "Patchy",
     "age": "6 Years, 11 Months",
     "breed": "Domestic Short-hair",
@@ -399,7 +399,7 @@
     "ageCategory": "Kitten"
   },
   {
-    "id": "bat-19",
+    "id": "bat-lulu-0",
     "name": "Lulu",
     "age": "8 Years, 8 Months",
     "breed": "Domestic Short-hair",
@@ -420,7 +420,7 @@
     "ageCategory": "Kitten"
   },
   {
-    "id": "bat-20",
+    "id": "bat-jessie-buckley",
     "name": "Jessie buckley",
     "age": "2 Years, 5 Months",
     "breed": "Domestic Short-hair",
@@ -441,7 +441,7 @@
     "ageCategory": "Kitten"
   },
   {
-    "id": "bat-21",
+    "id": "bat-billy",
     "name": "Billy",
     "age": "2 Years, 9 Months",
     "breed": "Domestic Short-hair",
@@ -462,7 +462,7 @@
     "ageCategory": "Kitten"
   },
   {
-    "id": "bat-22",
+    "id": "bat-mila",
     "name": "Mila",
     "age": "3 Years, 2 Months",
     "breed": "Domestic Short-hair",
@@ -483,7 +483,7 @@
     "ageCategory": "Kitten"
   },
   {
-    "id": "bat-23",
+    "id": "bat-pebble",
     "name": "Pebble",
     "age": "1 Year, 2 Months",
     "breed": "Domestic Short-hair",
@@ -504,238 +504,7 @@
     "ageCategory": "Kitten"
   },
   {
-    "id": "bat-24",
-    "name": "Fostering",
-    "age": "Unknown",
-    "breed": "Domestic Short-hair",
-    "coloring": "Unknown",
-    "location": "Battersea",
-    "sourceType": "Shelter",
-    "sourceId": "battersea",
-    "preferences": [],
-    "status": "Available",
-    "image": "/cats/bat-24.jpg?v=3",
-    "originalImage": "https://www.battersea.org.ukhttps://www.battersea.org.uk/sites/default/files/styles/webp/public/2026-01/Lurcher%20-%20thumbnail.jpg.webp?itok=AEEUkdzh",
-    "dateListed": "2026-01-31T17:39:23.679Z",
-    "dateReserved": null,
-    "link": "https://www.battersea.org.uk/support-us/fostering",
-    "environment": "Unknown",
-    "health": "Healthy",
-    "color": "Unknown",
-    "ageCategory": "Adult"
-  },
-  {
-    "id": "bat-25",
-    "name": "Gifts for our animals",
-    "age": "Unknown",
-    "breed": "Domestic Short-hair",
-    "coloring": "Unknown",
-    "location": "Battersea",
-    "sourceType": "Shelter",
-    "sourceId": "battersea",
-    "preferences": [],
-    "status": "Available",
-    "image": "/cats/bat-25.jpg?v=3",
-    "originalImage": "https://www.battersea.org.ukhttps://www.battersea.org.uk/sites/default/files/styles/webp/public/2024-04/A%20black%20cat%20playing%20with%20a%20string%20mouse%20toy%20at%20Battersea.jpg.webp?itok=ViaCLZ3G",
-    "dateListed": "2026-01-31T17:39:23.679Z",
-    "dateReserved": null,
-    "link": "https://shop.battersea.org.uk/collections/gifts-for-our-animals",
-    "environment": "Unknown",
-    "health": "Healthy",
-    "color": "Unknown",
-    "ageCategory": "Adult"
-  },
-  {
-    "id": "bat-26",
-    "name": "Lemont's Story",
-    "age": "Unknown",
-    "breed": "Domestic Short-hair",
-    "coloring": "Unknown",
-    "location": "Battersea",
-    "sourceType": "Shelter",
-    "sourceId": "battersea",
-    "preferences": [],
-    "status": "Available",
-    "image": "/cats/bat-26.jpg?v=3",
-    "originalImage": "https://www.battersea.org.ukhttps://www.battersea.org.uk/sites/default/files/styles/webp/public/2025-12/A%20cat%20sitting%20on%20a%20red%20chair%2C%20playfully%20interacting%20with%20a%20colorful%20toy%20beside%20it.jpg.webp?itok=Uf9qe6Lr",
-    "dateListed": "2026-01-31T17:39:23.679Z",
-    "dateReserved": null,
-    "link": "https://www.battersea.org.uk/what-we-do/about-us/news/lemont-story",
-    "environment": "Unknown",
-    "health": "Healthy",
-    "color": "Unknown",
-    "ageCategory": "Adult"
-  },
-  {
-    "id": "bat-27",
-    "name": "Tiny Tim's Story",
-    "age": "Unknown",
-    "breed": "Domestic Short-hair",
-    "coloring": "Unknown",
-    "location": "Battersea",
-    "sourceType": "Shelter",
-    "sourceId": "battersea",
-    "preferences": [],
-    "status": "Available",
-    "image": "/cats/bat-27.jpg?v=3",
-    "originalImage": "https://www.battersea.org.ukhttps://www.battersea.org.uk/sites/default/files/styles/webp/public/2025-11/Tiny%20Tim%20thumbnail.jpg.webp?itok=yBkv13E4",
-    "dateListed": "2026-01-31T17:39:23.679Z",
-    "dateReserved": null,
-    "link": "https://www.battersea.org.uk/what-we-do/about-us/news/tim-story",
-    "environment": "Unknown",
-    "health": "Healthy",
-    "color": "Unknown",
-    "ageCategory": "Adult"
-  },
-  {
-    "id": "bat-28",
-    "name": "Percy's Story",
-    "age": "Unknown",
-    "breed": "Domestic Short-hair",
-    "coloring": "Unknown",
-    "location": "Battersea",
-    "sourceType": "Shelter",
-    "sourceId": "battersea",
-    "preferences": [],
-    "status": "Available",
-    "image": "/cats/bat-28.jpg?v=3",
-    "originalImage": "https://www.battersea.org.ukhttps://www.battersea.org.uk/sites/default/files/styles/webp/public/2025-11/Black%20and%20white%20cat%20on%20top%20of%20tinsel%20-%20listing%20detail.jpg.webp?itok=LJMu-W62",
-    "dateListed": "2026-01-31T17:39:23.679Z",
-    "dateReserved": null,
-    "link": "https://www.battersea.org.uk/what-we-do/about-us/news/percy-story",
-    "environment": "Unknown",
-    "health": "Healthy",
-    "color": "Unknown",
-    "ageCategory": "Adult"
-  },
-  {
-    "id": "bat-29",
-    "name": "Rusty's Story",
-    "age": "Unknown",
-    "breed": "Domestic Short-hair",
-    "coloring": "Unknown",
-    "location": "Battersea",
-    "sourceType": "Shelter",
-    "sourceId": "battersea",
-    "preferences": [],
-    "status": "Available",
-    "image": "/cats/bat-29.jpg?v=3",
-    "originalImage": "https://www.battersea.org.ukhttps://www.battersea.org.uk/sites/default/files/styles/webp/public/2025-11/Rusty%20a%20black%20and%20white%20cat%20looking%20into%20the%20camera%20-%20listing%20detail.jpg.webp?itok=3Rxpq_Cd",
-    "dateListed": "2026-01-31T17:39:23.679Z",
-    "dateReserved": null,
-    "link": "https://www.battersea.org.uk/what-we-do/about-us/news/rusty-story",
-    "environment": "Unknown",
-    "health": "Healthy",
-    "color": "Unknown",
-    "ageCategory": "Adult"
-  },
-  {
-    "id": "bat-30",
-    "name": "Jellybean's Story",
-    "age": "Unknown",
-    "breed": "Domestic Short-hair",
-    "coloring": "Unknown",
-    "location": "Battersea",
-    "sourceType": "Shelter",
-    "sourceId": "battersea",
-    "preferences": [],
-    "status": "Available",
-    "image": "/cats/bat-30.jpg?v=3",
-    "originalImage": "https://www.battersea.org.ukhttps://www.battersea.org.uk/sites/default/files/styles/webp/public/2025-09/A%20black%20and%20white%20cat%20peaking%20round%20a%20corner%20-%20listing%20details.jpg.webp?itok=oImSZUjJ",
-    "dateListed": "2026-01-31T17:39:23.679Z",
-    "dateReserved": null,
-    "link": "https://www.battersea.org.uk/what-we-do/about-us/news/jellybean-story",
-    "environment": "Unknown",
-    "health": "Healthy",
-    "color": "Unknown",
-    "ageCategory": "Adult"
-  },
-  {
-    "id": "bat-31",
-    "name": "Rehome a cat",
-    "age": "Unknown",
-    "breed": "Domestic Short-hair",
-    "coloring": "Unknown",
-    "location": "Battersea",
-    "sourceType": "Shelter",
-    "sourceId": "battersea",
-    "preferences": [],
-    "status": "Available",
-    "image": "/cats/bat-31.jpg?v=3",
-    "originalImage": "https://www.battersea.org.ukhttps://www.battersea.org.uk/sites/default/files/styles/webp/public/2025-06/Rehome%20cat%20-%20June%20-%20thumbnail.jpg.webp?itok=R6TEI_gV",
-    "dateListed": "2026-01-31T17:39:23.679Z",
-    "dateReserved": null,
-    "link": "https://www.battersea.org.uk/rehome/cats",
-    "environment": "Unknown",
-    "health": "Healthy",
-    "color": "Unknown",
-    "ageCategory": "Adult"
-  },
-  {
-    "id": "bat-32",
-    "name": "Sponsor a cat cabin",
-    "age": "Unknown",
-    "breed": "Domestic Short-hair",
-    "coloring": "Unknown",
-    "location": "Battersea",
-    "sourceType": "Shelter",
-    "sourceId": "battersea",
-    "preferences": [],
-    "status": "Available",
-    "image": "/cats/bat-32.jpg?v=3",
-    "originalImage": "https://www.battersea.org.ukhttps://www.battersea.org.uk/sites/default/files/styles/webp/public/2023-05/Woman%20sitting%20with%20cat%20in%20Battersea%20cat%20cabin.jpg.webp?itok=Mf9tQyhW",
-    "dateListed": "2026-01-31T17:39:23.679Z",
-    "dateReserved": null,
-    "link": "https://donate.battersea.org.uk/cabin-sponsorship",
-    "environment": "Unknown",
-    "health": "Healthy",
-    "color": "Unknown",
-    "ageCategory": "Adult"
-  },
-  {
-    "id": "bat-33",
-    "name": "Cat advice",
-    "age": "Unknown",
-    "breed": "Domestic Short-hair",
-    "coloring": "Unknown",
-    "location": "Battersea",
-    "sourceType": "Shelter",
-    "sourceId": "battersea",
-    "preferences": [],
-    "status": "Available",
-    "image": "/cats/bat-33.jpg?v=3",
-    "originalImage": "https://www.battersea.org.ukhttps://www.battersea.org.uk/sites/default/files/styles/webp/public/2025-04/A%20cat%20sniffing%20grass%20-%20listing%20details.jpg.webp?itok=vle5L5cw",
-    "dateListed": "2026-01-31T17:39:23.679Z",
-    "dateReserved": null,
-    "link": "https://www.battersea.org.uk/pet-advice/cat-advice",
-    "environment": "Unknown",
-    "health": "Healthy",
-    "color": "Unknown",
-    "ageCategory": "Adult"
-  },
-  {
-    "id": "bat-34",
-    "name": "My Account",
-    "age": "Unknown",
-    "breed": "Domestic Short-hair",
-    "coloring": "Unknown",
-    "location": "Battersea",
-    "sourceType": "Shelter",
-    "sourceId": "battersea",
-    "preferences": [],
-    "status": "Available",
-    "image": "/cats/bat-34.jpg?v=3",
-    "originalImage": "https://www.battersea.org.ukhttps://www.battersea.org.uk/sites/default/files/styles/webp/public/2023-05/Pay%20in%20your%20funds%20content%20block%20-%20Battersea%20staff%20member%20holds%20dogs%20paws%20in%20his%20hand.jpg.webp?itok=y91bGvT5",
-    "dateListed": "2026-01-31T17:39:23.679Z",
-    "dateReserved": null,
-    "link": "https://www.battersea.org.uk/user/login",
-    "environment": "Unknown",
-    "health": "Healthy",
-    "color": "Unknown",
-    "ageCategory": "Adult"
-  },
-  {
-    "id": "cp-south-london-0",
+    "id": "cp-58944",
     "name": "Tingles",
     "age": "Unknown",
     "breed": "Domestic Short-hair",
@@ -747,18 +516,18 @@
     "preferences": [],
     "description": "Tingles\n                        South London Cat Centre\n                        \n                            Saba and Tingles are the dynamic duo of the next generation! Saba is the nonchalant aloof one but does enjoy a nap with his buddy Tingles. Tingles is all about the lovin', sometimes even a bit too much for Tingles. Like any pair of siblings, a playful hussle and tussle is usual, which is why they will need a large indoor and outdoor space (once the time is right) would be beneficial for t",
     "status": "Available",
-    "image": "/cats/cp-south-london-0.jpg?v=2",
+    "image": "/cats/cp-58944.jpg?v=2",
     "originalImage": "https://www.cats.org.uk/uploads/branches/adopt-a-cat-images/58944_3f57b1e1-41c9-45c7-90a7-7e75cdae54ef.jpg?format=webp",
     "dateListed": "2026-01-31T18:00:39.867Z",
     "dateReserved": null,
-    "link": "https://www.cats.org.uk/umbraco/surface/BranchCatsSurface/RenderCatForAdoptionPopup?locationId=438&locationName=South London Cat Centre&locationNumber=03000 120 285&catId=58944",
+    "link": "https://www.cats.org.uk/southlondon#adopt-58944",
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
     "ageCategory": "Adult"
   },
   {
-    "id": "cp-south-london-1",
+    "id": "cp-58943",
     "name": "Saba",
     "age": "Unknown",
     "breed": "Domestic Short-hair",
@@ -770,18 +539,18 @@
     "preferences": [],
     "description": "Saba\n                        South London Cat Centre\n                        \n                            Saba and Tingles are the dynamic duo of the next generation! Saba is the nonchalant aloof one but does enjoy a nap with his buddy Tingles. Tingles is all about the lovin', sometimes even a bit too much for Tingles. \n\nLike any pair of siblings, a playful hussle and tussle is usual, which is why they will need a large indoor and outdoor space (once the time is right) would be beneficial for th",
     "status": "Available",
-    "image": "/cats/cp-south-london-1.jpg?v=2",
+    "image": "/cats/cp-58943.jpg?v=2",
     "originalImage": "https://www.cats.org.uk/uploads/branches/adopt-a-cat-images/7d20bd1d-d0e9-4b5d-8a7e-9cececeed6bd.jpg?format=webp",
     "dateListed": "2026-01-31T18:00:39.867Z",
     "dateReserved": null,
-    "link": "https://www.cats.org.uk/umbraco/surface/BranchCatsSurface/RenderCatForAdoptionPopup?locationId=438&locationName=South London Cat Centre&locationNumber=03000 120 285&catId=58943",
+    "link": "https://www.cats.org.uk/southlondon#adopt-58943",
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
     "ageCategory": "Adult"
   },
   {
-    "id": "cp-south-london-2",
+    "id": "cp-58793",
     "name": "Poofy and Smokey",
     "age": "9m",
     "breed": "Domestic Short-hair",
@@ -793,18 +562,18 @@
     "preferences": [],
     "description": "Poofy and Smokey 9m female\n                        South London Cat Centre\n                        \n                            Pretty Poofy and Sweet Smokey and are a bonded pair that will melt your heart with their cute friendly personalities. Once they’re settled they will need a safe enclosed garden to explore and play. Poofy and Smokey will be ready to go to her new home from Saturday.\n                        \n                    \n                \n                \n                    \n     ",
     "status": "Reserved",
-    "image": "/cats/cp-south-london-2.jpg?v=2",
+    "image": "/cats/cp-58793.jpg?v=2",
     "originalImage": "https://www.cats.org.uk/uploads/branches/adopt-a-cat-images/58793_ab30d698-0d97-4ab0-9b9e-2ef2a8ffbad1.jpg?format=webp",
     "dateListed": "2026-01-31T18:00:39.867Z",
-    "dateReserved": "2026-01-31T18:00:39.867Z",
-    "link": "https://www.cats.org.uk/umbraco/surface/BranchCatsSurface/RenderCatForAdoptionPopup?locationId=438&locationName=South London Cat Centre&locationNumber=03000 120 285&catId=58793",
+    "dateReserved": "2026-02-01T21:32:52.274Z",
+    "link": "https://www.cats.org.uk/southlondon#adopt-58793",
     "environment": "Outdoor Access",
     "health": "Healthy",
     "color": "Female",
     "ageCategory": "Adult"
   },
   {
-    "id": "cp-south-london-3",
+    "id": "cp-58792",
     "name": "Smokey and Poofy",
     "age": "9m",
     "breed": "Domestic Short-hair",
@@ -816,18 +585,18 @@
     "preferences": [],
     "description": "Smokey and Poofy 9m female\n                        South London Cat Centre\n                        \n                            Sweet Smokey and Pretty Poofy are a bonded pair that will melt your heart with their cute friendly personalities. Once they’re settled they will need a safe enclosed garden to explore and play. Smokey and Poofy will be ready to go to her new home from Saturday.\n                        \n                    \n                \n                \n                    \n         ",
     "status": "Reserved",
-    "image": "/cats/cp-south-london-3.jpg?v=2",
+    "image": "/cats/cp-58792.jpg?v=2",
     "originalImage": "https://www.cats.org.uk/uploads/branches/adopt-a-cat-images/58792_1a24bb66-4895-4b1c-9ae8-556939fcfa77.jpg?format=webp",
     "dateListed": "2026-01-31T18:00:39.867Z",
-    "dateReserved": "2026-02-01T21:22:37.818Z",
-    "link": "https://www.cats.org.uk/umbraco/surface/BranchCatsSurface/RenderCatForAdoptionPopup?locationId=438&locationName=South London Cat Centre&locationNumber=03000 120 285&catId=58792",
+    "dateReserved": "2026-02-01T21:32:52.274Z",
+    "link": "https://www.cats.org.uk/southlondon#adopt-58792",
     "environment": "Outdoor Access",
     "health": "Healthy",
     "color": "Female",
     "ageCategory": "Adult"
   },
   {
-    "id": "cp-south-london-4",
+    "id": "cp-58790",
     "name": "Mishka",
     "age": "2y",
     "breed": "Domestic Short-hair",
@@ -839,18 +608,18 @@
     "preferences": [],
     "description": "Mishka 2y female\n                        South London Cat Centre\n                        \n                            Meet Mishka!Sweet Mishka would like a quiet home where she can truly blossom. She's no stranger to a lap cuddle and is growing in confidence and curiosity here in the cattery. She has previously lived with other cats but seems to prefer the company of humans, so we ask that she be the only pet. Mishka needs a private garden space for when she is ready to explore outdoors as she h",
     "status": "Available",
-    "image": "/cats/cp-south-london-4.jpg?v=2",
+    "image": "/cats/cp-58790.jpg?v=2",
     "originalImage": "https://www.cats.org.uk/uploads/branches/adopt-a-cat-images/58790_71349f93-d204-416e-a5a5-96fea8edbbcb.jpg?format=webp",
     "dateListed": "2026-01-31T18:00:39.867Z",
     "dateReserved": null,
-    "link": "https://www.cats.org.uk/umbraco/surface/BranchCatsSurface/RenderCatForAdoptionPopup?locationId=438&locationName=South London Cat Centre&locationNumber=03000 120 285&catId=58790",
+    "link": "https://www.cats.org.uk/southlondon#adopt-58790",
     "environment": "Outdoor Access",
     "health": "Healthy",
     "color": "Female",
     "ageCategory": "Adult"
   },
   {
-    "id": "cp-south-london-5",
+    "id": "cp-58785",
     "name": "Spicer",
     "age": "2y old",
     "breed": "Domestic Short-hair",
@@ -862,18 +631,18 @@
     "preferences": [],
     "description": "Spicer  2y old male\n                        South London Cat Centre\n                        \n                            Meet handsome Spicer, you will certainly find no cat nicer!He came in as a stray, but that was back in the day.Now he wants to live the socialised way.Spicer came in covered in scabs and was initially a little bit frantic but as soon as he was given a few soft furnishings and toys it was like something clicked and he remembered life before his time on the streets. If you ignor",
     "status": "Reserved",
-    "image": "/cats/cp-south-london-5.jpg?v=2",
+    "image": "/cats/cp-58785.jpg?v=2",
     "originalImage": "https://www.cats.org.uk/uploads/branches/adopt-a-cat-images/58785_5dba41da-5841-4208-8c74-7550e92e268b.jpg?format=webp",
     "dateListed": "2026-01-31T18:00:39.867Z",
-    "dateReserved": "2026-01-31T18:00:39.867Z",
-    "link": "https://www.cats.org.uk/umbraco/surface/BranchCatsSurface/RenderCatForAdoptionPopup?locationId=438&locationName=South London Cat Centre&locationNumber=03000 120 285&catId=58785",
+    "dateReserved": "2026-02-01T21:32:52.274Z",
+    "link": "https://www.cats.org.uk/southlondon#adopt-58785",
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Male",
     "ageCategory": "Adult"
   },
   {
-    "id": "cp-south-london-6",
+    "id": "cp-58783",
     "name": "Phoebe",
     "age": "1y",
     "breed": "Domestic Short-hair",
@@ -885,18 +654,18 @@
     "preferences": [],
     "description": "Phoebe 1y female\n                        South London Cat Centre\n                        \n                            Sweet Phoebe will melt your heart with her cute face and little meow.She loves her play tunnel and also to jump on your lap and make biscuits whilst looking out of the window of her pen to see whats going on! She has never been outside before but as she is still young we will only accept applications from a home with a safe enclosed garden for her to explore when she is ready. Ph",
     "status": "Reserved",
-    "image": "/cats/cp-south-london-6.jpg?v=2",
+    "image": "/cats/cp-58783.jpg?v=2",
     "originalImage": "https://www.cats.org.uk/uploads/branches/adopt-a-cat-images/58783_b0beea62-2cbb-4490-9d92-58e8044a898a.jpg?format=webp",
     "dateListed": "2026-01-31T18:00:39.867Z",
-    "dateReserved": "2026-01-31T18:00:39.867Z",
-    "link": "https://www.cats.org.uk/umbraco/surface/BranchCatsSurface/RenderCatForAdoptionPopup?locationId=438&locationName=South London Cat Centre&locationNumber=03000 120 285&catId=58783",
+    "dateReserved": "2026-02-01T21:32:52.274Z",
+    "link": "https://www.cats.org.uk/southlondon#adopt-58783",
     "environment": "Outdoor Access",
     "health": "Healthy",
     "color": "Female",
     "ageCategory": "Adult"
   },
   {
-    "id": "cp-south-london-7",
+    "id": "cp-58682",
     "name": "Bowser",
     "age": "2 year old",
     "breed": "Domestic Short-hair",
@@ -908,18 +677,18 @@
     "preferences": [],
     "description": "Bowser 2 year old male\n                        South London Cat Centre\n                        \n                            Despite his scary big boy name, Bowser is the gentlest boy ever! After a few cautious steps from under his hiding space and a quick wide eyed check of who's entered his home, Bowser will welcome you with the sweetest head bump and a roll onto his back. Once comfortable, he enjoys a lap cuddle as well as the freedom to explore independently.He would prefer to be top cat of t",
     "status": "Reserved",
-    "image": "/cats/cp-south-london-7.jpg?v=2",
+    "image": "/cats/cp-58682.jpg?v=2",
     "originalImage": "https://www.cats.org.uk/uploads/branches/adopt-a-cat-images/58682_81667e01-e751-4490-bb4d-d9ada90e8b64.jpg?format=webp",
     "dateListed": "2026-01-31T18:00:39.867Z",
-    "dateReserved": "2026-02-01T21:22:37.818Z",
-    "link": "https://www.cats.org.uk/umbraco/surface/BranchCatsSurface/RenderCatForAdoptionPopup?locationId=438&locationName=South London Cat Centre&locationNumber=03000 120 285&catId=58682",
+    "dateReserved": "2026-02-01T21:32:52.274Z",
+    "link": "https://www.cats.org.uk/southlondon#adopt-58682",
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Male",
     "ageCategory": "Adult"
   },
   {
-    "id": "cp-south-london-8",
+    "id": "cp-58677",
     "name": "Zoya",
     "age": "6 year old",
     "breed": "Domestic Short-hair",
@@ -931,18 +700,18 @@
     "preferences": [],
     "description": "Zoya 6 year old female\n                        South London Cat Centre\n                        \n                            If you're looking for an independent feline friend, then look the other way! This sweet white fluffball is the perfect lap-loving companion who thrives off cuddles and attention. She would be best suited to a pet-free home where she can be the star of the show. When Zoya is comfortable, you'll find it hard to keep her away from your lap, so please only enquire if you're abl",
     "status": "Available",
-    "image": "/cats/cp-south-london-8.jpg?v=2",
+    "image": "/cats/cp-58677.jpg?v=2",
     "originalImage": "https://www.cats.org.uk/uploads/branches/adopt-a-cat-images/58677_622d8aa6-96ed-4dab-bb6b-46d3a9606b39.jpg?format=webp",
     "dateListed": "2026-01-31T18:00:39.867Z",
     "dateReserved": null,
-    "link": "https://www.cats.org.uk/umbraco/surface/BranchCatsSurface/RenderCatForAdoptionPopup?locationId=438&locationName=South London Cat Centre&locationNumber=03000 120 285&catId=58677",
+    "link": "https://www.cats.org.uk/southlondon#adopt-58677",
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Female",
     "ageCategory": "Adult"
   },
   {
-    "id": "cp-south-london-9",
+    "id": "cp-58460",
     "name": "Galaxy",
     "age": "7 year old",
     "breed": "Domestic Short-hair",
@@ -954,18 +723,18 @@
     "preferences": [],
     "description": "Galaxy 7 year old male\n                        South London Cat Centre\n                        \n                            Meet our gorgeous shining star Galaxy.This chunky lad can be a little shy at first, but beneath that gentle reserve is a friendly, sweet-natured boy with his own unique, cosmic charm.He would thrive in a home where he is allowed to be independent and not pestered to be a lap cat. With patience and kindness, he quickly shows his affectionate side showing he would make a love",
     "status": "Reserved",
-    "image": "/cats/cp-south-london-9.jpg?v=2",
+    "image": "/cats/cp-58460.jpg?v=2",
     "originalImage": "https://www.cats.org.uk/uploads/branches/adopt-a-cat-images/58460_56614225-c8f1-4ae2-ac47-448b962b488e.jpg?format=webp",
     "dateListed": "2026-01-31T18:00:39.867Z",
-    "dateReserved": "2026-02-01T21:22:37.818Z",
-    "link": "https://www.cats.org.uk/umbraco/surface/BranchCatsSurface/RenderCatForAdoptionPopup?locationId=438&locationName=South London Cat Centre&locationNumber=03000 120 285&catId=58460",
+    "dateReserved": "2026-02-01T21:32:52.274Z",
+    "link": "https://www.cats.org.uk/southlondon#adopt-58460",
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Male",
     "ageCategory": "Adult"
   },
   {
-    "id": "cp-south-london-10",
+    "id": "cp-58330",
     "name": "Leo",
     "age": "1 year old",
     "breed": "Domestic Short-hair",
@@ -977,18 +746,18 @@
     "preferences": [],
     "description": "Leo  1 year old male INDOOR ONLY\n                        South London Cat Centre\n                        \n                            Lovely Leo is a super affectionate lad, always happy to warm up your lap and give a few head bumps. Unfortunately he has tested positive for FIV (Feline Immunodeficiency Virus) and whereas he is super healthy in himself if he goes outside he is more likely to pick up nasty bugs that he will then take longer to recover from. He will need a large indoor home with lo",
     "status": "Reserved",
-    "image": "/cats/cp-south-london-10.jpg?v=2",
+    "image": "/cats/cp-58330.jpg?v=2",
     "originalImage": "https://www.cats.org.uk/uploads/branches/adopt-a-cat-images/58330_58279d56-1813-4add-a752-5faeff8b56dd.jpg?format=webp",
     "dateListed": "2026-01-31T18:00:39.867Z",
-    "dateReserved": "2026-02-01T21:22:37.818Z",
-    "link": "https://www.cats.org.uk/umbraco/surface/BranchCatsSurface/RenderCatForAdoptionPopup?locationId=438&locationName=South London Cat Centre&locationNumber=03000 120 285&catId=58330",
+    "dateReserved": "2026-02-01T21:32:52.274Z",
+    "link": "https://www.cats.org.uk/southlondon#adopt-58330",
     "environment": "Indoor-Only",
     "health": "Needs Care",
     "color": "Male",
     "ageCategory": "Young Adult"
   },
   {
-    "id": "cp-south-london-11",
+    "id": "cp-58123",
     "name": "Mr Green",
     "age": "1year old",
     "breed": "Domestic Short-hair",
@@ -1000,18 +769,18 @@
     "preferences": [],
     "description": "Mr Green 1year old male\n                        South London Cat Centre\n                        \n                            Oh Mr Green! Such a sweet boy with the cutest pointy face and most endearing expression.He has come from a multi-cat household and will be keen to find a home where he isn't constantly watching his back and getting his lunch-money stolen.He'll happily stick his nose from under cover for a few biscuits and is gradually becoming a lap limpet for the chosen few. He is a bit o",
     "status": "Available",
-    "image": "/cats/cp-south-london-11.jpg?v=2",
+    "image": "/cats/cp-58123.jpg?v=2",
     "originalImage": "https://www.cats.org.uk/uploads/branches/adopt-a-cat-images/58123_7c157a35-b2d2-469c-89f7-9d5339bd4fce.jpg?format=webp",
     "dateListed": "2026-01-31T18:00:39.867Z",
     "dateReserved": null,
-    "link": "https://www.cats.org.uk/umbraco/surface/BranchCatsSurface/RenderCatForAdoptionPopup?locationId=438&locationName=South London Cat Centre&locationNumber=03000 120 285&catId=58123",
+    "link": "https://www.cats.org.uk/southlondon#adopt-58123",
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Male",
     "ageCategory": "Young Adult"
   },
   {
-    "id": "cp-south-london-12",
+    "id": "cp-55479",
     "name": "Maggie",
     "age": "8y",
     "breed": "Domestic Short-hair",
@@ -1023,18 +792,18 @@
     "preferences": [],
     "description": "Maggie 8y female\n                        South London Cat Centre\n                        \n                            Miss Maggie went to stay with one of our brilliant foster carers when she came to us and they had this to say about her \"This beautiful tabby was initially quite worried and spent much of her first days in her foster home hiding. She made it very clear she preferred to be left alone. How different things are now! She jumps down to meet us when we come to say hello and enjoys a fu",
     "status": "Available",
-    "image": "/cats/cp-south-london-12.jpg?v=2",
+    "image": "/cats/cp-55479.jpg?v=2",
     "originalImage": "https://www.cats.org.uk/uploads/branches/adopt-a-cat-images/55479_9ae34e65-f010-4b3e-8e41-829089799f1b.jpg?format=webp",
     "dateListed": "2026-02-01T21:22:37.818Z",
     "dateReserved": null,
-    "link": "https://www.cats.org.uk/umbraco/surface/BranchCatsSurface/RenderCatForAdoptionPopup?locationId=438&locationName=South London Cat Centre&locationNumber=03000 120 285&catId=55479",
+    "link": "https://www.cats.org.uk/southlondon#adopt-55479",
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Female",
     "ageCategory": "Adult"
   },
   {
-    "id": "lick-0",
+    "id": "lick-janet",
     "name": "Janet",
     "age": "2 years old",
     "breed": "Domestic Short-hair",
@@ -1056,7 +825,7 @@
     "ageCategory": "Adult"
   },
   {
-    "id": "lick-1",
+    "id": "lick-big-daddy",
     "name": "Big daddy",
     "age": "2 years old",
     "breed": "Domestic Short-hair",
@@ -1078,7 +847,7 @@
     "ageCategory": "Adult"
   },
   {
-    "id": "lick-2",
+    "id": "lick-rush",
     "name": "Rush",
     "age": "5 years old",
     "breed": "Domestic Short-hair",
@@ -1100,7 +869,7 @@
     "ageCategory": "Adult"
   },
   {
-    "id": "lick-3",
+    "id": "lick-teddy",
     "name": "Teddy",
     "age": "2 years old",
     "breed": "Domestic Short-hair",
@@ -1122,7 +891,7 @@
     "ageCategory": "Adult"
   },
   {
-    "id": "lick-4",
+    "id": "lick-oliver",
     "name": "Oliver",
     "age": "OLIVER2 years old",
     "breed": "Domestic Short-hair",
@@ -1144,7 +913,7 @@
     "ageCategory": "Adult"
   },
   {
-    "id": "lick-5",
+    "id": "lick-nugget",
     "name": "Nugget",
     "age": "nUGGET1 year old",
     "breed": "Domestic Short-hair",
@@ -1166,7 +935,7 @@
     "ageCategory": "Young Adult"
   },
   {
-    "id": "lick-6",
+    "id": "lick-lisette-assigned-to-adopter-",
     "name": "Lisette\n(assigned to adopter)",
     "age": "2 years old",
     "breed": "Domestic Short-hair",
@@ -1188,7 +957,7 @@
     "ageCategory": "Adult"
   },
   {
-    "id": "lick-7",
+    "id": "lick-ross",
     "name": "Ross",
     "age": "Ross3 years old",
     "breed": "Domestic Short-hair",
@@ -1210,7 +979,7 @@
     "ageCategory": "Adult"
   },
   {
-    "id": "lick-8",
+    "id": "lick-holly-sasha",
     "name": "Holly & sasha",
     "age": "Holly & Sasha7 & 10 years old",
     "breed": "Domestic Short-hair",
@@ -1232,7 +1001,7 @@
     "ageCategory": "Adult"
   },
   {
-    "id": "lick-9",
+    "id": "lick-joe-nick-and-kevin",
     "name": "Joe, nick and kevin",
     "age": "4 months old",
     "breed": "Domestic Short-hair",
@@ -1254,7 +1023,7 @@
     "ageCategory": "Kitten"
   },
   {
-    "id": "lick-10",
+    "id": "lick-minsk-kiev",
     "name": "Minsk & kiev",
     "age": "Minsk & Kiev4 months old",
     "breed": "Domestic Short-hair",
@@ -1276,7 +1045,7 @@
     "ageCategory": "Kitten"
   },
   {
-    "id": "lick-11",
+    "id": "lick-talin",
     "name": "Talin",
     "age": "Talin3 months old",
     "breed": "Domestic Short-hair",
@@ -1298,7 +1067,7 @@
     "ageCategory": "Kitten"
   },
   {
-    "id": "lick-12",
+    "id": "lick-squirt-kilo",
     "name": "Squirt & kilo",
     "age": "1 year old",
     "breed": "Domestic Short-hair",
@@ -1320,7 +1089,7 @@
     "ageCategory": "Young Adult"
   },
   {
-    "id": "lick-13",
+    "id": "lick--banksy-micah",
     "name": "​banksy & micah",
     "age": "​Banksy & Micah2 years & 6 months old",
     "breed": "Domestic Short-hair",
@@ -1342,7 +1111,7 @@
     "ageCategory": "Kitten"
   },
   {
-    "id": "lick-14",
+    "id": "lick-genta",
     "name": "Genta",
     "age": "11 years old",
     "breed": "Domestic Short-hair",

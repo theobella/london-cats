@@ -109,7 +109,7 @@ const Sidebar = ({ filters, onFilterChange, resultCount, availableLocations = []
             {/* Status Filter */}
             <div style={{ marginBottom: 'var(--spacing-lg)' }}>
                 <h4 style={{ fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px', color: 'var(--color-text-muted)', marginBottom: 'var(--spacing-sm)' }}>Status</h4>
-                {['Available', 'Reserved'].map(status => (
+                {['Available', 'Reserved', 'Adopted'].map(status => (
                     <label key={status} style={{ display: 'flex', alignItems: 'center', marginBottom: '8px', cursor: 'pointer', fontSize: '0.95rem' }}>
                         <input
                             type="checkbox"
