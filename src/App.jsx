@@ -76,7 +76,7 @@ function App() {
 
       // Gender Filter
       if (filters.genders.length > 0) {
-        const catGender = cat.gender === 'Unknown' ? 'Unknown' : cat.gender;
+        const catGender = cat.gender || 'Unknown';
         if (!filters.genders.includes(catGender)) return false;
       }
 

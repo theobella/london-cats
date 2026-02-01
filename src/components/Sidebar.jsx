@@ -72,7 +72,7 @@ const Sidebar = ({ filters, onFilterChange, resultCount, availableLocations = []
             {/* Sex Filter */}
             <div style={{ marginBottom: 'var(--spacing-lg)' }}>
                 <h4 style={{ fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px', color: 'var(--color-text-muted)', marginBottom: 'var(--spacing-sm)' }}>Sex</h4>
-                {['Male', 'Female'].map(sex => (
+                {['Male', 'Female', 'Unknown'].map(sex => (
                     <label key={sex} style={{ display: 'flex', alignItems: 'center', marginBottom: '8px', cursor: 'pointer', fontSize: '0.95rem' }}>
                         <input
                             type="checkbox"
