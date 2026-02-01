@@ -4,6 +4,7 @@ import CatModal from '../components/CatModal';
 
 const Metrics = () => {
     const [filters, setFilters] = useState({});
+    const [activityFilters, setActivityFilters] = useState([]); // Array of { date, type }
     const [selectedCat, setSelectedCat] = useState(null);
 
     const handleFilterToggle = (category, value) => {
@@ -17,23 +18,53 @@ const Metrics = () => {
         });
     };
 
-    const filteredCats = useMemo(() => {
-        return CATS.filter(cat => {
-            for (const [key, value] of Object.entries(filters)) {
-                if (key === 'waitTimeBucket') {
-                    const days = calculateDaysWaiting(cat.dateListed, cat.dateReserved);
-                    if (value === '< 1 Week' && days >= 7) return false;
-                    if (value === '1-2 Weeks' && (days < 7 || days >= 14)) return false;
-                    if (value === '2-4 Weeks' && (days < 14 || days >= 30)) return false;
-                    if (value === '1 Month+' && days < 30) return false;
-                } else {
-                    const catValue = cat[key] || 'Unknown';
-                    if (catValue !== value) return false;
-                }
+    const toggleActivityFilter = (date, type) => {
+        setActivityFilters(prev => {
+            const exists = prev.find(f => f.date === date && f.type === type);
+            if (exists) {
+                return prev.filter(f => f.date !== date || f.type !== type);
             }
-            return true;
+            return [...prev, { date, type }];
         });
-    }, [filters]);
+    };
+
+    const matchesFilters = (cat, excludeKey = null, ignoreActivity = false) => {
+        // Standard Filters
+        for (const [key, value] of Object.entries(filters)) {
+            if (key === excludeKey) continue;
+            if (key === 'waitTimeBucket') {
+                const days = calculateDaysWaiting(cat.dateListed, cat.dateReserved || cat.dateAdopted);
+                if (value === '< 1 Week' && days >= 7) return false;
+                if (value === '1-2 Weeks' && (days < 7 || days >= 14)) return false;
+                if (value === '2-4 Weeks' && (days < 14 || days >= 30)) return false;
+                if (value === '1 Month+' && days < 30) return false;
+            } else {
+                const catValue = cat[key] || 'Unknown';
+                if (catValue !== value) return false;
+            }
+        }
+
+        // Activity Filter
+        if (!ignoreActivity && activityFilters.length > 0) {
+            const matchesActivity = activityFilters.some(filter => {
+                const { date, type } = filter;
+                if (type === 'added') {
+                    return cat.dateListed && cat.dateListed.split('T')[0] === date;
+                }
+                if (type === 'reserved') {
+                    return cat.dateReserved && cat.dateReserved.split('T')[0] === date;
+                }
+                return false;
+            });
+            if (!matchesActivity) return false;
+        }
+
+        return true;
+    };
+
+    const filteredCats = useMemo(() => {
+        return CATS.filter(cat => matchesFilters(cat));
+    }, [filters, activityFilters]);
 
     const stats = useMemo(() => {
         const total = CATS.length;
@@ -53,16 +84,28 @@ const Metrics = () => {
         return { total, available, reserved, avgWaitTime, avgReserveTime };
     }, []);
 
-    // Grouping Helpers (Unfiltered for overview charts, or filtered? Usually overview charts show everything, interactive drilling down filters the table)
-    // Let's keep charts showing GLOBAL stats to act as controls.
-    const getGroupCounts = (field) => {
+    // Cross-filtered Chart Data
+    const getChartCounts = (field) => {
         const counts = {};
-        CATS.forEach(c => {
-            const val = c[field] || 'Unknown';
+        // Filter by everything EXCEPT this field
+        const relevantCats = CATS.filter(cat => matchesFilters(cat, field));
+        relevantCats.forEach(c => {
+            // Special handling for rescue Name mapping
+            let val = c[field] || 'Unknown';
+            if (field === 'sourceId') {
+                if (val === 'battersea') val = 'Battersea';
+                else if (val === 'cats_protection') val = 'Cats Protection';
+                else if (val === 'lick') val = 'L.I.C.K.';
+            }
             counts[val] = (counts[val] || 0) + 1;
         });
         return counts;
     };
+
+    // Activity Chart Data (Respects filters, ignores activity selection to show context)
+    const activityChartCats = useMemo(() => {
+        return CATS.filter(cat => matchesFilters(cat, null, true));
+    }, [filters]);
 
     const navi = (days) => {
         if (days < 7) return '< 1 Week';
@@ -72,15 +115,18 @@ const Metrics = () => {
     }
 
     const waitTimeCounts = {};
-    CATS.filter(c => c.status === 'Available').forEach(c => {
+    // For Wait Time chart, we exclude 'waitTimeBucket' from filters
+    CATS.filter(cat => matchesFilters(cat, 'waitTimeBucket')).filter(c => c.status === 'Available').forEach(c => {
         const days = calculateDaysWaiting(c.dateListed, null);
         const bucket = navi(days);
         waitTimeCounts[bucket] = (waitTimeCounts[bucket] || 0) + 1;
     });
 
-    const ageCounts = getGroupCounts('ageCategory');
-    const genderCounts = getGroupCounts('gender');
-    const sourceCounts = getGroupCounts('sourceType');
+    const ageCounts = getChartCounts('ageCategory');
+    const genderCounts = getChartCounts('gender');
+    const sourceCounts = getChartCounts('sourceType');
+    const rescueNameCounts = getChartCounts('sourceId');
+    const envCounts = getChartCounts('environment');
 
     const renderBarChart = (data, title, category) => {
         const max = Math.max(...Object.values(data));
@@ -127,9 +173,9 @@ const Metrics = () => {
             <div style={{ textAlign: 'center', marginBottom: 'var(--spacing-xl)' }}>
                 <h2 style={{ fontSize: '2.5rem', color: 'var(--color-primary)' }}>Adoption Metrics & Insights</h2>
                 <p style={{ fontSize: '1.2rem', color: 'var(--color-text-muted)' }}>Real-time analysis of London's cat rescue ecosystem.</p>
-                {Object.keys(filters).length > 0 && (
+                {(Object.keys(filters).length > 0 || activityFilters.length > 0) && (
                     <button
-                        onClick={() => setFilters({})}
+                        onClick={() => { setFilters({}); setActivityFilters([]); }}
                         style={{ marginTop: '10px', background: 'transparent', border: '1px solid var(--color-text-muted)', padding: '5px 15px', borderRadius: '20px', cursor: 'pointer' }}
                     >
                         Clear Filters
@@ -146,13 +192,15 @@ const Metrics = () => {
             </div>
 
             {/* Daily Activity Chart */}
-            <ActivityChart cats={CATS} />
+            <ActivityChart cats={activityChartCats} filters={activityFilters} onToggle={toggleActivityFilter} />
 
             {/* Charts Row */}
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--spacing-lg)', marginBottom: 'var(--spacing-xl)' }}>
-                {renderBarChart(sourceCounts, 'By Rescue Type', 'sourceType')}
+                {renderBarChart(rescueNameCounts, 'By Rescue', 'sourceId')}
+                {renderBarChart(sourceCounts, 'Rescue Type', 'sourceType')}
                 {renderBarChart(ageCounts, 'Age Demographics', 'ageCategory')}
                 {renderBarChart(genderCounts, 'Gender Split', 'gender')}
+                {renderBarChart(envCounts, 'Environment', 'environment')}
                 {renderBarChart(waitTimeCounts, 'Wait Time Distribution (Available)', 'waitTimeBucket')}
             </div>
 
@@ -175,7 +223,7 @@ const Metrics = () => {
                     </thead>
                     <tbody>
                         {filteredCats.map(cat => {
-                            const waitTime = calculateDaysWaiting(cat.dateListed, cat.dateReserved);
+                            const waitTime = calculateDaysWaiting(cat.dateListed, cat.dateReserved || cat.dateAdopted);
                             return (
                                 <tr
                                     key={cat.id}
@@ -195,11 +243,18 @@ const Metrics = () => {
                                             {cat.name}
                                         </div>
                                     </td>
-                                    <td style={tdStyle}>{cat.sourceId === 'battersea' ? 'Battersea' : 'Cats Protection'}</td>
+                                    <td style={tdStyle}>
+                                        {(() => {
+                                            if (cat.sourceId === 'battersea') return 'Battersea';
+                                            if (cat.sourceId === 'cats_protection') return 'Cats Protection';
+                                            if (cat.sourceId === 'lick') return 'L.I.C.K.';
+                                            return cat.sourceId || 'Unknown';
+                                        })()}
+                                    </td>
                                     <td style={tdStyle}>{cat.ageCategory || 'Unknown'}</td>
                                     <td style={tdStyle}>{cat.color || 'Unknown'}</td>
                                     <td style={tdStyle}>
-                                        <span className={`badge ${cat.environment === 'Indoor-Only' ? 'badge-primary' : 'badge-secondary'}`}>
+                                        <span className={`badge ${cat.environment === 'Indoor-Only' ? 'badge-primary' : (cat.environment === 'Outdoor Access' ? 'badge-secondary' : 'badge-neutral')}`}>
                                             {cat.environment || 'Unknown'}
                                         </span>
                                     </td>
@@ -239,7 +294,7 @@ const KPICard = ({ title, value, subtitle }) => (
 const thStyle = { padding: '12px', fontSize: '0.9rem', color: 'var(--color-text-muted)', fontWeight: 600 };
 const tdStyle = { padding: '12px', fontSize: '0.95rem' };
 
-const ActivityChart = ({ cats }) => {
+const ActivityChart = ({ cats, filters, onToggle }) => {
     const dailyStats = useMemo(() => {
         const stats = {};
         cats.forEach(cat => {
@@ -254,10 +309,10 @@ const ActivityChart = ({ cats }) => {
                 stats[date].reserved++;
             }
         });
-        return Object.entries(stats).sort((a, b) => a[0].localeCompare(b[0])).slice(-14); // Last 14 days
+        return Object.entries(stats).sort((a, b) => a[0].localeCompare(b[0])).slice(-14);
     }, [cats]);
 
-    const maxVal = Math.max(...dailyStats.map(([, d]) => Math.max(d.added, d.reserved)), 1); // Avoid div by zero
+    const maxVal = Math.max(...dailyStats.map(([, d]) => Math.max(d.added, d.reserved)), 1);
 
     return (
         <div className="glass-card" style={{ padding: 'var(--spacing-lg)', marginBottom: 'var(--spacing-xl)' }}>
@@ -276,48 +331,99 @@ const ActivityChart = ({ cats }) => {
             </div>
 
             <div style={{ display: 'flex', alignItems: 'flex-end', height: '200px', gap: '2%', paddingTop: '20px' }}>
-                {dailyStats.map(([date, data]) => (
-                    <div key={date} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100%', flex: 1 }}>
-                        <div style={{ display: 'flex', alignItems: 'flex-end', gap: '4px', height: '100%', width: '100%', justifyContent: 'center' }}>
-                            <div
-                                style={{
-                                    width: '30%',
-                                    height: `${(data.added / maxVal) * 100}%`,
-                                    background: 'var(--color-secondary)',
-                                    borderRadius: '4px 4px 0 0',
-                                    transition: 'height 0.5s ease',
-                                    minHeight: data.added > 0 ? '4px' : '0'
-                                }}
-                                title={`${data.added} Added`}
-                            />
-                            <div
-                                style={{
-                                    width: '30%',
-                                    height: `${(data.reserved / maxVal) * 100}%`,
-                                    background: 'var(--color-primary)',
-                                    borderRadius: '4px 4px 0 0',
-                                    transition: 'height 0.5s ease',
-                                    minHeight: data.reserved > 0 ? '4px' : '0'
-                                }}
-                                title={`${data.reserved} Reserved`}
-                            />
+                {dailyStats.map(([date, data]) => {
+                    const isAddedActive = filters.some(f => f.date === date && f.type === 'added');
+                    const isReservedActive = filters.some(f => f.date === date && f.type === 'reserved');
+                    const hasFilters = filters.length > 0;
+
+                    return (
+                        <div key={date} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100%', flex: 1 }}>
+                            <div style={{ display: 'flex', alignItems: 'flex-end', gap: '4px', height: '100%', width: '100%', justifyContent: 'center' }}>
+                                <div
+                                    onClick={() => onToggle(date, 'added')}
+                                    style={{
+                                        width: '30%',
+                                        height: `${(data.added / maxVal) * 100}%`,
+                                        background: 'var(--color-secondary)',
+                                        borderRadius: '4px 4px 0 0',
+                                        transition: 'all 0.3s ease',
+                                        minHeight: data.added > 0 ? '4px' : '0',
+                                        cursor: 'pointer',
+                                        opacity: (!hasFilters || isAddedActive) ? 1 : 0.3,
+                                        border: isAddedActive ? '2px solid #333' : 'none',
+                                        position: 'relative'
+                                    }}
+                                    title={`${data.added} Added`}
+                                >
+                                    {data.added > 0 && (
+                                        <span style={{
+                                            position: 'absolute',
+                                            bottom: '100%',
+                                            left: '50%',
+                                            transform: 'translateX(-50%)',
+                                            fontSize: '0.7rem',
+                                            fontWeight: 'bold',
+                                            color: 'var(--color-text-muted)',
+                                            marginBottom: '2px'
+                                        }}>
+                                            {data.added}
+                                        </span>
+                                    )}
+                                </div>
+                                <div
+                                    onClick={() => onToggle(date, 'reserved')}
+                                    style={{
+                                        width: '30%',
+                                        height: `${(data.reserved / maxVal) * 100}%`,
+                                        background: 'var(--color-primary)',
+                                        borderRadius: '4px 4px 0 0',
+                                        transition: 'all 0.3s ease',
+                                        minHeight: data.reserved > 0 ? '4px' : '0',
+                                        cursor: 'pointer',
+                                        opacity: (!hasFilters || isReservedActive) ? 1 : 0.3,
+                                        border: isReservedActive ? '2px solid #333' : 'none',
+                                        position: 'relative'
+                                    }}
+                                    title={`${data.reserved} Reserved`}
+                                >
+                                    {data.reserved > 0 && (
+                                        <span style={{
+                                            position: 'absolute',
+                                            bottom: '100%',
+                                            left: '50%',
+                                            transform: 'translateX(-50%)',
+                                            fontSize: '0.7rem',
+                                            fontWeight: 'bold',
+                                            color: 'var(--color-text-muted)',
+                                            marginBottom: '2px'
+                                        }}>
+                                            {data.reserved}
+                                        </span>
+                                    )}
+                                </div>
+                            </div>
+                            <span style={{
+                                fontSize: '0.75rem',
+                                marginTop: '8px',
+                                color: 'var(--color-text-muted)',
+                                transform: 'rotate(-45deg)',
+                                transformOrigin: 'top left',
+                                whiteSpace: 'nowrap'
+                            }}>
+                                {new Date(date).toLocaleDateString(undefined, { month: 'short', day: 'numeric' })}
+                            </span>
                         </div>
-                        <span style={{
-                            fontSize: '0.75rem',
-                            marginTop: '8px',
-                            color: 'var(--color-text-muted)',
-                            transform: 'rotate(-45deg)',
-                            transformOrigin: 'top left',
-                            whiteSpace: 'nowrap'
-                        }}>
-                            {new Date(date).toLocaleDateString(undefined, { month: 'short', day: 'numeric' })}
-                        </span>
-                    </div>
-                ))}
+                    );
+                })}
                 {dailyStats.length === 0 && (
                     <div style={{ width: '100%', textAlign: 'center', color: 'var(--color-text-muted)', alignSelf: 'center' }}>No activity data available yet.</div>
                 )}
             </div>
+            {filters.length > 0 && (
+                <div style={{ textAlign: 'center', marginTop: '10px', fontSize: '0.85rem', color: 'var(--color-text-muted)' }}>
+                    Filtering by {filters.length} selected activities
+                </div>
+            )}
         </div>
     );
 };
