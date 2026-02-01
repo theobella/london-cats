@@ -77,6 +77,7 @@ async function scrapeBattersea() {
 
             let linkHref = $(el).attr('href');
             if (!linkHref) linkHref = $(el).find('a').attr('href');
+            if (!linkHref) linkHref = $(el).parent('a').attr('href'); // Check parent
             const link = linkHref ? (linkHref.startsWith('http') ? linkHref : 'https://www.battersea.org.uk' + linkHref) : null;
 
             let image = $(el).find('img').attr('src');
@@ -128,10 +129,11 @@ async function scrapeBattersea() {
     }
 }
 
-async function scrapeCatsProtection() {
+async function scrapeCatsProtection(config) {
     try {
-        console.log('Fetching Cats Protection...');
-        const { data } = await axios.get(SOURCES.CATS_PROTECTION_SOUTH_LONDON.url, { headers: HEADERS });
+        const { url, location } = config;
+        console.log(`Fetching Cats Protection (${location})...`);
+        const { data } = await axios.get(url, { headers: HEADERS });
         const $ = cheerio.load(data);
 
         const cats = [];
@@ -146,7 +148,10 @@ async function scrapeCatsProtection() {
 
             const text = $(el).text().trim();
             const firstLine = text.split('\n')[0].trim();
-            const nameMatch = firstLine.match(/^(.*?)\s+(\d+[ym])\s+(?:old\s+)?(male|female)/i);
+
+            // Regex to handle "Name 2y male" or "Name 2 years old Male"
+            // Captures: Name, Age string, Gender
+            const nameMatch = firstLine.match(/^(.*?)\s+((?:\d+\s*(?:years?|months?|[ym])(?:\s+old)?))\s+(male|female)/i);
 
             let name = 'Unknown';
             let age = 'Unknown';
@@ -188,21 +193,25 @@ async function scrapeCatsProtection() {
             if (gender && gender.toLowerCase() === 'female') gender = 'Female';
             if (gender && gender.toLowerCase() === 'male') gender = 'Male';
 
+            // Generate a specialized ID suffix based on location to avoid collisions
+            // e.g. cp-north-0 or cp-south-london-0
+            const idSuffix = location.toLowerCase().replace(/[^a-z0-9]/g, '-');
+
             let localImage = 'https://placekitten.com/300/300';
             if (image && !image.includes('placekitten')) {
                 const ext = image.split('.').pop().split('?')[0] || 'jpg';
-                const filename = `cp-${i}.${ext}`;
+                const filename = `cp-${idSuffix}-${i}.${ext}`;
                 localImage = await downloadImage(image, filename);
             }
 
             cats.push({
-                id: `cp-${i}`,
+                id: `cp-${idSuffix}-${i}`,
                 name,
                 age,
                 breed: 'Domestic Short-hair',
                 coloring: gender,
                 gender: gender || 'Unknown',
-                location: 'South London',
+                location: location,
                 sourceType: 'Physical Center',
                 sourceId: 'cats_protection',
                 preferences: [],
@@ -212,17 +221,109 @@ async function scrapeCatsProtection() {
                 originalImage: image,
                 dateListed: new Date().toISOString(),
                 dateReserved: isReserved ? new Date().toISOString() : null,
-                link: fullLink // Use the specific cat link!
+                link: fullLink
             });
 
             // Be polite
             await new Promise(r => setTimeout(r, 200));
         }
 
-        console.log(`Found ${cats.length} cats at Cats Protection.`);
+        console.log(`Found ${cats.length} cats at Cats Protection ${location}.`);
         return cats;
     } catch (error) {
-        console.error('Error scraping Cats Protection:', error.message);
+        console.error(`Error scraping Cats Protection ${config.location}:`, error.message);
+        return [];
+    }
+}
+async function scrapeLick() {
+    try {
+        console.log('Fetching London Inner City Kitties...');
+        const { data } = await axios.get('https://www.london-inner-city-kitties.org/adopt', { headers: HEADERS });
+        const $ = cheerio.load(data);
+        const cats = [];
+
+        // Strategy: Find Name in H4, get UUID, find related image and description
+        const nameElements = $('h4').toArray();
+        console.log(`Found ${nameElements.length} potential name headers.`);
+
+        for (let i = 0; i < nameElements.length; i++) {
+            const el = nameElements[i];
+            const name = $(el).text().trim().toLowerCase();
+
+            // Ignore "Kitties for adoption" header or empty
+            if (!name || name.includes('kitties for adoption') || name.length > 50) continue;
+
+            const repeaterItem = $(el).closest('div[id^="comp-"]');
+            if (repeaterItem.length) {
+                const id = repeaterItem.attr('id');
+                const uuid = id.split('__item-')[1];
+
+                if (uuid) {
+                    // Find all components for this item
+                    const relatedElements = $(`[id*="${uuid}"]`);
+
+                    let image = null;
+                    let description = '';
+                    let age = 'Unknown';
+
+                    relatedElements.each((_, relEl) => {
+                        // Image
+                        const img = $(relEl).find('img').first();
+                        if (img.length) {
+                            const src = img.attr('src') || img.attr('data-src');
+                            if (src) image = src;
+                        }
+
+                        // Description/Age text
+                        const text = $(relEl).text().trim();
+                        if (text.length > 20 && !text.includes(name)) { // Avoid name block
+                            description += text + '\n';
+                        }
+                    });
+
+                    // Specific parse for age in description?
+                    // Usually "2 years old / female / indoor" is the first line of description
+                    const firstLine = description.split('\n')[0];
+                    if (firstLine) {
+                        // Simple extraction
+                        const parts = firstLine.split('/');
+                        if (parts.length > 0) age = parts[0].trim();
+                    }
+
+                    // Download image
+                    let localImage = 'https://placekitten.com/300/300';
+                    if (image) {
+                        const filename = `lick-${i}.jpg`; // Assumption: source is likely jpg/webp
+                        localImage = await downloadImage(image, filename);
+                    }
+
+                    cats.push({
+                        id: `lick-${i}`,
+                        name: name.charAt(0).toUpperCase() + name.slice(1), // Capitalize
+                        age: age,
+                        breed: 'Domestic Short-hair',
+                        coloring: 'Unknown',
+                        location: 'London',
+                        sourceType: 'Network',
+                        sourceId: 'lick',
+                        preferences: [],
+                        description: description.substring(0, 500),
+                        status: 'Available', // LICK usually removes adopted ones
+                        image: localImage,
+                        originalImage: image,
+                        dateListed: new Date().toISOString(),
+                        dateReserved: null,
+                        link: 'https://www.london-inner-city-kitties.org/adopt'
+                    });
+                }
+            }
+        }
+
+        console.log(`Found ${cats.length} cats at L.I.C.K.`);
+        return cats;
+
+    } catch (error) {
+        console.error('Error scraping LICK:', error.message);
         return [];
     }
 }
@@ -290,13 +391,15 @@ function extractMetadata(cat) {
 
     // Age Category
     let ageCategory = 'Adult';
-    const age = cat.age.toLowerCase();
-    if (age.includes('month') || age.includes('kitten')) {
-        ageCategory = 'Kitten';
-    } else if (age.includes('year')) {
-        const years = parseInt(age.match(/\d+/)?.[0] || '0');
-        if (years < 2) ageCategory = 'Young Adult';
-        else if (years >= 10) ageCategory = 'Senior';
+    if (cat.age) {
+        const age = cat.age.toLowerCase();
+        if (age.includes('month') || age.includes('kitten')) {
+            ageCategory = 'Kitten';
+        } else if (age.includes('year')) {
+            const years = parseInt(age.match(/\d+/)?.[0] || '0');
+            if (years < 2) ageCategory = 'Young Adult';
+            else if (years >= 10) ageCategory = 'Senior';
+        }
     }
 
     return {
@@ -321,37 +424,48 @@ async function main() {
         console.log('No existing data found, starting fresh.');
     }
 
-    let batterseaCats = [];
-    try {
-        const restoredPath = path.join(__dirname, '../src/data/restoredBattersea.json');
-        const restoredData = await fs.readFile(restoredPath, 'utf-8');
-        batterseaCats = JSON.parse(restoredData);
+    let batterseaCats = await scrapeBattersea();
 
-        // Update restored cats to use local images
-        for (let i = 0; i < batterseaCats.length; i++) {
-            const cat = batterseaCats[i];
-            // If image is URL, try download. If local, re-verify?
-            let urlToDownload = cat.image;
-            if (!urlToDownload || !urlToDownload.startsWith('http')) {
-                // If it's already local, maybe originalImage has the URL?
-                urlToDownload = cat.originalImage;
-            }
+    if (batterseaCats.length === 0) {
+        console.log('Scrape failed or empty, looking for restored data...');
+        try {
+            const restoredPath = path.join(__dirname, '../src/data/restoredBattersea.json');
+            const restoredData = await fs.readFile(restoredPath, 'utf-8');
+            const restoredCats = JSON.parse(restoredData);
 
-            if (urlToDownload && urlToDownload.startsWith('http')) {
-                // Force jpg because we know Battersea serves JPEGs disguised as WebP
-                const ext = 'jpg';
-                const filename = `bat-${i}.${ext}`;
-                const localPath = await downloadImage(urlToDownload, filename);
-                cat.originalImage = urlToDownload;
-                cat.image = localPath ? `${localPath}?v=4` : localPath;
+            // Update restored cats to use local images
+            for (let i = 0; i < restoredCats.length; i++) {
+                const cat = restoredCats[i];
+                // If image is URL, try download. If local, re-verify?
+                let urlToDownload = cat.image;
+                if (!urlToDownload || !urlToDownload.startsWith('http')) {
+                    // If it's already local, maybe originalImage has the URL?
+                    urlToDownload = cat.originalImage;
+                }
+
+                if (urlToDownload && urlToDownload.startsWith('http')) {
+                    // Force jpg because we know Battersea serves JPEGs disguised as WebP
+                    const ext = 'jpg';
+                    const filename = `bat-${i}.${ext}`;
+                    const localPath = await downloadImage(urlToDownload, filename);
+                    cat.originalImage = urlToDownload;
+                    cat.image = localPath ? `${localPath}?v=4` : localPath;
+                }
             }
+            batterseaCats = restoredCats;
+            console.log(`Loaded ${batterseaCats.length} cats from restored backup.`);
+        } catch (e) {
+            console.log('No restored data found either.');
         }
-    } catch (e) {
-        batterseaCats = await scrapeBattersea();
     }
 
-    const cpCats = await scrapeCatsProtection();
-    const allScrapedCats = [...batterseaCats, ...cpCats];
+    // Scrape CP South London
+    const cpSouthCats = await scrapeCatsProtection(SOURCES.CATS_PROTECTION_SOUTH_LONDON);
+
+    const lickCats = await scrapeLick();
+
+    // Combine all
+    const allScrapedCats = [...batterseaCats, ...cpSouthCats, ...lickCats];
 
     // Merge and Enrich
     const finalCats = allScrapedCats.map(scrapedCat => {

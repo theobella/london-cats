@@ -12,11 +12,7 @@ const CatList = ({ cats, onCatClick }) => {
     }
 
     return (
-        <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
-            gap: 'var(--spacing-lg)'
-        }}>
+        <div className="cat-grid">
             {cats.map(cat => (
                 <CatCard key={cat.id} cat={cat} onClick={onCatClick} />
             ))}

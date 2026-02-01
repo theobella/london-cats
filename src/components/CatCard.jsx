@@ -7,11 +7,11 @@ const CatCard = ({ cat, onClick }) => {
 
     return (
         <div className="glass-card" onClick={() => onClick(cat)} style={{ cursor: 'pointer', overflow: 'hidden', display: 'flex', flexDirection: 'column', height: '100%' }}>
-            <div style={{ position: 'relative', height: '200px' }}>
+            <div style={{ position: 'relative' }}>
                 <img
                     src={cat.image}
                     alt={cat.name}
-                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                    style={{ width: '100%', height: 'auto', display: 'block' }}
                 />
                 <div style={{ position: 'absolute', top: '10px', right: '10px', display: 'flex', gap: '8px' }}>
                     {isReserved ? (
@@ -44,7 +44,12 @@ const CatCard = ({ cat, onClick }) => {
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingTop: '8px', borderTop: '1px solid #eee' }}>
                         <span style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--color-primary)' }}>
-                            {cat.sourceId === 'battersea' ? 'Battersea' : cat.sourceType}
+                            {{
+                                'battersea': 'Battersea',
+                                'cats_protection': 'Cats Protection',
+                                'lick': 'London Inner City Kitties',
+                                'mayhew': 'The Mayhew'
+                            }[cat.sourceId] || cat.sourceType}
                         </span>
                         {cat.link && (
                             <a

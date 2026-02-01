@@ -1,10 +1,10 @@
 import React from 'react';
 import Header from './Header';
 
-const Layout = ({ children }) => {
+const Layout = ({ children, currentView, onViewChange }) => {
   return (
     <div className="app-layout">
-      <Header />
+      <Header currentView={currentView} onViewChange={onViewChange} />
       <main className="container" style={{ paddingBottom: 'var(--spacing-2xl)' }}>
         {children}
       </main>

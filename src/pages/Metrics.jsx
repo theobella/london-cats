@@ -1,9 +1,10 @@
-
-import React, { useMemo } from 'react';
+import React, { useMemo, useState } from 'react';
 import { CATS, calculateDaysWaiting } from '../data/mockData';
+import CatModal from '../components/CatModal';
 
 const Metrics = () => {
-    const [filters, setFilters] = React.useState({});
+    const [filters, setFilters] = useState({});
+    const [selectedCat, setSelectedCat] = useState(null);
 
     const handleFilterToggle = (category, value) => {
         setFilters(prev => {
@@ -26,7 +27,8 @@ const Metrics = () => {
                     if (value === '2-4 Weeks' && (days < 14 || days >= 30)) return false;
                     if (value === '1 Month+' && days < 30) return false;
                 } else {
-                    if (cat[key] !== value) return false;
+                    const catValue = cat[key] || 'Unknown';
+                    if (catValue !== value) return false;
                 }
             }
             return true;
@@ -143,6 +145,9 @@ const Metrics = () => {
                 <KPICard title="Adoption Rate" value={`${Math.round((stats.reserved / stats.total) * 100)}%`} subtitle={`${stats.reserved} reserved`} />
             </div>
 
+            {/* Daily Activity Chart */}
+            <ActivityChart cats={CATS} />
+
             {/* Charts Row */}
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--spacing-lg)', marginBottom: 'var(--spacing-xl)' }}>
                 {renderBarChart(sourceCounts, 'By Rescue Type', 'sourceType')}
@@ -172,7 +177,18 @@ const Metrics = () => {
                         {filteredCats.map(cat => {
                             const waitTime = calculateDaysWaiting(cat.dateListed, cat.dateReserved);
                             return (
-                                <tr key={cat.id} style={{ borderBottom: '1px solid rgba(0,0,0,0.05)' }}>
+                                <tr
+                                    key={cat.id}
+                                    onClick={() => setSelectedCat(cat)}
+                                    style={{
+                                        borderBottom: '1px solid rgba(0,0,0,0.05)',
+                                        cursor: 'pointer',
+                                        transition: 'background-color 0.2s'
+                                    }}
+                                    className="table-row-hover"
+                                    onMouseEnter={(e) => e.currentTarget.style.backgroundColor = 'rgba(0,0,0,0.02)'}
+                                    onMouseLeave={(e) => e.currentTarget.style.backgroundColor = 'transparent'}
+                                >
                                     <td style={tdStyle}>
                                         <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                                             <img src={cat.image} alt="" style={{ width: '32px', height: '32px', borderRadius: '50%', objectFit: 'cover' }} />
@@ -204,6 +220,10 @@ const Metrics = () => {
                     </tbody>
                 </table>
             </div>
+
+            {selectedCat && (
+                <CatModal cat={selectedCat} onClose={() => setSelectedCat(null)} />
+            )}
         </div>
     );
 };
@@ -218,5 +238,88 @@ const KPICard = ({ title, value, subtitle }) => (
 
 const thStyle = { padding: '12px', fontSize: '0.9rem', color: 'var(--color-text-muted)', fontWeight: 600 };
 const tdStyle = { padding: '12px', fontSize: '0.95rem' };
+
+const ActivityChart = ({ cats }) => {
+    const dailyStats = useMemo(() => {
+        const stats = {};
+        cats.forEach(cat => {
+            if (cat.dateListed) {
+                const date = cat.dateListed.split('T')[0];
+                if (!stats[date]) stats[date] = { added: 0, reserved: 0 };
+                stats[date].added++;
+            }
+            if (cat.dateReserved) {
+                const date = cat.dateReserved.split('T')[0];
+                if (!stats[date]) stats[date] = { added: 0, reserved: 0 };
+                stats[date].reserved++;
+            }
+        });
+        return Object.entries(stats).sort((a, b) => a[0].localeCompare(b[0])).slice(-14); // Last 14 days
+    }, [cats]);
+
+    const maxVal = Math.max(...dailyStats.map(([, d]) => Math.max(d.added, d.reserved)), 1); // Avoid div by zero
+
+    return (
+        <div className="glass-card" style={{ padding: 'var(--spacing-lg)', marginBottom: 'var(--spacing-xl)' }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 'var(--spacing-lg)' }}>
+                <h3 style={{ color: 'var(--color-primary)', fontSize: '1.1rem' }}>Daily Activity (Last 14 Days)</h3>
+                <div style={{ display: 'flex', gap: '16px', fontSize: '0.85rem' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                        <div style={{ width: '12px', height: '12px', background: 'var(--color-secondary)', borderRadius: '2px' }}></div>
+                        <span>Added</span>
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                        <div style={{ width: '12px', height: '12px', background: 'var(--color-primary)', borderRadius: '2px' }}></div>
+                        <span>Reserved</span>
+                    </div>
+                </div>
+            </div>
+
+            <div style={{ display: 'flex', alignItems: 'flex-end', height: '200px', gap: '2%', paddingTop: '20px' }}>
+                {dailyStats.map(([date, data]) => (
+                    <div key={date} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100%', flex: 1 }}>
+                        <div style={{ display: 'flex', alignItems: 'flex-end', gap: '4px', height: '100%', width: '100%', justifyContent: 'center' }}>
+                            <div
+                                style={{
+                                    width: '30%',
+                                    height: `${(data.added / maxVal) * 100}%`,
+                                    background: 'var(--color-secondary)',
+                                    borderRadius: '4px 4px 0 0',
+                                    transition: 'height 0.5s ease',
+                                    minHeight: data.added > 0 ? '4px' : '0'
+                                }}
+                                title={`${data.added} Added`}
+                            />
+                            <div
+                                style={{
+                                    width: '30%',
+                                    height: `${(data.reserved / maxVal) * 100}%`,
+                                    background: 'var(--color-primary)',
+                                    borderRadius: '4px 4px 0 0',
+                                    transition: 'height 0.5s ease',
+                                    minHeight: data.reserved > 0 ? '4px' : '0'
+                                }}
+                                title={`${data.reserved} Reserved`}
+                            />
+                        </div>
+                        <span style={{
+                            fontSize: '0.75rem',
+                            marginTop: '8px',
+                            color: 'var(--color-text-muted)',
+                            transform: 'rotate(-45deg)',
+                            transformOrigin: 'top left',
+                            whiteSpace: 'nowrap'
+                        }}>
+                            {new Date(date).toLocaleDateString(undefined, { month: 'short', day: 'numeric' })}
+                        </span>
+                    </div>
+                ))}
+                {dailyStats.length === 0 && (
+                    <div style={{ width: '100%', textAlign: 'center', color: 'var(--color-text-muted)', alignSelf: 'center' }}>No activity data available yet.</div>
+                )}
+            </div>
+        </div>
+    );
+};
 
 export default Metrics;

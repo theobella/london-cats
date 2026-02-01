@@ -3,6 +3,7 @@ import Layout from './components/Layout';
 import Sidebar from './components/Sidebar';
 import CatList from './components/CatList';
 import CatModal from './components/CatModal';
+import ActiveFilters from './components/ActiveFilters';
 import Metrics from './pages/Metrics';
 import { CATS } from './data/mockData';
 
@@ -63,7 +64,8 @@ function App() {
       if (filters.organisations && filters.organisations.length > 0) {
         const orgMap = {
           'Battersea': 'battersea',
-          'Cats Protection': 'cats_protection'
+          'Cats Protection': 'cats_protection',
+          'London Inner City Kitties': 'lick'
         };
         const allowedIds = filters.organisations.map(o => orgMap[o]);
         if (!allowedIds.includes(cat.sourceId)) return false;
@@ -90,42 +92,14 @@ function App() {
     });
   }, [filters]);
 
+  // Derive unique locations from data
+  const availableLocations = useMemo(() => {
+    const locs = new Set(CATS.map(cat => cat.location).filter(Boolean));
+    return Array.from(locs).sort();
+  }, []);
+
   return (
-    <Layout>
-      <div style={{ textAlign: 'center', marginBottom: 'var(--spacing-xl)' }}>
-        <div style={{ display: 'inline-flex', gap: 'var(--spacing-md)', background: 'white', padding: '4px', borderRadius: '50px', boxShadow: 'var(--shadow-sm)', marginBottom: 'var(--spacing-lg)' }}>
-          <button
-            onClick={() => setView('home')}
-            style={{
-              padding: '8px 24px',
-              borderRadius: '24px',
-              border: 'none',
-              background: view === 'home' ? 'var(--color-primary)' : 'transparent',
-              color: view === 'home' ? 'white' : 'var(--color-text)',
-              fontWeight: 600,
-              cursor: 'pointer',
-              transition: 'all 0.2s'
-            }}
-          >
-            Start Search
-          </button>
-          <button
-            onClick={() => setView('metrics')}
-            style={{
-              padding: '8px 24px',
-              borderRadius: '24px',
-              border: 'none',
-              background: view === 'metrics' ? 'var(--color-primary)' : 'transparent',
-              color: view === 'metrics' ? 'white' : 'var(--color-text)',
-              fontWeight: 600,
-              cursor: 'pointer',
-              transition: 'all 0.2s'
-            }}
-          >
-            Metrics Dashboard
-          </button>
-        </div>
-      </div>
+    <Layout currentView={view} onViewChange={setView}>
 
       {view === 'home' ? (
         <>
@@ -137,9 +111,15 @@ function App() {
           </div>
 
           <div style={{ display: 'flex', gap: 'var(--spacing-xl)', alignItems: 'flex-start' }}>
-            <Sidebar filters={filters} onFilterChange={handleFilterChange} />
+            <Sidebar
+              filters={filters}
+              onFilterChange={handleFilterChange}
+              resultCount={filteredCats.length}
+              availableLocations={availableLocations}
+            />
 
             <div style={{ flex: 1 }}>
+              <ActiveFilters filters={filters} onFilterChange={handleFilterChange} />
               <CatList cats={filteredCats} onCatClick={setSelectedCat} />
             </div>
           </div>

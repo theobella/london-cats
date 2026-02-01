@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-const Sidebar = ({ filters, onFilterChange }) => {
+const Sidebar = ({ filters, onFilterChange, resultCount, availableLocations = [] }) => {
     // Helper to handle checkbox changes
     const handleCheckboxChange = (category, value) => {
         const currentValues = filters[category] || [];
@@ -26,12 +26,17 @@ const Sidebar = ({ filters, onFilterChange }) => {
             maxHeight: 'calc(100vh - 40px)',
             overflowY: 'auto'
         }}>
-            <h3 style={{ marginBottom: 'var(--spacing-md)', fontSize: '1.2rem', color: 'var(--color-primary)' }}>Filters</h3>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: 'var(--spacing-md)' }}>
+                <h3 style={{ fontSize: '1.2rem', color: 'var(--color-primary)' }}>Filters</h3>
+                <span style={{ fontSize: '0.9rem', color: 'var(--color-text-muted)', fontWeight: 500 }}>
+                    {resultCount} cats
+                </span>
+            </div>
 
             {/* Organisation Filter */}
             <div style={{ marginBottom: 'var(--spacing-lg)' }}>
                 <h4 style={{ fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px', color: 'var(--color-text-muted)', marginBottom: 'var(--spacing-sm)' }}>Organisation</h4>
-                {['Battersea', 'Cats Protection'].map(org => (
+                {['Battersea', 'Cats Protection', 'London Inner City Kitties'].map(org => (
                     <label key={org} style={{ display: 'flex', alignItems: 'center', marginBottom: '8px', cursor: 'pointer', fontSize: '0.95rem' }}>
                         <input
                             type="checkbox"
@@ -47,20 +52,21 @@ const Sidebar = ({ filters, onFilterChange }) => {
             {/* Centre / Location Filter */}
             <div style={{ marginBottom: 'var(--spacing-lg)' }}>
                 <h4 style={{ fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px', color: 'var(--color-text-muted)', marginBottom: 'var(--spacing-sm)' }}>Centre / Location</h4>
-                {/* Dynamically distinct locations + hardcoded main ones if needed, or just pass availableLocations prop? 
-                    For now, let's include the ones we know exist plus defaults.
-                */}
-                {['Battersea', 'South London', 'North London', 'Hackney'].map(centre => (
-                    <label key={centre} style={{ display: 'flex', alignItems: 'center', marginBottom: '8px', cursor: 'pointer', fontSize: '0.95rem' }}>
-                        <input
-                            type="checkbox"
-                            checked={filters.locations?.includes(centre)}
-                            onChange={() => handleCheckboxChange('locations', centre)}
-                            style={{ marginRight: '8px', accentColor: 'var(--color-primary)' }}
-                        />
-                        {centre}
-                    </label>
-                ))}
+                {availableLocations.length > 0 ? (
+                    availableLocations.map(centre => (
+                        <label key={centre} style={{ display: 'flex', alignItems: 'center', marginBottom: '8px', cursor: 'pointer', fontSize: '0.95rem' }}>
+                            <input
+                                type="checkbox"
+                                checked={filters.locations?.includes(centre)}
+                                onChange={() => handleCheckboxChange('locations', centre)}
+                                style={{ marginRight: '8px', accentColor: 'var(--color-primary)' }}
+                            />
+                            {centre}
+                        </label>
+                    ))
+                ) : (
+                    <p style={{ fontSize: '0.9rem', color: 'var(--color-text-muted)' }}>No locations found</p>
+                )}
             </div>
 
             {/* Sex Filter */}

@@ -110,3 +110,22 @@ button {
   background-color: rgba(61, 64, 91, 0.1);
   color: var(--color-secondary);
 }
+
+/* Responsive Grid for Cat List */
+.cat-grid {
+  display: grid;
+  gap: var(--spacing-lg);
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 600px) {
+  .cat-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .cat-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

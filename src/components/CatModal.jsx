@@ -53,11 +53,11 @@ const CatModal = ({ cat, onClose }) => {
                     &times;
                 </button>
 
-                <div style={{ height: '300px' }}>
+                <div style={{ padding: 'var(--spacing-md)', display: 'flex', justifyContent: 'center', background: '#F5F5F7' }}>
                     <img
                         src={cat.image}
                         alt={cat.name}
-                        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                        style={{ maxWidth: '100%', maxHeight: '400px', objectFit: 'contain', borderRadius: 'var(--radius-sm)' }}
                     />
                 </div>
 

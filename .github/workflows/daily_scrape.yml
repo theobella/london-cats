@@ -1,0 +1,44 @@
+name: Daily Cat Scrape
+
+on:
+  schedule:
+    - cron: '0 6 * * *' # Runs at 06:00 UTC every day
+  workflow_dispatch: # Allows manual trigger from GitHub UI
+
+jobs:
+  scrape-and-update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Run Scraper
+      run: node scripts/scrape.js
+
+    - name: Commit and Push Changes
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        
+        # Add the updated data file and any new downloaded images
+        git add src/data/realCats.json public/cats
+        
+        # Check if there are changes to commit
+        if git diff --staged --quiet; then
+          echo "No changes to commit."
+        else
+          git commit -m "daily: update cat listings 🐱"
+          git push
+        fi
