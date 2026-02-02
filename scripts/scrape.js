@@ -547,19 +547,24 @@ function mergeCatData(newCat, existingCat) {
 
 // Helper: Extract metadata from text
 function extractMetadata(cat) {
-    const text = (cat.description + ' ' + cat.name + ' ' + (cat.preferences || []).join(' ')).toLowerCase();
+    // Use description and preferences for color detection to avoid matching names like "Blue" or "Ginger"
+    const colorText = (cat.description + ' ' + (cat.preferences || []).join(' ')).toLowerCase();
+
+    // Indoor/Outdoor (keep using full text including name just in case, or stick to description?)
+    // Let's stick to full text for behavior/health as name rarely conflicts there.
+    const fullText = (cat.description + ' ' + cat.name + ' ' + (cat.preferences || []).join(' ')).toLowerCase();
 
     // Indoor/Outdoor
     let environment = 'Unknown';
-    if (text.includes('indoor only') || text.includes('indoor home')) {
+    if (fullText.includes('indoor only') || fullText.includes('indoor home')) {
         environment = 'Indoor-Only';
-    } else if (text.includes('garden') || text.includes('outdoor access')) {
+    } else if (fullText.includes('garden') || fullText.includes('outdoor access')) {
         environment = 'Outdoor Access';
     }
 
     // Health
     let health = 'Healthy';
-    if (text.includes('medical') || text.includes('condition') || text.includes('treatment') || text.includes('fiv')) {
+    if (fullText.includes('medical') || fullText.includes('condition') || fullText.includes('treatment') || fullText.includes('fiv')) {
         health = 'Needs Care'; // Broad category for metrics
     }
 
@@ -567,7 +572,7 @@ function extractMetadata(cat) {
     let color = 'Unknown';
     const colors = ['black', 'white', 'tabby', 'ginger', 'tortoiseshell', 'calico', 'grey', 'blue'];
     for (const c of colors) {
-        if (text.includes(c)) {
+        if (colorText.includes(c)) {
             color = c.charAt(0).toUpperCase() + c.slice(1);
             break;
         }
