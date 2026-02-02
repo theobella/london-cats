@@ -66,87 +66,174 @@ async function scrapeBattersea() {
     try {
         console.log('Fetching Battersea...');
         const { data } = await axios.get(SOURCES.BATTERSEA.url, { headers: HEADERS });
+
         const $ = cheerio.load(data);
         const cats = [];
 
-        const elements = $('.card').toArray();
-        for (let i = 0; i < elements.length; i++) {
-            const el = elements[i];
+        // Strategy: Find ALL unique cat profile links, then visit each.
+        // This avoids missing 'Reserved' cats that might not have standard .card markup.
+        const links = new Set();
+
+        $('a[href*="/cats/cat-rehoming-gallery/"]').each((_, el) => {
+            let href = $(el).attr('href');
+            if (href) {
+                const fullLink = href.startsWith('http') ? href : 'https://www.battersea.org.uk' + href;
+                links.add(fullLink);
+            }
+        });
+
+        // FALLBACK: Scan for Reserved cats that have NO link (e.g. Shadow)
+        // These are visible in the listing but skipped by link-based logic.
+        const fallbackCats = [];
+        $('.card').each((_, el) => {
             const name = $(el).find('.card-title').text().trim();
             const cardText = $(el).text().trim();
+            const isReserved = cardText.includes('Reserved');
 
+            // Check if this card has a link we already found
             let linkHref = $(el).attr('href');
             if (!linkHref) linkHref = $(el).find('a').attr('href');
             if (!linkHref) linkHref = $(el).parent('a').attr('href');
             const link = linkHref ? (linkHref.startsWith('http') ? linkHref : 'https://www.battersea.org.uk' + linkHref) : null;
 
-            if (!link || !link.includes('/cats/cat-rehoming-gallery/')) continue;
+            const hasKnownLink = link && links.has(link);
 
-            let image = $(el).find('img').attr('src');
-            if (!image) image = $(el).find('img').attr('data-src');
+            if (!hasKnownLink && isReserved && name) {
+                console.log(`Found Linkless Reserved Cat: ${name}`);
 
-            const isReserved = cardText.includes('Reserved');
+                let image = $(el).find('img').attr('src');
+                if (!image) image = $(el).find('img').attr('data-src');
 
-            let ageVal = 'Unknown';
-            const ageMatch = cardText.match(/Age:?\s*(.*?)(?:\n|$)/i);
-            if (ageMatch) ageVal = ageMatch[1].trim();
+                let ageVal = 'Unknown';
+                const ageMatch = cardText.match(/Age:?\s*(.*?)(?:\n|$)/i);
+                if (ageMatch) ageVal = ageMatch[1].trim();
 
-            if (name && link) {
-                // Fetch Details for Gender and Location
-                let gender = 'Unknown';
-                let location = 'Battersea (London)'; // Default
-                let detailDesc = '';
+                const idSlug = name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+                const stableId = `bat-${idSlug}`;
 
-                try {
-                    // console.log(`Fetching details for ${name}...`);
-                    const { data: detailData } = await axios.get(link, { headers: HEADERS });
-                    const $d = cheerio.load(detailData);
-                    const bodyText = $d('body').text().replace(/\s+/g, ' ');
+                fallbackCats.push({
+                    id: stableId,
+                    name,
+                    age: ageVal,
+                    breed: 'Domestic Short-hair',
+                    coloring: 'Unknown',
+                    gender: 'Unknown',
+                    location: 'Battersea (London)',
+                    sourceType: 'Shelter',
+                    sourceId: 'battersea',
+                    preferences: [],
+                    description: 'Reserved - No details available.',
+                    status: 'Reserved',
+                    image: image,
+                    PENDING_IMAGE_DOWNLOAD: true,
+                    originalImage: image ? (image.startsWith('http') ? image : 'https://www.battersea.org.uk' + image) : '',
+                    dateListed: new Date().toISOString(),
+                    dateReserved: new Date().toISOString(),
+                    link: 'https://www.battersea.org.uk/cats/cat-rehoming-gallery' // Generic link
+                });
+            }
+        });
 
-                    // Regex for Sex/Gender
-                    // Matches "Sex Female" or "Sex: Female"
-                    const sexMatch = bodyText.match(/Sex\s*:?\s*(Female|Male)/i);
-                    if (sexMatch) {
-                        gender = sexMatch[1].charAt(0).toUpperCase() + sexMatch[1].slice(1).toLowerCase(); // Female/Male
-                    }
+        console.log(`Found ${links.size} unique cat links and ${fallbackCats.length} fallback reserved cats.`);
 
-                    // Regex for Centre
-                    // Matches "Centre Old Windsor"
-                    const centerMatch = bodyText.match(/Centre\s*:?\s*([A-Za-z\s]+)(?:-|$)/i);
-                    if (centerMatch) {
-                        const rawCenter = centerMatch[1].trim();
-                        if (rawCenter.includes('Windsor')) location = 'Old Windsor';
-                        else if (rawCenter.includes('Brands Hatch')) location = 'Brands Hatch';
-                        else if (rawCenter.includes('London')) location = 'London';
-                        else location = rawCenter;
-                    }
+        // Add fallback cats to main list
+        cats.push(...fallbackCats);
 
-                    detailDesc = $d('div.field-name-body').text().trim() || '';
+        const linkArray = [...links];
+        for (let i = 0; i < linkArray.length; i++) {
+            // ... existing loop ...
+        }
+        // NOTE: The previous replacement ended at the start of the loop.
+        // I need to target the end of the function to add the image loop.
+        // But I can't target "end of function" easily with replace_file_content unless I see it.
+        // So I will start by merging the array.
 
-                } catch (e) {
-                    console.log(`Warning: Could not fetch details for ${name}`);
+        for (let i = 0; i < linkArray.length; i++) {
+            const link = linkArray[i];
+
+            try {
+                // console.log(`Processing ${link}...`);
+                const { data: detailData } = await axios.get(link, { headers: HEADERS });
+                const $d = cheerio.load(detailData);
+                const bodyText = $d('body').text().replace(/\s+/g, ' ');
+
+                // Extract Name from H1
+                let name = $d('h1').first().text().trim();
+                if (!name) {
+                    // Fallback to URL slug
+                    const parts = link.split('/');
+                    name = parts[parts.length - 1];
+                    name = name.charAt(0).toUpperCase() + name.slice(1).replace(/-/g, ' ');
                 }
+
+                // Extract Age
+                // "Age 2 Years, 3 Months" usually in listing, but on detail page?
+                // Look for "Age" key in lists
+                let ageVal = 'Unknown';
+                const ageText = bodyText.match(/Age\s*:?\s*([0-9]+\s*\w+(?:,\s*[0-9]+\s*\w+)?)/i);
+                if (ageText) ageVal = ageText[1].trim();
+
+                // Extract Gender
+                let gender = 'Unknown';
+                const sexMatch = bodyText.match(/Sex\s*:?\s*(Female|Male)/i);
+                if (sexMatch) {
+                    gender = sexMatch[1].charAt(0).toUpperCase() + sexMatch[1].slice(1).toLowerCase();
+                }
+
+                // Extract Location
+                let location = 'Battersea (London)';
+                const centerMatch = bodyText.match(/Centre\s*:?\s*([A-Za-z\s]+)(?:-|$)/i);
+                if (centerMatch) {
+                    const rawCenter = centerMatch[1].trim();
+                    if (rawCenter.includes('Windsor')) location = 'Old Windsor';
+                    else if (rawCenter.includes('Brands Hatch')) location = 'Brands Hatch';
+                    else if (rawCenter.includes('London')) location = 'London';
+                    else location = rawCenter;
+                }
+
+                // Extract Reserved Status
+                // Check for "Reserved" text in page
+                const isReserved = bodyText.includes('Reserved');
+
+                // Description
+                const detailDesc = $d('div.field-name-body').text().trim() || '';
+
+                // Image
+                // Try to find the main image
+                let image = $d('img').first().attr('src'); // Imprecise
+                // Better: Look for og:image meta tag or specific class logic? 
+                // Listing scraper used .card img.
+                // Detail page usually has a gallery.
+                const galleryImg = $d('.field-name-field-animal-images img').first();
+                if (galleryImg.length) {
+                    image = galleryImg.attr('src') || galleryImg.attr('data-src');
+                }
+
+                // Just use first image if above fails
+                if (!image) image = $d('img[src*="/sites/default/files/animal_images/"]').first().attr('src');
+
+                // Stable ID
+                const idSlug = link.split('/').pop().toLowerCase();
+                const stableId = `bat-${idSlug}`;
 
                 // Download Image
                 let localImage = 'https://placekitten.com/300/300';
-                let originalImage = image ? ('https://www.battersea.org.uk' + image) : 'https://placekitten.com/300/300';
+                let originalImage = 'https://placekitten.com/300/300';
 
                 if (image) {
-                    const ext = 'jpg';
-                    const filename = `bat-${i}.${ext}`;
                     const realUrl = image.startsWith('http') ? image : 'https://www.battersea.org.uk' + image;
+                    originalImage = realUrl;
+                    const ext = 'jpg';
+                    const filename = `${stableId}.${ext}`;
                     localImage = await downloadImage(realUrl, filename);
                 }
-
-                const idSlug = link ? link.split('/').pop().toLowerCase() : name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
-                const stableId = `bat-${idSlug}`;
 
                 cats.push({
                     id: stableId,
                     name,
                     age: ageVal,
                     breed: 'Domestic Short-hair',
-                    coloring: gender, // Legacy mapping to coloring if needed, but we prefer gender
+                    coloring: gender,
                     gender: gender,
                     location: location,
                     sourceType: 'Shelter',
@@ -154,17 +241,47 @@ async function scrapeBattersea() {
                     preferences: [],
                     description: detailDesc,
                     status: isReserved ? 'Reserved' : 'Available',
-                    image: localImage ? `${localImage}?v=3` : localImage,
+                    image: localImage ? `${localImage}?v=${new Date().getTime()}` : localImage,
                     originalImage: originalImage,
                     dateListed: new Date().toISOString(),
                     dateReserved: isReserved ? new Date().toISOString() : null,
                     link
                 });
 
-                // Be polite to Battersea server
+                // Politeness
                 await new Promise(r => setTimeout(r, 200));
+
+            } catch (err) {
+                console.log(`Error processing details for ${link}: ${err.message}`);
             }
         }
+
+        // Process images for Fallback Cats (PENDING_IMAGE_DOWNLOAD)
+        for (let cat of cats) {
+            if (cat.PENDING_IMAGE_DOWNLOAD) {
+                let localImage = 'https://placekitten.com/300/300';
+                let originalImage = 'https://placekitten.com/300/300';
+
+                if (cat.image) {
+                    const realUrl = cat.image.startsWith('http') ? cat.image : 'https://www.battersea.org.uk' + cat.image;
+                    originalImage = realUrl;
+
+                    const ext = 'jpg';
+                    const filename = `${cat.id}.${ext}`;
+
+                    try {
+                        localImage = await downloadImage(realUrl, filename);
+                    } catch (e) {
+                        console.log(`Failed to download image for fallback cat ${cat.id}`);
+                    }
+                }
+
+                cat.image = localImage ? `${localImage}?v=${new Date().getTime()}` : localImage;
+                cat.originalImage = originalImage;
+                delete cat.PENDING_IMAGE_DOWNLOAD;
+            }
+        }
+
         console.log(`Found ${cats.length} cats at Battersea.`);
         return cats;
     } catch (error) {

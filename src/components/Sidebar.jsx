@@ -33,6 +33,24 @@ const Sidebar = ({ filters, onFilterChange, resultCount, availableLocations = []
                 </span>
             </div>
 
+            {/* Search Input */}
+            <div style={{ marginBottom: 'var(--spacing-lg)' }}>
+                <input
+                    type="text"
+                    placeholder="Search by name..."
+                    value={filters.searchQuery || ''}
+                    onChange={(e) => onFilterChange('searchQuery', e.target.value)}
+                    style={{
+                        width: '100%',
+                        padding: '10px',
+                        borderRadius: 'var(--radius-sm)',
+                        border: '1px solid #ddd',
+                        fontSize: '0.95rem',
+                        outline: 'none'
+                    }}
+                />
+            </div>
+
             {/* Organisation Filter */}
             <div style={{ marginBottom: 'var(--spacing-lg)' }}>
                 <h4 style={{ fontSize: '0.9rem', textTransform: 'uppercase', letterSpacing: '1px', color: 'var(--color-text-muted)', marginBottom: 'var(--spacing-sm)' }}>Organisation</h4>

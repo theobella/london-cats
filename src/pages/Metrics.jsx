@@ -75,6 +75,7 @@ const Metrics = () => {
         const total = CATS.length;
         const available = CATS.filter(c => c.status === 'Available').length;
         const reserved = CATS.filter(c => c.status === 'Reserved').length;
+        const adopted = CATS.filter(c => c.status === 'Adopted').length;
 
         // Calculate Average Wait Time for Available Cats
         const availableCats = CATS.filter(c => c.status === 'Available');
@@ -86,7 +87,7 @@ const Metrics = () => {
         const totalReserveTime = reservedCats.reduce((sum, cat) => sum + calculateDaysWaiting(cat.dateListed, cat.dateReserved), 0);
         const avgReserveTime = reservedCats.length ? Math.round(totalReserveTime / reservedCats.length) : 0;
 
-        return { total, available, reserved, avgWaitTime, avgReserveTime };
+        return { total, available, reserved, adopted, avgWaitTime, avgReserveTime };
     }, []);
 
     // Cross-filtered Chart Data
@@ -121,8 +122,8 @@ const Metrics = () => {
 
     const waitTimeCounts = {};
     // For Wait Time chart, we exclude 'waitTimeBucket' from filters
-    CATS.filter(cat => matchesFilters(cat, 'waitTimeBucket')).filter(c => c.status === 'Available').forEach(c => {
-        const days = calculateDaysWaiting(c.dateListed, null);
+    CATS.filter(cat => matchesFilters(cat, 'waitTimeBucket')).forEach(c => {
+        const days = calculateDaysWaiting(c.dateListed, c.dateReserved || c.dateAdopted);
         const bucket = navi(days);
         waitTimeCounts[bucket] = (waitTimeCounts[bucket] || 0) + 1;
     });
@@ -132,6 +133,7 @@ const Metrics = () => {
     const sourceCounts = getChartCounts('sourceType');
     const rescueNameCounts = getChartCounts('sourceId');
     const envCounts = getChartCounts('environment');
+    const statusCounts = getChartCounts('status');
 
     const renderBarChart = (data, title, category) => {
         const max = Math.max(...Object.values(data));
@@ -191,9 +193,10 @@ const Metrics = () => {
             {/* KPI Cards */}
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 'var(--spacing-lg)', marginBottom: 'var(--spacing-xl)' }}>
                 <KPICard title="Total Cats Tracking" value={stats.total} />
+                <KPICard title="Already Adopted" value={stats.adopted} subtitle="Found forever homes" />
                 <KPICard title="Avg Days Waiting" value={`${stats.avgWaitTime} Days`} subtitle="For available cats" />
                 <KPICard title="Avg Time to Reserve" value={stats.avgReserveTime > 0 ? `${stats.avgReserveTime} Days` : "N/A"} subtitle="Speed of adoption" />
-                <KPICard title="Adoption Rate" value={`${Math.round((stats.reserved / stats.total) * 100)}%`} subtitle={`${stats.reserved} reserved`} />
+                <KPICard title="Adoption Rate" value={`${Math.round(((stats.reserved + stats.adopted) / stats.total) * 100)}%`} subtitle={`${stats.reserved} reserved / ${stats.adopted} adopted`} />
             </div>
 
             {/* Daily Activity Chart */}
@@ -201,12 +204,13 @@ const Metrics = () => {
 
             {/* Charts Row */}
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--spacing-lg)', marginBottom: 'var(--spacing-xl)' }}>
+                {renderBarChart(statusCounts, 'Current Status', 'status')}
                 {renderBarChart(rescueNameCounts, 'By Rescue', 'sourceId')}
                 {renderBarChart(sourceCounts, 'Rescue Type', 'sourceType')}
                 {renderBarChart(ageCounts, 'Age Demographics', 'ageCategory')}
                 {renderBarChart(genderCounts, 'Gender Split', 'gender')}
                 {renderBarChart(envCounts, 'Environment', 'environment')}
-                {renderBarChart(waitTimeCounts, 'Wait Time Distribution (Available)', 'waitTimeBucket')}
+                {renderBarChart(waitTimeCounts, 'Wait Time Distribution', 'waitTimeBucket')}
             </div>
 
             {/* Detailed Table */}
@@ -267,7 +271,7 @@ const Metrics = () => {
                                     <td style={tdStyle}>{new Date(cat.dateListed).toLocaleDateString()}</td>
                                     <td style={tdStyle}>
                                         <span style={{
-                                            color: cat.status === 'Reserved' ? '#E07A5F' : '#81B29A',
+                                            color: cat.status === 'Reserved' ? '#E07A5F' : (cat.status === 'Adopted' ? 'var(--color-primary)' : '#81B29A'),
                                             fontWeight: 600
                                         }}>
                                             {cat.status}

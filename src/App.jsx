@@ -46,13 +46,14 @@ function App() {
     genders: [],
     ageBrackets: [],
     statuses: [],
-    organisations: []
+    organisations: [],
+    searchQuery: ''
   });
   const [selectedCat, setSelectedCat] = useState(null);
 
   const handleFilterChange = (category, value) => {
     if (category === 'reset') {
-      setFilters({ locations: [], genders: [], ageBrackets: [], statuses: [], organisations: [] });
+      setFilters({ locations: [], genders: [], ageBrackets: [], statuses: [], organisations: [], searchQuery: '' });
     } else {
       setFilters(prev => ({ ...prev, [category]: value }));
     }
@@ -91,6 +92,13 @@ function App() {
         if (cat.status === 'Adopted') return false;
       }
 
+      // Name Search (Keyword)
+      if (filters.searchQuery) {
+        const query = filters.searchQuery.toLowerCase();
+        const name = (cat.name || '').toLowerCase();
+        if (!name.includes(query)) return false;
+      }
+
       return true;
     });
   }, [filters]);
@@ -107,7 +115,7 @@ function App() {
       {view === 'home' ? (
         <>
           <div style={{ textAlign: 'center', marginBottom: 'var(--spacing-xl)' }}>
-            <h2 style={{ fontSize: '2.5rem', marginBottom: 'var(--spacing-sm)', color: 'var(--color-primary)' }}>Find Your Perfect Companion</h2>
+            <h2 style={{ fontSize: '2.5rem', marginBottom: 'var(--spacing-sm)', color: 'var(--color-primary)' }}>Find Your Purrfect Companion</h2>
             <p style={{ fontSize: '1.2rem', color: 'var(--color-text-muted)', maxWidth: '600px', margin: '0 auto' }}>
               Browse cats available for adoption across London's shelters and rehoming networks.
             </p>
