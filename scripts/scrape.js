@@ -200,17 +200,37 @@ async function scrapeBattersea() {
 
                 // Image
                 // Try to find the main image
-                let image = $d('img').first().attr('src'); // Imprecise
-                // Better: Look for og:image meta tag or specific class logic? 
-                // Listing scraper used .card img.
-                // Detail page usually has a gallery.
-                const galleryImg = $d('.field-name-field-animal-images img').first();
-                if (galleryImg.length) {
-                    image = galleryImg.attr('src') || galleryImg.attr('data-src');
+                let image = null;
+
+                // 0. Use Open Graph image (usually reliable)
+                const ogImage = $d('meta[property="og:image"]').attr('content');
+                if (ogImage && !ogImage.includes('logo')) {
+                    image = ogImage;
                 }
 
-                // Just use first image if above fails
-                if (!image) image = $d('img[src*="/sites/default/files/animal_images/"]').first().attr('src');
+                // 1. Look for the gallery main image
+                if (!image) {
+                    const galleryImg = $d('.field-name-field-animal-images img').first();
+                    if (galleryImg.length) {
+                        image = galleryImg.attr('src') || galleryImg.attr('data-src');
+                    }
+                }
+
+                // 2. Look for any large image in the main content area
+                if (!image) {
+                    image = $d('article img').filter((i, el) => {
+                        const src = $d(el).attr('src') || '';
+                        return src.includes('/animal_images/') && !src.includes('logo') && !src.includes('arrow');
+                    }).first().attr('src');
+                }
+
+                // 3. Fallback: just use first image if above fails, but exclude logo/icons
+                if (!image) {
+                    image = $d('img').filter((i, el) => {
+                        const src = $d(el).attr('src') || '';
+                        return !src.includes('logo') && !src.includes('icon') && !src.includes('arrow');
+                    }).first().attr('src');
+                }
 
                 // Stable ID
                 const idSlug = link.split('/').pop().toLowerCase();
