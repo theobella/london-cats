@@ -32,8 +32,8 @@ jobs:
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         
-        # Add the updated data file and any new downloaded images
-        git add src/data/realCats.json public/cats
+        # Add the updated data file, metadata, and any new downloaded images
+        git add src/data/realCats.json src/data/meta.json public/cats
         
         # Check if there are changes to commit
         if git diff --staged --quiet; then
