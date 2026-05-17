@@ -20,7 +20,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-cosy",
@@ -43,7 +43,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-cagney",
@@ -66,7 +66,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-sprite",
@@ -89,7 +89,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-liquorice",
@@ -112,7 +112,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Young Adult"
   },
   {
     "id": "bat-edwina",
@@ -158,7 +158,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Senior"
   },
   {
     "id": "bat-princess-giselle",
@@ -181,7 +181,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Young Adult"
   },
   {
     "id": "bat-simba-1",
@@ -204,7 +204,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-tam",
@@ -227,7 +227,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-fizz",
@@ -273,7 +273,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-pluto",
@@ -296,7 +296,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Young Adult"
   },
   {
     "id": "bat-taylor",
@@ -342,7 +342,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-cosmo",
@@ -411,7 +411,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-muffin",
@@ -503,7 +503,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-bimini",
@@ -526,7 +526,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-marny",
@@ -572,7 +572,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-jack",
@@ -595,7 +595,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Senior"
   },
   {
     "id": "bat-helsinki",
@@ -618,7 +618,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-otto",
@@ -664,7 +664,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-tilly",
@@ -687,7 +687,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-sabrina",
@@ -710,7 +710,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-mr-felix",
@@ -733,7 +733,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-eccles",
@@ -756,7 +756,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Senior"
   },
   {
     "id": "bat-lemon-drizzle",
@@ -779,7 +779,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-pip",
@@ -802,7 +802,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-dotty",
@@ -825,7 +825,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Young Adult"
   },
   {
     "id": "bat-juicy-pear",
@@ -848,7 +848,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-sammi",
@@ -871,7 +871,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Senior"
   },
   {
     "id": "bat-billy",
@@ -940,7 +940,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Senior"
   },
   {
     "id": "bat-bumble",
@@ -963,7 +963,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Young Adult"
   },
   {
     "id": "bat-mac",
@@ -1009,7 +1009,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Senior"
   },
   {
     "id": "bat-lavanda",
@@ -1032,7 +1032,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-pepper",
@@ -1055,7 +1055,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Senior"
   },
   {
     "id": "bat-oreo",
@@ -1078,7 +1078,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-patchy",
@@ -1101,7 +1101,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-miss-frankie",
@@ -1124,7 +1124,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-belle",
@@ -1147,7 +1147,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Senior"
   },
   {
     "id": "bat-marilyn-monmeow",
@@ -1170,7 +1170,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-duckling",
@@ -1193,7 +1193,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-nyx",
@@ -1216,7 +1216,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-bean",
@@ -1239,7 +1239,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-harlem",
@@ -1262,7 +1262,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-gigi",
@@ -1285,7 +1285,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Senior"
   },
   {
     "id": "bat-berlioz-basquicat",
@@ -1331,7 +1331,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-thorne",
@@ -1377,7 +1377,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-moo-moo",
@@ -1400,7 +1400,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Young Adult"
   },
   {
     "id": "bat-simba",
@@ -1423,7 +1423,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-moon",
@@ -1446,7 +1446,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-freddie",
@@ -1469,7 +1469,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-georgie",
@@ -1492,7 +1492,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-nahla",
@@ -1515,7 +1515,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-cleo",
@@ -1538,7 +1538,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-joy",
@@ -1584,7 +1584,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "bat-huck",
@@ -1607,7 +1607,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "cp-63354",
@@ -1905,7 +1905,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten"
+    "ageCategory": "Adult"
   },
   {
     "id": "lick-jamaica",
@@ -2146,7 +2146,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-05-17T08:08:29.659Z"
   },
   {
@@ -2190,7 +2190,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-05-17T08:08:29.659Z"
   },
   {
@@ -2214,7 +2214,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Senior",
     "dateAdopted": "2026-05-17T07:39:51.869Z"
   },
   {
@@ -2238,7 +2238,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-05-17T07:39:51.870Z"
   },
   {
@@ -2262,7 +2262,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-05-17T07:39:51.870Z"
   },
   {
@@ -2286,7 +2286,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-05-17T07:39:51.870Z"
   },
   {
@@ -2310,7 +2310,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-05-17T07:39:51.870Z"
   },
   {
@@ -2334,7 +2334,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-05-17T07:39:51.870Z"
   },
   {
@@ -2430,7 +2430,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-05-17T07:39:51.870Z"
   },
   {
@@ -2478,7 +2478,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-05-17T07:39:51.870Z"
   },
   {
@@ -2502,7 +2502,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-05-17T07:39:51.870Z"
   },
   {
@@ -2526,7 +2526,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Young Adult",
     "dateAdopted": "2026-05-17T07:39:51.870Z"
   },
   {
@@ -2550,7 +2550,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-05-17T07:39:51.870Z"
   },
   {
@@ -2598,7 +2598,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Senior",
     "dateAdopted": "2026-05-17T07:39:51.870Z"
   },
   {
@@ -2622,7 +2622,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Young Adult",
     "dateAdopted": "2026-05-17T07:39:51.870Z"
   },
   {
@@ -2646,7 +2646,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-05-17T07:39:51.870Z"
   },
   {
@@ -2670,7 +2670,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-05-17T07:39:51.870Z"
   },
   {
@@ -2694,7 +2694,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-05-17T07:39:51.870Z"
   },
   {
@@ -2742,7 +2742,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-05-17T07:39:51.870Z"
   },
   {
@@ -3092,7 +3092,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-05-17T07:39:51.870Z"
   },
   {
@@ -3278,7 +3278,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-14T06:42:02.184Z"
   },
   {
@@ -3302,7 +3302,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-14T06:42:02.184Z"
   },
   {
@@ -3350,7 +3350,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Senior",
     "dateAdopted": "2026-03-14T06:42:02.184Z"
   },
   {
@@ -3374,7 +3374,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Senior",
     "dateAdopted": "2026-03-14T06:42:02.184Z"
   },
   {
@@ -3422,7 +3422,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-14T06:42:02.184Z"
   },
   {
@@ -3446,7 +3446,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-14T06:42:02.184Z"
   },
   {
@@ -3470,7 +3470,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-14T06:42:02.184Z"
   },
   {
@@ -3494,7 +3494,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-14T06:42:02.184Z"
   },
   {
@@ -3518,7 +3518,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-14T06:42:02.184Z"
   },
   {
@@ -3542,7 +3542,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-14T06:42:02.185Z"
   },
   {
@@ -3566,7 +3566,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-14T06:42:02.185Z"
   },
   {
@@ -3590,7 +3590,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-14T06:42:02.185Z"
   },
   {
@@ -3614,7 +3614,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Senior",
     "dateAdopted": "2026-03-14T06:42:02.185Z"
   },
   {
@@ -3638,7 +3638,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-14T06:42:02.185Z"
   },
   {
@@ -3782,7 +3782,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-10T06:44:30.911Z"
   },
   {
@@ -3830,7 +3830,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-10T06:44:30.911Z"
   },
   {
@@ -3854,7 +3854,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-10T06:44:30.911Z"
   },
   {
@@ -3878,7 +3878,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-10T06:44:30.911Z"
   },
   {
@@ -3902,7 +3902,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-10T06:44:30.911Z"
   },
   {
@@ -3926,7 +3926,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-10T06:44:30.911Z"
   },
   {
@@ -3950,7 +3950,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-10T06:44:30.911Z"
   },
   {
@@ -3998,7 +3998,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-10T06:44:30.911Z"
   },
   {
@@ -4022,7 +4022,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-10T06:44:30.911Z"
   },
   {
@@ -4046,7 +4046,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Senior",
     "dateAdopted": "2026-03-10T06:44:30.911Z"
   },
   {
@@ -4070,7 +4070,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-10T06:44:30.911Z"
   },
   {
@@ -4094,7 +4094,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-10T06:44:30.911Z"
   },
   {
@@ -4118,7 +4118,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-10T06:44:30.911Z"
   },
   {
@@ -4142,7 +4142,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Young Adult",
     "dateAdopted": "2026-03-10T06:44:30.911Z"
   },
   {
@@ -4166,7 +4166,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-10T06:44:30.911Z"
   },
   {
@@ -4190,7 +4190,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Senior",
     "dateAdopted": "2026-03-10T06:44:30.911Z"
   },
   {
@@ -4214,7 +4214,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-10T06:44:30.911Z"
   },
   {
@@ -4238,7 +4238,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Senior",
     "dateAdopted": "2026-03-10T06:44:30.911Z"
   },
   {
@@ -4330,7 +4330,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-10T06:44:30.911Z"
   },
   {
@@ -4448,7 +4448,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-05T06:47:42.196Z"
   },
   {
@@ -4472,7 +4472,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-05T06:47:42.196Z"
   },
   {
@@ -4496,7 +4496,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Senior",
     "dateAdopted": "2026-03-05T06:47:42.196Z"
   },
   {
@@ -4544,7 +4544,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-04T06:43:32.037Z"
   },
   {
@@ -4568,7 +4568,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-04T06:43:32.037Z"
   },
   {
@@ -4616,7 +4616,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-04T06:43:32.037Z"
   },
   {
@@ -4640,7 +4640,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Young Adult",
     "dateAdopted": "2026-03-03T06:47:26.431Z"
   },
   {
@@ -4664,7 +4664,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Young Adult",
     "dateAdopted": "2026-03-03T06:47:26.431Z"
   },
   {
@@ -4688,7 +4688,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-03T06:47:26.431Z"
   },
   {
@@ -4760,7 +4760,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Young Adult",
     "dateAdopted": "2026-03-03T06:47:26.431Z"
   },
   {
@@ -4923,7 +4923,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-02T06:55:10.173Z"
   },
   {
@@ -4947,7 +4947,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Senior",
     "dateAdopted": "2026-03-02T06:55:10.173Z"
   },
   {
@@ -4971,7 +4971,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-02T06:55:10.174Z"
   },
   {
@@ -4995,7 +4995,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-02T06:55:10.174Z"
   },
   {
@@ -5019,7 +5019,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-02T06:55:10.174Z"
   },
   {
@@ -5067,7 +5067,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-02T06:55:10.174Z"
   },
   {
@@ -5091,7 +5091,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-02T06:55:10.174Z"
   },
   {
@@ -5115,7 +5115,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-02T06:55:10.174Z"
   },
   {
@@ -5187,7 +5187,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-01T06:42:39.483Z"
   },
   {
@@ -5211,7 +5211,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-03-01T06:42:39.483Z"
   },
   {
@@ -5235,7 +5235,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Young Adult",
     "dateAdopted": "2026-03-01T06:42:39.483Z"
   },
   {
@@ -5331,7 +5331,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-28T06:35:28.030Z"
   },
   {
@@ -5403,7 +5403,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-28T06:35:28.030Z"
   },
   {
@@ -5427,7 +5427,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Young Adult",
     "dateAdopted": "2026-02-28T06:35:28.030Z"
   },
   {
@@ -5451,7 +5451,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-28T06:35:28.031Z"
   },
   {
@@ -5523,7 +5523,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-27T06:51:38.693Z"
   },
   {
@@ -5571,7 +5571,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-27T06:51:38.693Z"
   },
   {
@@ -5691,7 +5691,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Young Adult",
     "dateAdopted": "2026-02-26T06:57:39.361Z"
   },
   {
@@ -5715,7 +5715,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-26T06:57:39.361Z"
   },
   {
@@ -5763,7 +5763,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-26T06:57:39.361Z"
   },
   {
@@ -5787,7 +5787,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-26T06:57:39.361Z"
   },
   {
@@ -5859,7 +5859,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-25T06:59:41.787Z"
   },
   {
@@ -5907,7 +5907,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-25T06:59:41.787Z"
   },
   {
@@ -5955,7 +5955,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-24T06:57:41.341Z"
   },
   {
@@ -6003,7 +6003,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Young Adult",
     "dateAdopted": "2026-02-24T06:57:41.341Z"
   },
   {
@@ -6027,7 +6027,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Young Adult",
     "dateAdopted": "2026-02-24T06:57:41.341Z"
   },
   {
@@ -6051,7 +6051,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-24T06:57:41.341Z"
   },
   {
@@ -6075,7 +6075,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-23T07:01:24.931Z"
   },
   {
@@ -6099,7 +6099,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-23T07:01:24.931Z"
   },
   {
@@ -6123,7 +6123,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Young Adult",
     "dateAdopted": "2026-02-23T07:01:24.931Z"
   },
   {
@@ -6171,7 +6171,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-23T07:01:24.931Z"
   },
   {
@@ -6195,7 +6195,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Young Adult",
     "dateAdopted": "2026-02-23T07:01:24.931Z"
   },
   {
@@ -6243,7 +6243,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-23T07:01:24.931Z"
   },
   {
@@ -6315,7 +6315,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-22T06:43:39.780Z"
   },
   {
@@ -6339,7 +6339,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Young Adult",
     "dateAdopted": "2026-02-22T06:43:39.780Z"
   },
   {
@@ -6363,7 +6363,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Young Adult",
     "dateAdopted": "2026-02-22T06:43:39.780Z"
   },
   {
@@ -6387,7 +6387,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-22T06:43:39.780Z"
   },
   {
@@ -6579,7 +6579,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-21T06:39:08.218Z"
   },
   {
@@ -6603,7 +6603,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-21T06:39:08.218Z"
   },
   {
@@ -6627,7 +6627,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Young Adult",
     "dateAdopted": "2026-02-21T06:39:08.218Z"
   },
   {
@@ -6651,7 +6651,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-20T06:53:51.776Z"
   },
   {
@@ -6675,7 +6675,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-20T06:53:51.776Z"
   },
   {
@@ -6839,7 +6839,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-18T06:59:17.627Z"
   },
   {
@@ -6863,7 +6863,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Senior",
     "dateAdopted": "2026-02-18T06:59:17.628Z"
   },
   {
@@ -6911,7 +6911,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Young Adult",
     "dateAdopted": "2026-02-18T06:59:17.628Z"
   },
   {
@@ -7007,7 +7007,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Young Adult",
     "dateAdopted": "2026-02-17T06:56:16.839Z"
   },
   {
@@ -7031,7 +7031,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Young Adult",
     "dateAdopted": "2026-02-17T06:56:16.839Z"
   },
   {
@@ -7079,7 +7079,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-16T07:00:34.097Z"
   },
   {
@@ -7103,7 +7103,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Young Adult",
     "dateAdopted": "2026-02-16T07:00:34.097Z"
   },
   {
@@ -7291,7 +7291,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-15T06:48:45.262Z"
   },
   {
@@ -7315,7 +7315,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-15T06:48:45.262Z"
   },
   {
@@ -7387,7 +7387,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-14T06:41:44.108Z"
   },
   {
@@ -7411,7 +7411,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-14T06:41:44.108Z"
   },
   {
@@ -7435,7 +7435,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Senior",
     "dateAdopted": "2026-02-14T06:41:44.108Z"
   },
   {
@@ -7507,7 +7507,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-13T06:57:19.434Z"
   },
   {
@@ -7531,7 +7531,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-13T06:57:19.434Z"
   },
   {
@@ -7555,7 +7555,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-13T06:57:19.434Z"
   },
   {
@@ -7603,7 +7603,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-12T06:59:28.674Z"
   },
   {
@@ -7699,7 +7699,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Young Adult",
     "dateAdopted": "2026-02-11T06:58:26.063Z"
   },
   {
@@ -7747,7 +7747,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-11T06:58:26.064Z"
   },
   {
@@ -7771,7 +7771,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-11T06:58:26.064Z"
   },
   {
@@ -7887,7 +7887,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Black",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-10T07:01:36.215Z"
   },
   {
@@ -7911,7 +7911,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-09T07:01:51.363Z"
   },
   {
@@ -7935,7 +7935,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-09T07:01:51.364Z"
   },
   {
@@ -7959,7 +7959,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Young Adult",
     "dateAdopted": "2026-02-09T07:01:51.364Z"
   },
   {
@@ -7983,7 +7983,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Young Adult",
     "dateAdopted": "2026-02-09T07:01:51.364Z"
   },
   {
@@ -8007,7 +8007,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Young Adult",
     "dateAdopted": "2026-02-09T07:01:51.364Z"
   },
   {
@@ -8031,7 +8031,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-09T07:01:51.364Z"
   },
   {
@@ -8151,7 +8151,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Young Adult",
     "dateAdopted": "2026-02-08T06:46:24.567Z"
   },
   {
@@ -8175,7 +8175,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-08T06:46:24.567Z"
   },
   {
@@ -8271,7 +8271,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-07T06:39:16.554Z"
   },
   {
@@ -8295,7 +8295,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Young Adult",
     "dateAdopted": "2026-02-07T06:39:16.554Z"
   },
   {
@@ -8319,7 +8319,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-07T06:39:16.554Z"
   },
   {
@@ -8343,7 +8343,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-07T06:39:16.554Z"
   },
   {
@@ -8367,7 +8367,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Young Adult",
     "dateAdopted": "2026-02-06T06:52:03.108Z"
   },
   {
@@ -8391,7 +8391,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Young Adult",
     "dateAdopted": "2026-02-06T06:52:03.108Z"
   },
   {
@@ -8415,7 +8415,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-06T06:52:03.108Z"
   },
   {
@@ -8439,7 +8439,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Senior",
     "dateAdopted": "2026-02-06T06:52:03.108Z"
   },
   {
@@ -8463,7 +8463,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Young Adult",
     "dateAdopted": "2026-02-06T06:52:03.108Z"
   },
   {
@@ -8487,7 +8487,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-06T06:52:03.108Z"
   },
   {
@@ -8583,7 +8583,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Senior",
     "dateAdopted": "2026-02-05T06:56:10.410Z"
   },
   {
@@ -8607,7 +8607,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Young Adult",
     "dateAdopted": "2026-02-05T06:56:10.410Z"
   },
   {
@@ -8631,7 +8631,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Unknown",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-04T06:47:51.165Z"
   },
   {
@@ -8703,7 +8703,7 @@
     "environment": "Unknown",
     "health": "Healthy",
     "color": "Female",
-    "ageCategory": "Kitten",
+    "ageCategory": "Adult",
     "dateAdopted": "2026-02-02T23:17:02.441Z"
   },
   {

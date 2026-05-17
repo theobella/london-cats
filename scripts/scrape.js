@@ -635,12 +635,16 @@ function extractMetadata(cat) {
     let ageCategory = 'Adult';
     if (cat.age) {
         const age = cat.age.toLowerCase();
-        if (age.includes('month') || age.includes('kitten')) {
-            ageCategory = 'Kitten';
-        } else if (age.includes('year')) {
+        if (age.includes('year')) {
+            // Check years first — "13 years, 4 months" must not match the month check
             const years = parseInt(age.match(/\d+/)?.[0] || '0');
-            if (years < 2) ageCategory = 'Young Adult';
+            if (years < 1) ageCategory = 'Kitten';
+            else if (years < 2) ageCategory = 'Young Adult';
             else if (years >= 10) ageCategory = 'Senior';
+            // else: Adult (default)
+        } else if (age.includes('month') || age.includes('kitten')) {
+            // Only a kitten if there's no year component at all
+            ageCategory = 'Kitten';
         }
     }
 
