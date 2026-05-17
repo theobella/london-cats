@@ -1,0 +1,1786 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="Battersea Is Here For Every Dog And Cat, And Has Been Since 1860. We Believe That Every Dog And Cat Deserves The Best." />
+<link rel="canonical" href="https://www.battersea.org.uk/" />
+<link rel="shortlink" href="https://www.battersea.org.uk/" />
+<meta name="Generator" content="Drupal 11 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta http-equiv="x-ua-compatible" content="ie=edge" />
+<link rel="icon" href="https://www.battersea.org.uk/sites/default/files/favicon-16x16.png" type="image/png" />
+
+    <title>Battersea Dogs &amp; Cats Home | Here For Every Dog And Cat</title>
+    <base href="https://www.battersea.org.uk/">
+	<!-- Favicons | Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="https://www.battersea.org.uk/themes/custom/my_battersea/favicons/apple-touch-icon-57x57.png?v=2">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://www.battersea.org.uk/themes/custom/my_battersea/favicons/apple-touch-icon-60x60.png?v=2">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://www.battersea.org.uk/themes/custom/my_battersea/favicons/apple-touch-icon-72x72.png?v=2">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://www.battersea.org.uk/themes/custom/my_battersea/favicons/apple-touch-icon-76x76.png?v=2">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://www.battersea.org.uk/themes/custom/my_battersea/favicons/apple-touch-icon-114x114.png?v=2">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://www.battersea.org.uk/themes/custom/my_battersea/favicons/apple-touch-icon-120x120.png?v=2">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://www.battersea.org.uk/themes/custom/my_battersea/favicons/apple-touch-icon-144x144.png?v=2">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://www.battersea.org.uk/themes/custom/my_battersea/favicons/apple-touch-icon-152x152.png?v=2">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.battersea.org.uk/themes/custom/my_battersea/favicons/apple-touch-icon-180x180.png?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.battersea.org.uk/themes/custom/my_battersea/favicons/favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="194x194" href="https://www.battersea.org.uk/themes/custom/my_battersea/favicons/favicon-194x194.png?v=2">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://www.battersea.org.uk/themes/custom/my_battersea/favicons/android-chrome-192x192.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.battersea.org.uk/themes/custom/my_battersea/favicons/favicon-16x16.png">
+    <link rel="manifest" href="https://www.battersea.org.uk/themes/custom/my_battersea/favicons/site.webmanifest">
+    <link rel="mask-icon" href="https://www.battersea.org.uk/themes/custom/my_battersea/favicons/safari-pinned-tab.svg?v=2" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="https://www.battersea.org.uk/themes/custom/my_battersea/favicons/mstile-144x144.png?v=2">
+    <link rel="stylesheet" media="all" href="https://www.battersea.org.uk/sites/default/files/css/css_MbtvVb_StXFlSzicK6TovFoT97eG43kSbEciIHQp9eo.css?delta=0&amp;language=en&amp;theme=my_battersea&amp;include=eJx1kGFuwyAMhS9EwpGQCQ5hNRhhs7S3H7SVJi3dHyO-92zD86CKTRBcKgo3tNCVnXSfkxqPU3R4rywY3J5oem3Egg3IeGYVbVCdh9YSW9j3dL_incfoE4UzfhJbvtJI7IEW0QelEq96RhGIKO48kn6YWjig2aDqdoD1IOPCRFAleeLtZjduaPJj2N_f_7uxQoM4Bh5iQ-sVaP0lay-1e0pyYDCjt22Hg5rcjG7jXAkV7T_cyEMU8-tN3wlPsc-6Zg6d0JzoMkbIWPozmvXEZYJlkmVvI0osYdj8VO37XOEL7heIhKNL14AKiWRVjvG54rPtnelFn-UHNp_ZUg" />
+<link rel="stylesheet" media="all" href="https://www.battersea.org.uk/sites/default/files/css/css_h2J7idbIRVj8yCwtR_qMzNG6CSzVsuAAZJKGo2o5ciM.css?delta=1&amp;language=en&amp;theme=my_battersea&amp;include=eJx1kGFuwyAMhS9EwpGQCQ5hNRhhs7S3H7SVJi3dHyO-92zD86CKTRBcKgo3tNCVnXSfkxqPU3R4rywY3J5oem3Egg3IeGYVbVCdh9YSW9j3dL_incfoE4UzfhJbvtJI7IEW0QelEq96RhGIKO48kn6YWjig2aDqdoD1IOPCRFAleeLtZjduaPJj2N_f_7uxQoM4Bh5iQ-sVaP0lay-1e0pyYDCjt22Hg5rcjG7jXAkV7T_cyEMU8-tN3wlPsc-6Zg6d0JzoMkbIWPozmvXEZYJlkmVvI0osYdj8VO37XOEL7heIhKNL14AKiWRVjvG54rPtnelFn-UHNp_ZUg" />
+<link rel="stylesheet" media="all" href="https://www.battersea.org.uk/sites/default/files/css/css_AuhKsGzP61pLN0v9pRZ4w-l7QpQl35Fr_VgFkDOnpEo.css?delta=2&amp;language=en&amp;theme=my_battersea&amp;include=eJx1kGFuwyAMhS9EwpGQCQ5hNRhhs7S3H7SVJi3dHyO-92zD86CKTRBcKgo3tNCVnXSfkxqPU3R4rywY3J5oem3Egg3IeGYVbVCdh9YSW9j3dL_incfoE4UzfhJbvtJI7IEW0QelEq96RhGIKO48kn6YWjig2aDqdoD1IOPCRFAleeLtZjduaPJj2N_f_7uxQoM4Bh5iQ-sVaP0lay-1e0pyYDCjt22Hg5rcjG7jXAkV7T_cyEMU8-tN3wlPsc-6Zg6d0JzoMkbIWPozmvXEZYJlkmVvI0osYdj8VO37XOEL7heIhKNL14AKiWRVjvG54rPtnelFn-UHNp_ZUg" />
+<link rel="stylesheet" media="all" href="https://www.battersea.org.uk/sites/default/files/css/css_ZORKuVeGivYuGsVEZFge2D7nmZVO24KQsmhdquLSmlw.css?delta=3&amp;language=en&amp;theme=my_battersea&amp;include=eJx1kGFuwyAMhS9EwpGQCQ5hNRhhs7S3H7SVJi3dHyO-92zD86CKTRBcKgo3tNCVnXSfkxqPU3R4rywY3J5oem3Egg3IeGYVbVCdh9YSW9j3dL_incfoE4UzfhJbvtJI7IEW0QelEq96RhGIKO48kn6YWjig2aDqdoD1IOPCRFAleeLtZjduaPJj2N_f_7uxQoM4Bh5iQ-sVaP0lay-1e0pyYDCjt22Hg5rcjG7jXAkV7T_cyEMU8-tN3wlPsc-6Zg6d0JzoMkbIWPozmvXEZYJlkmVvI0osYdj8VO37XOEL7heIhKNL14AKiWRVjvG54rPtnelFn-UHNp_ZUg" />
+<link rel="stylesheet" media="all" href="https://www.battersea.org.uk/sites/default/files/css/css_gvQ5SPEAjPMsIZ6_kH4qgUJrce2z9govPsinqMFUO_Q.css?delta=4&amp;language=en&amp;theme=my_battersea&amp;include=eJx1kGFuwyAMhS9EwpGQCQ5hNRhhs7S3H7SVJi3dHyO-92zD86CKTRBcKgo3tNCVnXSfkxqPU3R4rywY3J5oem3Egg3IeGYVbVCdh9YSW9j3dL_incfoE4UzfhJbvtJI7IEW0QelEq96RhGIKO48kn6YWjig2aDqdoD1IOPCRFAleeLtZjduaPJj2N_f_7uxQoM4Bh5iQ-sVaP0lay-1e0pyYDCjt22Hg5rcjG7jXAkV7T_cyEMU8-tN3wlPsc-6Zg6d0JzoMkbIWPozmvXEZYJlkmVvI0osYdj8VO37XOEL7heIhKNL14AKiWRVjvG54rPtnelFn-UHNp_ZUg" />
+<link rel="stylesheet" media="all" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
+<link rel="stylesheet" media="print" href="https://www.battersea.org.uk/sites/default/files/css/css_ojZvMBMUFwuNJosO_8cZmbOmXajRC3a0gsp6_4NE2vM.css?delta=6&amp;language=en&amp;theme=my_battersea&amp;include=eJx1kGFuwyAMhS9EwpGQCQ5hNRhhs7S3H7SVJi3dHyO-92zD86CKTRBcKgo3tNCVnXSfkxqPU3R4rywY3J5oem3Egg3IeGYVbVCdh9YSW9j3dL_incfoE4UzfhJbvtJI7IEW0QelEq96RhGIKO48kn6YWjig2aDqdoD1IOPCRFAleeLtZjduaPJj2N_f_7uxQoM4Bh5iQ-sVaP0lay-1e0pyYDCjt22Hg5rcjG7jXAkV7T_cyEMU8-tN3wlPsc-6Zg6d0JzoMkbIWPozmvXEZYJlkmVvI0osYdj8VO37XOEL7heIhKNL14AKiWRVjvG54rPtnelFn-UHNp_ZUg" />
+
+    <script src="https://www.recaptcha.net/recaptcha/api.js?render=6LexWo4oAAAAAKqV2iimbnmtT-jk3BEJcJpqY_wO&amp;hl=en" async defer></script>
+
+	<!-- begin Convert Experiences code-->
+<script type="text/javascript" src="https://cdn-4.convertexperiments.com/v1/js/100410046-100412070.js?environment=production"></script>
+<!-- end Convert Experiences code -->
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KZN2NR');</script>
+<!-- End Google Tag Manager -->
+<script async src="https://static.srcspot.com/libs/reina.js" type="text/javascript"></script> 
+	
+                                <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="CBUYF-38H2N-T4V2M-LBL7F-EET72",function(){function e(){if(!i){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,o.parentNode.appendChild(e),i=!0}}function t(e){i=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(o.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",o.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"CBUYF-38H2N-T4V2M-LBL7F-EET72";var o=document.currentScript||document.getElementsByTagName("script")[0],i=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!i)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),o.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="lsyxr53acblb22qjodaq-f-e25705496-clientnsv4-s.akamaihd.net",o="false"=="true"?2:1,i={"ak.v":"41","ak.cp":"1591456","ak.ai":parseInt("1016697",10),"ak.ol":"0","ak.cr":19,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"a9b8146","ak.r":46193,"ak.a2":n,"ak.m":"b","ak.n":"ff","ak.cport":57479,"ak.gh":"96.16.87.156","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.0rtt.ed":"","ak.csrc":"-","ak.acc":"bbr","ak.t":"1779003585","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==gV5T1XgV88h1ftHJ0smC9vAYdYSqtVE4lJ2xqdVxq/FxJG2lOxy7SV8fU5yOttb3vLPhIrERolAcu9R2L4yx64d8+vHu7r39ow6GdrsfHjCK8w6yk5+tnFT6tDbyrCjErps+L+mKSBa04/6hOrgHC4nODC9zIkpk0HXDsIlnY9q8M92+B0lPRgcZlKnEeS2tzo7VOr68HwVmBA3U+3L8in8w7ZiVPMXiYcawvrHUquH5DZ0wu+moe+4kjuq23oG5PqxFvroUr7pTeV/AIkZ6EFa3+WXFnRPA5IUutQfjX3j4NB3mRxeW6Xdeg5Y04mBOwnOHrhou7gp90keUmKELgPD/QwlfhSaNyJGid49QxP5MbqE6iLN0ES1XvuYrTqFy+JJau8u+yvfsk6bbNQTa7aSxUvnY3VcShbmNVJqxkXE=","ak.pv":"5","ak.dpoabenc":"","ak.tf":o};if(""!==t)i["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.0rtt.ed","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+  <body class="exclude-node-title layout-no-sidebars has-featured-top page-node-4 path-frontpage node--type-homepage-rebrand" data-page_path="/home" data-page_title="Battersea Dogs &amp;amp; Cats Home | Here For Every Dog And Cat" data-login_status="guest" data-user_id=""
+  >
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZN2NR"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div id="page-wrapper">
+  <div id="page" class="">
+    <header id="header" class="header" role="banner" aria-label="Site header">
+                      <nav class="navbar affix navbar-expand-lg" id="navbar-main">
+                    <div class="container">
+                              <a href="https://www.battersea.org.uk/" title="Home" rel="home" class="navbar-brand">
+              <img src="https://www.battersea.org.uk/sites/default/files/logo.png" alt="Home" class="img-fluid d-inline-block align-top" height="84" width="516" />
+            
+    </a>
+    <nav role="navigation" aria-labelledby="block-mainnavigationdonatebutton-menu" id="block-mainnavigationdonatebutton" class="mobile-donate-button block block-menu navigation menu--donate-button">
+            
+  <h2 class="visually-hidden" id="block-mainnavigationdonatebutton-menu">Donate Button</h2>
+  
+
+        
+
+              <ul id="block-mainnavigationdonatebutton" region="header" class="clearfix menu">
+                          <li class="menu-item"
+                      >
+        <a href="https://donate.battersea.org.uk/appeals/default/" class="btn btn-priority" target="_blank" link="_blank">Donate</a>
+              </li>
+        </ul>
+  
+
+  </nav>
+
+
+                          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#CollapsingNavbar" aria-controls="CollapsingNavbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+			  <div class="collapse navbar-collapse justify-content-end" id="CollapsingNavbar" data-region="primary_menu" data-component="primary_mega_menu">
+				                				  <div id="block-mainnavigation" class="navigation-desktop block block-we-megamenu block-we-megamenu-blockmain">
+  
+    
+      <div class="content">
+      <div class="region-we-mega-menu">
+	<a class="navbar-toggle collapsed">
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	</a>
+	<nav  class="main navbar navbar-default navbar-we-mega-menu mobile-collapse hover-action" data-menu-name="main" data-block-theme="my_battersea" data-style="Default" data-animation="None" data-delay="" data-duration="" data-autoarrow="" data-alwayshowsubmenu="" data-action="hover" data-mobile-collapse="0">
+	  <div class="container-fluid">
+	    <ul  class="we-mega-menu-ul nav nav-tabs">
+  <li  class="we-mega-menu-li dropdown-menu" data-level="0" data-element-type="we-mega-menu-li" description="We&#039;ve been here for every dog and cat since 1860" data-id="6ee2e87e-63e9-45a2-bb80-662ee597216d" data-submenu="1" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="">
+      <a class="we-mega-menu-li" title="What we do" href="https://www.battersea.org.uk/what-we-do" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      What we do    </a>
+    <div  class="we-mega-menu-submenu" data-element-type="we-mega-menu-submenu" data-submenu-width="" data-class="" style="width: px" data-ga-event="top_navigation_link_click|link_click|primary_menu" data-component="secondary_mega_menu">
+  <div class="we-mega-menu-submenu-inner container">
+    <div  class="we-mega-menu-row" data-element-type="we-mega-menu-row" data-custom-row="0">
+  <div  class="we-mega-menu-col span12" data-element-type="we-mega-menu-col" data-width="12" data-block="" data-blocktitle="0" data-hidewhencollapse="" data-class="">
+  
+<div class="type-of-block">
+<div class="block-inner">
+<div class="content">
+<div class="container">
+	<div class="row">
+		<div class="col-sm menu-text">
+			<h6><a href="https://www.battersea.org.uk/what-we-do">What we do <img class="menu-arrow" src="https://www.battersea.org.uk/sites/default/files/2022-11/arrow-right.png" alt=""></a></h6>
+			<p>We&#039;ve been here for every dog and cat since 1860</p>
+		</div>
+															<div class="col-sm">
+				<ul>
+											<li  class="we-mega-menu-li" data-level="1" data-element-type="we-mega-menu-li" description="" data-id="8b581c2c-679a-4cd3-accc-dbd68706c5ce" data-submenu="0" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="">
+      <a class="we-mega-menu-li" title="Rehoming" href="https://www.battersea.org.uk/rehome" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      Rehoming    </a>
+    
+</li>
+
+											<li  class="we-mega-menu-li" data-level="1" data-element-type="we-mega-menu-li" description="" data-id="652e66d3-718b-4035-a585-28fee8dbd6aa" data-submenu="0" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="_self">
+      <a class="we-mega-menu-li" title="Caring for our animals" href="https://www.battersea.org.uk/what-we-do/caring-for-our-animals" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      Caring for our animals    </a>
+    
+</li>
+
+											<li  class="we-mega-menu-li" data-level="1" data-element-type="we-mega-menu-li" description="" data-id="5e6d4bbc-f540-4a72-a3c5-07f40865754b" data-submenu="0" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="_self">
+      <a class="we-mega-menu-li" title="Animal welfare campaigning" href="https://www.battersea.org.uk/what-we-do/animal-welfare-campaigning" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      Animal welfare campaigning    </a>
+    
+</li>
+
+											<li  class="we-mega-menu-li dropdown-menu" data-level="1" data-element-type="we-mega-menu-li" description="" data-id="9278d1c1-81a0-4776-a6a9-ef5d345f49da" data-submenu="1" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="_self">
+      <a class="we-mega-menu-li" title="Working with other rescues" href="https://www.battersea.org.uk/what-we-do/working-with-other-rescues" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      Working with other rescues    </a>
+    <div  class="we-mega-menu-submenu" data-element-type="we-mega-menu-submenu" data-submenu-width="" data-class="" style="width: px" data-ga-event="top_navigation_link_click|link_click|primary_menu" data-component="secondary_mega_menu">
+  <div class="we-mega-menu-submenu-inner container">
+    <div  class="we-mega-menu-row" data-element-type="we-mega-menu-row" data-custom-row="1">
+  <div  class="we-mega-menu-col span12" data-element-type="we-mega-menu-col" data-width="12" data-block="" data-blocktitle="0" data-hidewhencollapse="" data-class="">
+  
+</div>
+
+</div>
+
+  </div>
+</div>
+
+</li>
+
+									</ul>
+			</div>
+											<div class="col-sm">
+				<ul>
+											<li  class="we-mega-menu-li" data-level="1" data-element-type="we-mega-menu-li" description="" data-id="c4e41572-fc99-4679-8ce4-2d834700f5f0" data-submenu="0" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="_self">
+      <a class="we-mega-menu-li" title="Supporting pet owners" href="https://www.battersea.org.uk/pet-advice" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      Supporting pet owners    </a>
+    
+</li>
+
+											<li  class="we-mega-menu-li" data-level="1" data-element-type="we-mega-menu-li" description="" data-id="78f1069a-e914-4304-911b-6729c826157d" data-submenu="0" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="_self">
+      <a class="we-mega-menu-li" title="More about us" href="https://www.battersea.org.uk/about-us" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      More about us    </a>
+    
+</li>
+
+											
+											
+									</ul>
+			</div>
+									</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+  </div>
+</div>
+
+</li>
+<li  class="we-mega-menu-li dropdown-menu" data-level="0" data-element-type="we-mega-menu-li" description="Finding new homes for dogs and cats" data-id="c05d50f4-9c85-4ebf-807f-49d5cff3a8ee" data-submenu="1" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="">
+      <a class="we-mega-menu-li" title="Rehoming" href="https://www.battersea.org.uk/rehome" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      Rehoming    </a>
+    <div  class="we-mega-menu-submenu" data-element-type="we-mega-menu-submenu" data-submenu-width="" data-class="" style="width: px" data-ga-event="top_navigation_link_click|link_click|primary_menu" data-component="secondary_mega_menu">
+  <div class="we-mega-menu-submenu-inner container">
+    <div  class="we-mega-menu-row" data-element-type="we-mega-menu-row" data-custom-row="0">
+  <div  class="we-mega-menu-col span12" data-element-type="we-mega-menu-col" data-width="12" data-block="" data-blocktitle="0" data-hidewhencollapse="" data-class="">
+  
+<div class="type-of-block">
+<div class="block-inner">
+<div class="content">
+<div class="container">
+	<div class="row">
+		<div class="col-sm menu-text">
+			<h6><a href="https://www.battersea.org.uk/rehome">Rehoming <img class="menu-arrow" src="https://www.battersea.org.uk/sites/default/files/2022-11/arrow-right.png" alt=""></a></h6>
+			<p>Finding new homes for dogs and cats</p>
+		</div>
+															<div class="col-sm">
+				<ul>
+											<li  class="we-mega-menu-li" data-level="1" data-element-type="we-mega-menu-li" description="" data-id="b77ee4ce-460d-4aae-b745-f02339a6a4a4" data-submenu="0" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="_self">
+      <a class="we-mega-menu-li" title="How to rehome a dog" href="https://www.battersea.org.uk/rehome/dogs" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      How to rehome a dog    </a>
+    
+</li>
+
+											<li  class="we-mega-menu-li" data-level="1" data-element-type="we-mega-menu-li" description="" data-id="a00d75f0-7ba8-4ade-813d-f03a58363b11" data-submenu="0" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="_self">
+      <a class="we-mega-menu-li" title="How to rehome a cat" href="https://www.battersea.org.uk/rehome/cats" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      How to rehome a cat    </a>
+    
+</li>
+
+											<li  class="we-mega-menu-li" data-level="1" data-element-type="we-mega-menu-li" description="" data-id="f5f47992-fc37-4339-be6f-06dbac93bb62" data-submenu="0" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="_self">
+      <a class="we-mega-menu-li" title="Meet the dogs" href="https://www.battersea.org.uk/dogs/dog-rehoming-gallery" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      Meet the dogs    </a>
+    
+</li>
+
+											<li  class="we-mega-menu-li" data-level="1" data-element-type="we-mega-menu-li" description="" data-id="e7ba9582-42a8-4adb-9562-562b21ad8c2c" data-submenu="0" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="_self">
+      <a class="we-mega-menu-li" title="Meet the cats" href="https://www.battersea.org.uk/cats/cat-rehoming-gallery" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      Meet the cats    </a>
+    
+</li>
+
+									</ul>
+			</div>
+											<div class="col-sm">
+				<ul>
+											<li  class="we-mega-menu-li" data-level="1" data-element-type="we-mega-menu-li" description="" data-id="496b3a1a-ee93-49ca-864c-766d05a601f1" data-submenu="0" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="_self">
+      <a class="we-mega-menu-li" title="Giving your dog up for adoption" href="https://www.battersea.org.uk/rehome/giving-your-dog-adoption" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      Giving your dog up for adoption    </a>
+    
+</li>
+
+											<li  class="we-mega-menu-li" data-level="1" data-element-type="we-mega-menu-li" description="" data-id="d5f6ca7a-ef8f-4c15-9e5f-7ed06d035b2e" data-submenu="0" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="_self">
+      <a class="we-mega-menu-li" title="Giving your cat up for adoption" href="https://www.battersea.org.uk/rehome/giving-your-cat-adoption" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      Giving your cat up for adoption    </a>
+    
+</li>
+
+											
+											
+									</ul>
+			</div>
+									</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+  </div>
+</div>
+
+</li>
+<li  class="we-mega-menu-li dropdown-menu" data-level="0" data-element-type="we-mega-menu-li" description="Sharing our expertise to support pet owners everywhere" data-id="a50598be-65d2-4b94-8876-43e5f01011d3" data-submenu="1" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="">
+      <a class="we-mega-menu-li" title="Pet advice" href="https://www.battersea.org.uk/pet-advice" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      Pet advice    </a>
+    <div  class="we-mega-menu-submenu" data-element-type="we-mega-menu-submenu" data-submenu-width="" data-class="" style="width: px" data-ga-event="top_navigation_link_click|link_click|primary_menu" data-component="secondary_mega_menu">
+  <div class="we-mega-menu-submenu-inner container">
+    <div  class="we-mega-menu-row" data-element-type="we-mega-menu-row" data-custom-row="0">
+  <div  class="we-mega-menu-col span12" data-element-type="we-mega-menu-col" data-width="12" data-block="" data-blocktitle="0" data-hidewhencollapse="" data-class="">
+  
+<div class="type-of-block">
+<div class="block-inner">
+<div class="content">
+<div class="container">
+	<div class="row">
+		<div class="col-sm menu-text">
+			<h6><a href="https://www.battersea.org.uk/pet-advice">Pet advice <img class="menu-arrow" src="https://www.battersea.org.uk/sites/default/files/2022-11/arrow-right.png" alt=""></a></h6>
+			<p>Sharing our expertise to support pet owners everywhere</p>
+		</div>
+															<div class="col-sm">
+				<ul>
+											<li  class="we-mega-menu-li" data-level="1" data-element-type="we-mega-menu-li" description="" data-id="8f30f6e7-aaf5-49c9-bfe6-27b1d6613bfd" data-submenu="0" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="_self">
+      <a class="we-mega-menu-li" title="Dog advice" href="https://www.battersea.org.uk/pet-advice/dog-advice" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      Dog advice    </a>
+    
+</li>
+
+											<li  class="we-mega-menu-li" data-level="1" data-element-type="we-mega-menu-li" description="" data-id="b86be107-6010-4427-b7a2-0504b2c6af06" data-submenu="0" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="_self">
+      <a class="we-mega-menu-li" title="Cat advice" href="https://www.battersea.org.uk/pet-advice/cat-advice" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      Cat advice    </a>
+    
+</li>
+
+											
+											
+									</ul>
+			</div>
+									</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+  </div>
+</div>
+
+</li>
+<li  class="we-mega-menu-li dropdown-menu" data-level="0" data-element-type="we-mega-menu-li" description="Help us be here for every dog and cat" data-id="19dfc743-a471-4cf2-935e-dca185f690ca" data-submenu="1" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="">
+      <a class="we-mega-menu-li" title="Support us" href="https://www.battersea.org.uk/support-us" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      Support us    </a>
+    <div  class="we-mega-menu-submenu" data-element-type="we-mega-menu-submenu" data-submenu-width="" data-class="" style="width: px" data-ga-event="top_navigation_link_click|link_click|primary_menu" data-component="secondary_mega_menu">
+  <div class="we-mega-menu-submenu-inner container">
+    <div  class="we-mega-menu-row" data-element-type="we-mega-menu-row" data-custom-row="0">
+  <div  class="we-mega-menu-col span12" data-element-type="we-mega-menu-col" data-width="12" data-block="" data-blocktitle="0" data-hidewhencollapse="" data-class="">
+  
+<div class="type-of-block">
+<div class="block-inner">
+<div class="content">
+<div class="container">
+	<div class="row">
+		<div class="col-sm menu-text">
+			<h6><a href="https://www.battersea.org.uk/support-us">Support us <img class="menu-arrow" src="https://www.battersea.org.uk/sites/default/files/2022-11/arrow-right.png" alt=""></a></h6>
+			<p>Help us be here for every dog and cat</p>
+		</div>
+															<div class="col-sm">
+				<ul>
+											<li  class="we-mega-menu-li" data-level="1" data-element-type="we-mega-menu-li" description="" data-id="5e6f2fd1-e683-4f25-8b5a-60b1ed00c70b" data-submenu="0" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="_self">
+      <a class="we-mega-menu-li" title="Donate" href="https://donate.battersea.org.uk/" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      Donate    </a>
+    
+</li>
+
+											<li  class="we-mega-menu-li" data-level="1" data-element-type="we-mega-menu-li" description="" data-id="6754117e-23cf-478e-92b7-ee69d8dfed8d" data-submenu="0" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="_self">
+      <a class="we-mega-menu-li" title="Other ways to give" href="https://www.battersea.org.uk/support-us/other-ways-give" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      Other ways to give    </a>
+    
+</li>
+
+											<li  class="we-mega-menu-li" data-level="1" data-element-type="we-mega-menu-li" description="" data-id="baa908e9-360f-4b52-ae28-83cf7e59a129" data-submenu="0" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="_self">
+      <a class="we-mega-menu-li" title="Paw Draw weekly lottery" href="https://www.battersea.org.uk/support-us/paw-draw-weekly-lottery-0" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      Paw Draw weekly lottery    </a>
+    
+</li>
+
+											<li  class="we-mega-menu-li" data-level="1" data-element-type="we-mega-menu-li" description="" data-id="accb1123-2cc6-4786-80d0-aee1db3e8fa8" data-submenu="0" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="">
+      <a class="we-mega-menu-li" title="Play our raffle" href="https://www.battersea.org.uk/support-us/other-ways-give/enter-our-raffle" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      Play our raffle    </a>
+    
+</li>
+
+									</ul>
+			</div>
+											<div class="col-sm">
+				<ul>
+											<li  class="we-mega-menu-li" data-level="1" data-element-type="we-mega-menu-li" description="" data-id="f82d016d-a4d2-4cec-a3b4-7229d22a68b9" data-submenu="0" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="_self">
+      <a class="we-mega-menu-li" title="Sponsor our kennels or cabins" href="https://www.battersea.org.uk/support-us/sponsor-our-kennels-or-cabins" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      Sponsor our kennels or cabins    </a>
+    
+</li>
+
+											<li  class="we-mega-menu-li" data-level="1" data-element-type="we-mega-menu-li" description="" data-id="1ff88ca5-8fb3-4c8d-9c6e-cf51026e0e60" data-submenu="0" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="_self">
+      <a class="we-mega-menu-li" title="Virtual gifts" href="https://shop.battersea.org.uk" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      Virtual gifts    </a>
+    
+</li>
+
+											<li  class="we-mega-menu-li" data-level="1" data-element-type="we-mega-menu-li" description="" data-id="517c7af9-564e-429f-bf48-3a5678ad7d07" data-submenu="0" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="_self">
+      <a class="we-mega-menu-li" title="Challenge events" href="https://www.battersea.org.uk/support-us/challenges" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      Challenge events    </a>
+    
+</li>
+
+											<li  class="we-mega-menu-li" data-level="1" data-element-type="we-mega-menu-li" description="" data-id="09c72888-77cd-460b-9569-378aa9ba4b29" data-submenu="0" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="_self">
+      <a class="we-mega-menu-li" title="Fundraising" href="https://www.battersea.org.uk/support-us/fundraising" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      Fundraising    </a>
+    
+</li>
+
+									</ul>
+			</div>
+											<div class="col-sm">
+				<ul>
+											<li  class="we-mega-menu-li" data-level="1" data-element-type="we-mega-menu-li" description="" data-id="c1fdde52-8e34-4f87-89f5-c14943361439" data-submenu="0" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="_self">
+      <a class="we-mega-menu-li" title="Gifts in Wills" href="https://www.battersea.org.uk/support-us/gifts-in-wills" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      Gifts in Wills    </a>
+    
+</li>
+
+											<li  class="we-mega-menu-li" data-level="1" data-element-type="we-mega-menu-li" description="" data-id="d1a6a3e8-3069-460d-aec1-0d4d3092a4c5" data-submenu="0" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="_self">
+      <a class="we-mega-menu-li" title="Donate in memory" href="https://www.battersea.org.uk/support-us/donate-in-memory" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      Donate in memory    </a>
+    
+</li>
+
+											<li  class="we-mega-menu-li" data-level="1" data-element-type="we-mega-menu-li" description="" data-id="457c0673-3973-4e4b-8931-11742a2c08ee" data-submenu="0" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="_self">
+      <a class="we-mega-menu-li" title="Volunteer" href="https://www.battersea.org.uk/support-us/volunteer" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      Volunteer    </a>
+    
+</li>
+
+											<li  class="we-mega-menu-li" data-level="1" data-element-type="we-mega-menu-li" description="" data-id="700c7497-6bf2-4652-97d4-ef876e1a5e4f" data-submenu="0" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="">
+      <a class="we-mega-menu-li" title="Fostering" href="https://www.battersea.org.uk/support-us/fostering" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      Fostering    </a>
+    
+</li>
+
+									</ul>
+			</div>
+											<div class="col-sm">
+				<ul>
+											<li  class="we-mega-menu-li" data-level="1" data-element-type="we-mega-menu-li" description="" data-id="7ad951b5-0671-40b8-a4a5-c0a36c2d2b6b" data-submenu="0" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="_self">
+      <a class="we-mega-menu-li" title="Business Partnerships" href="https://www.battersea.org.uk/support-us/business-partnerships" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      Business Partnerships    </a>
+    
+</li>
+
+											<li  class="we-mega-menu-li" data-level="1" data-element-type="we-mega-menu-li" description="" data-id="ed7965f2-6b9f-4c12-bdb3-b2c6978ce30f" data-submenu="0" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="_self">
+      <a class="we-mega-menu-li" title="Philanthropy" href="https://www.battersea.org.uk/support-us/philanthropy" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      Philanthropy    </a>
+    
+</li>
+
+											
+											
+									</ul>
+			</div>
+									</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+  </div>
+</div>
+
+</li>
+<li  class="we-mega-menu-li" data-level="0" data-element-type="we-mega-menu-li" description="" data-id="e2ef769b-b70a-4770-a5e2-43e8210b4f7c" data-submenu="0" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="">
+      <a class="we-mega-menu-li" title="Shop" href="https://www.battersea.org.uk/stores" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      Shop    </a>
+    
+</li>
+<li  class="we-mega-menu-li" data-level="0" data-element-type="we-mega-menu-li" description="" data-id="d9a27897-e073-4ee7-bb7d-2b05dd7f091e" data-submenu="0" data-hide-sub-when-collapse="" data-group="0" data-class="" data-icon="" data-caption="" data-alignsub="" data-target="">
+      <a class="we-mega-menu-li" title="Donate" href="https://donate.battersea.org.uk/appeals/default/" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      Donate    </a>
+    
+</li>
+
+</ul>
+	  </div>
+	</nav>
+</div>
+    </div>
+  </div>
+
+
+								  <div class="form-inline navbar-form justify-content-end" data-region="header_form">
+					  <section class="row region region-header-form">
+    <div id="block-useraccountmenu" class="block block-we-megamenu block-we-megamenu-blockaccount">
+  
+    
+      <div class="content">
+      <div class="region-we-mega-menu">
+	<a class="navbar-toggle collapsed">
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	    <span class="icon-bar"></span>
+	</a>
+	<nav  class="account navbar navbar-default navbar-we-mega-menu mobile-collapse hover-action" data-menu-name="account" data-block-theme="my_battersea" data-style="Default" data-animation="None" data-delay="" data-duration="" data-autoarrow="" data-alwayshowsubmenu="" data-action="hover" data-mobile-collapse="0">
+	  <div class="container-fluid">
+	    <ul  class="we-mega-menu-ul nav nav-tabs">
+  <li  class="we-mega-menu-li btn-icon icon-login" data-level="0" data-element-type="we-mega-menu-li" description="" data-id="53cb20e1-79da-46da-a03e-2ed67a1386d2" data-submenu="0" data-hide-sub-when-collapse="" data-group="0" data-class="btn-icon icon-login" data-icon="" data-caption="" data-alignsub="" data-target="">
+      <a class="we-mega-menu-li" title="Log in" href="https://www.battersea.org.uk/user/login" 
+  target="_self" data-ga-event="top_navigation_link_click|link_click|primary_menu" aria-haspopup="true">
+      Log in    </a>
+    
+</li>
+<li  class="we-mega-menu-li btn-icon search-icon dropdown-menu" data-level="0" data-element-type="we-mega-menu-li" description="" data-id="6caa5c7f-961b-4c86-9fd0-bffbe45dfd64" data-submenu="1" data-hide-sub-when-collapse="" data-group="0" data-class="btn-icon search-icon" data-icon="" data-caption="" data-alignsub="" data-target="">
+   
+    <a href='#' data-drupal-link-system-path="<front>" class="we-megamenu-nolink" aria-haspopup="true">
+      Search</a>
+    <div  class="we-mega-menu-submenu" data-element-type="we-mega-menu-submenu" data-submenu-width="" data-class="" style="width: px" data-ga-event="top_navigation_link_click|link_click|primary_menu" data-component="secondary_mega_menu">
+  <div class="we-mega-menu-submenu-inner container">
+    <div  class="we-mega-menu-row" data-element-type="we-mega-menu-row" data-custom-row="1">
+  <div  class="we-mega-menu-col span7" data-element-type="we-mega-menu-col" data-width="7" data-block="exposedformsearch_globalpage_1" data-blocktitle="0" data-hidewhencollapse="" data-class="">
+    <div class="type-of-block"><div class="block-inner"><div class="views-exposed-form bef-exposed-form navigation-search-pannel filter-keyword block block-views block-views-exposed-filter-blocksearch-global-page-1" data-bef-auto-submit="" data-bef-auto-submit-delay="500" data-bef-auto-submit-minimum-length="3" data-bef-auto-submit-full-form="" data-drupal-selector="views-exposed-form-search-global-page-1" id="block-exposedformsearch-globalpage-1">
+  <div id="collapsiblock-wrapper-exposedformsearch_globalpage_1" class="collapsiblockTitle" data-collapsiblock-action="2">
+      <h2>Keywords</h2>
+    </div>
+      <div class="content">
+      
+<form region="sidebar_filter_area" action="https://www.battersea.org.uk/search/site/%2A" method="get" id="views-exposed-form-search-global-page-1" accept-charset="UTF-8">
+  
+
+<div class="row">
+
+            
+
+
+
+
+
+  <div class="js-form-item js-form-type-search-api-autocomplete form-type-search-api-autocomplete js-form-item-s form-item-s mb-4">
+           
+                          <div>
+        <input placeholder="Search keywords" data-drupal-selector="edit-s" data-search-api-autocomplete-search="search_global" class="form-autocomplete form-control" data-autocomplete-path="/search_api_autocomplete/search_global?display=page_1&amp;&amp;filter=s" data-msg-maxlength="This field has a maximum length of 128." type="text" id="edit-s" name="s" value="" size="30" maxlength="128" autocomplete="off" /></div>
+                      </div>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper mb-3" id="edit-actions"><button data-bef-auto-submit-click="" data-drupal-selector="edit-submit-search-global" type="submit" id="edit-submit-search-global" value="Search" class="button js-form-submit form-submit btn btn-primary">Search</button>
+</div>
+
+        
+  
+</div>
+</form>
+
+    </div>
+  </div>
+</div></div>
+
+</div>
+<div  class="we-mega-menu-col span5" data-element-type="we-mega-menu-col" data-width="5" data-block="navigationpopularonbattersea" data-blocktitle="0" data-hidewhencollapse="" data-class="">
+    <div class="type-of-block"><div class="block-inner"><nav role="navigation" aria-labelledby="block-navigationpopularonbattersea-menu" id="block-navigationpopularonbattersea" class="navigation-search-links block block-menu navigation menu--navigation---popular-on-batterse">
+      
+  <h2 id="block-navigationpopularonbattersea-menu">POPULAR ON BATTERSEA</h2>
+  
+
+        
+
+              <ul id="block-navigationpopularonbattersea" region="header" class="clearfix menu">
+                          <li class="menu-item"
+                      >
+        <a href="https://www.battersea.org.uk/about-us/contact-us" data-drupal-link-system-path="node/2716">Contacting Battersea</a>
+              </li>
+                      <li class="menu-item"
+                      >
+        <a href="https://www.battersea.org.uk/support-us/challenges" data-drupal-link-system-path="node/2206">Challenge events</a>
+              </li>
+                      <li class="menu-item"
+                      >
+        <a href="https://www.battersea.org.uk/pet-advice" data-drupal-link-system-path="node/2136">Pet advice</a>
+              </li>
+        </ul>
+  
+
+  </nav>
+</div></div>
+
+</div>
+
+</div>
+
+  </div>
+</div>
+
+</li>
+
+</ul>
+	  </div>
+	</nav>
+</div>
+    </div>
+  </div>
+
+  </section>
+
+				  </div>
+				                	            </div>
+                                            </div>
+                  </nav>
+            <section class="row region region-header-bottom">
+    <div class="search-mobile-block"> 
+	<div class="offcanvas-header">        
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="menu-btn1" id="menu-btn1">	 
+	 <i class="fa fa-search" aria-hidden="true"></i> <span>Search</span>
+	 <span>Close</span>
+    </div> 
+     <div class="responsive-menu">
+       <div class="search-form-mob">
+			<h2>KEYWORDS</h2>
+		   <form action="https://www.battersea.org.uk/search/site/%2A" method="get">
+			  <div class="row">
+				<input placeholder="Search keywords" data-drupal-selector="edit-search-api-fulltext" type="text" id="edit-search-api-fulltext" name="s" value="" size="30" maxlength="128" class="form-control form-autocomplete ui-autocomplete-input"
+  data-autocomplete-path="/search_api_autocomplete/search_global?display=page_1&&filter=s"
+  data-search-api-autocomplete-search="search_global"
+  autocomplete="off">
+			</div>
+			<button data-drupal-selector="edit-submit-search-global" type="submit" id="edit-submit-search-global" value="Search" class="button js-form-submit form-submit btn btn-primary">Search</button>
+			</form>
+		</div>
+	    <div class="container">
+			<div class="row">
+				<div class="col-sm col-sm-5 menu-text">
+					<h6>POPULAR ON BATTERSEA</h6>
+					
+
+              <ul class="clearfix menu">
+                          <li class="menu-item"
+                      >
+        <a href="https://www.battersea.org.uk/about-us/contact-us" data-drupal-link-system-path="node/2716">Contacting Battersea</a>
+              </li>
+                      <li class="menu-item"
+                      >
+        <a href="https://www.battersea.org.uk/support-us/challenges" data-drupal-link-system-path="node/2206">Challenge events</a>
+              </li>
+                      <li class="menu-item"
+                      >
+        <a href="https://www.battersea.org.uk/pet-advice" data-drupal-link-system-path="node/2136">Pet advice</a>
+              </li>
+        </ul>
+  
+
+				</div>
+			</div>		
+	   </div>
+     </div>
+</div><nav class="navbar mobile-menu-block">      
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      Menu <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">        
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">Close</button>
+      </div>
+      <div class="offcanvas-body">
+        		
+              <ul region="header_bottom" class="clearfix nav navbar-nav">
+                    <li class="nav-item active">
+                          <a href="https://www.battersea.org.uk/" class="home-icon nav-link active nav-link-https--wwwbatterseaorguk- is-active" data-drupal-link-system-path="&lt;front&gt;" aria-current="page">Home</a>
+              </li>
+                <li class="nav-item menu-item--expanded dropdown">
+                          <a href="https://www.battersea.org.uk/what-we-do" class="aboutus-icon nav-link dropdown-toggle nav-link-https--wwwbatterseaorguk-what-we-do" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" data-drupal-link-system-path="node/2081">What we do</a>
+                        <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                          <a href="https://www.battersea.org.uk/what-we-do" class="nav-link-https--wwwbatterseaorguk-what-we-do" data-drupal-link-system-path="node/2081">What we do</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="https://www.battersea.org.uk/rehome" class="nav-link-https--wwwbatterseaorguk-rehome" data-drupal-link-system-path="node/2151">Rehoming</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="https://www.battersea.org.uk/what-we-do/caring-for-our-animals" class="nav-link-https--wwwbatterseaorguk-what-we-do-caring-for-our-animals" data-drupal-link-system-path="node/2121">Caring for our animals</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="https://www.battersea.org.uk/what-we-do/animal-welfare-campaigning" class="nav-link-https--wwwbatterseaorguk-what-we-do-animal-welfare-campaigning" data-drupal-link-system-path="node/2116">Animal welfare campaigning</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="https://www.battersea.org.uk/what-we-do/working-with-other-rescues" class="nav-link-https--wwwbatterseaorguk-what-we-do-working-with-other-rescues" data-drupal-link-system-path="node/2126">Working with other rescues</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="https://www.battersea.org.uk/pet-advice" class="nav-link-https--wwwbatterseaorguk-pet-advice" data-drupal-link-system-path="node/2136">Supporting pet owners</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="https://www.battersea.org.uk/about-us" class="nav-link-https--wwwbatterseaorguk-about-us" data-drupal-link-system-path="node/2176">More about us</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="nav-item menu-item--expanded dropdown">
+                          <a href="https://www.battersea.org.uk/rehome" class="dog-icon nav-link dropdown-toggle nav-link-https--wwwbatterseaorguk-rehome" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" data-drupal-link-system-path="node/2151">Rehoming</a>
+                        <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                          <a href="https://www.battersea.org.uk/rehome" class="nav-link-https--wwwbatterseaorguk-rehome" data-drupal-link-system-path="node/2151">Rehoming</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="https://www.battersea.org.uk/rehome/dogs" class="nav-link-https--wwwbatterseaorguk-rehome-dogs" data-drupal-link-system-path="node/2156">How to rehome a dog</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="https://www.battersea.org.uk/rehome/cats" class="nav-link-https--wwwbatterseaorguk-rehome-cats" data-drupal-link-system-path="node/2161">How to rehome a cat</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="https://www.battersea.org.uk/dogs/dog-rehoming-gallery" class="nav-link-https--wwwbatterseaorguk-dogs-dog-rehoming-gallery" data-drupal-link-system-path="node/1996">Meet the dogs</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="https://www.battersea.org.uk/cats/cat-rehoming-gallery" class="nav-link-https--wwwbatterseaorguk-cats-cat-rehoming-gallery" data-drupal-link-system-path="node/5101">Meet the cats</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="https://www.battersea.org.uk/rehome/giving-your-dog-adoption" class="nav-link-https--wwwbatterseaorguk-rehome-giving-your-dog-adoption" data-drupal-link-system-path="node/2286">Giving your dog up for adoption</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="https://www.battersea.org.uk/rehome/giving-your-cat-adoption" class="nav-link-https--wwwbatterseaorguk-rehome-giving-your-cat-adoption" data-drupal-link-system-path="node/2401">Giving your cat up for adoption</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="nav-item menu-item--expanded dropdown">
+                          <a href="https://www.battersea.org.uk/pet-advice" class="cat-icon nav-link dropdown-toggle nav-link-https--wwwbatterseaorguk-pet-advice" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" data-drupal-link-system-path="node/2136">Pet advice</a>
+                        <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                          <a href="https://www.battersea.org.uk/pet-advice" class="nav-link-https--wwwbatterseaorguk-pet-advice" data-drupal-link-system-path="node/2136">Pet advice</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="https://www.battersea.org.uk/pet-advice/dog-advice" class="nav-link-https--wwwbatterseaorguk-pet-advice-dog-advice" data-drupal-link-system-path="node/2141">Dog advice</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="https://www.battersea.org.uk/pet-advice/cat-advice" class="nav-link-https--wwwbatterseaorguk-pet-advice-cat-advice" data-drupal-link-system-path="node/2146">Cat advice</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="nav-item menu-item--expanded dropdown">
+                          <a href="https://www.battersea.org.uk/support-us" class="supportus-icon nav-link dropdown-toggle nav-link-https--wwwbatterseaorguk-support-us" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true" data-drupal-link-system-path="node/2196">Support us</a>
+                        <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                          <a href="https://www.battersea.org.uk/support-us" class="nav-link-https--wwwbatterseaorguk-support-us" data-drupal-link-system-path="node/2196">See all ways to support us</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="https://donate.battersea.org.uk/appeals/default/" class="nav-link-https--donatebatterseaorguk-appeals-default-">Donate</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="https://www.battersea.org.uk/support-us/other-ways-give" class="nav-link-https--wwwbatterseaorguk-support-us-other-ways-give" data-drupal-link-system-path="node/2226">Other ways to give</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="https://www.battersea.org.uk/support-us/paw-draw-weekly-lottery-0" class="nav-link-https--wwwbatterseaorguk-support-us-paw-draw-weekly-lottery-0" data-drupal-link-system-path="node/2846">Paw Draw weekly lottery</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="https://www.battersea.org.uk/support-us/other-ways-give/enter-our-raffle" class="nav-link-https--wwwbatterseaorguk-support-us-other-ways-give-enter-our-raffle" data-drupal-link-system-path="node/2851">Play our raffle</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="https://www.battersea.org.uk/support-us/sponsor-our-kennels-or-cabins" class="nav-link-https--wwwbatterseaorguk-support-us-sponsor-our-kennels-or-cabins" data-drupal-link-system-path="node/7867716">Sponsor our kennels or cabins</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="https://shop.battersea.org.uk" class="nav-link-https--shopbatterseaorguk">Virtual gifts</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="https://www.battersea.org.uk/support-us/challenges" class="nav-link-https--wwwbatterseaorguk-support-us-challenges" data-drupal-link-system-path="node/2206">Challenge events</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="https://www.battersea.org.uk/support-us/fundraising" class="nav-link-https--wwwbatterseaorguk-support-us-fundraising" data-drupal-link-system-path="node/7976021">Fundraising</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="https://www.battersea.org.uk/support-us/gifts-in-wills" class="nav-link-https--wwwbatterseaorguk-support-us-gifts-in-wills" data-drupal-link-system-path="node/7998911">Gifts in Wills</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="https://www.battersea.org.uk/support-us/donate-in-memory" class="nav-link-https--wwwbatterseaorguk-support-us-donate-in-memory" data-drupal-link-system-path="node/7998881">Donate in memory</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="https://www.battersea.org.uk/support-us/philanthropy" class="nav-link-https--wwwbatterseaorguk-support-us-philanthropy" data-drupal-link-system-path="node/3356">Philanthropy</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="https://www.battersea.org.uk/support-us/business-partnerships" class="nav-link-https--wwwbatterseaorguk-support-us-business-partnerships" data-drupal-link-system-path="node/2201">Business partnerships</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="https://www.battersea.org.uk/support-us/volunteer" class="nav-link-https--wwwbatterseaorguk-support-us-volunteer" data-drupal-link-system-path="node/2231">Volunteer</a>
+              </li>
+                <li class="dropdown-item">
+                          <a href="https://www.battersea.org.uk/support-us/fostering" class="nav-link-https--wwwbatterseaorguk-support-us-fostering" data-drupal-link-system-path="node/2211">Fostering</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="nav-item">
+                          <a href="https://www.battersea.org.uk/stores" class="shop-icon nav-link nav-link-https--wwwbatterseaorguk-stores" target="_blank" data-drupal-link-system-path="node/7995291">Shop</a>
+              </li>
+                <li class="nav-item">
+                          <a href="https://www.battersea.org.uk/user/login" class="login-icon nav-link nav-link-https--wwwbatterseaorguk-user-login" data-drupal-link-system-path="user/login">Log in</a>
+              </li>
+        </ul>
+  
+
+
+
+		      </div>
+    </div>  
+</nav>
+  </section>
+
+	</header>
+
+    
+			<div class="no-breadcrumb-section container">
+		</div>
+	
+			  <div class="views-element-container block block-views block-views-blockinner-page-slider-block-1" id="block-views-block-inner-page-slider-block-1">
+  
+    
+      <div class="content">
+      <div region="featured_top"><div class="single-item view view-inner-page-slider view-id-inner_page_slider view-display-id-block_1 js-view-dom-id-87d3e2aee52bf8b439561880cf4eb4c5a5251ba199c3bba8ecf5b627bf32e154" data-component=inner_page_slider>
+  
+    
+      
+      <div class="view-content">
+          <div class="views-row">
+    <div class="full-width-layout main-hero" data-component="main_hero">
+		<div class="hero-banner-section">
+		<div class="hero-banner promo-banner">
+			<div class="banner-slide">
+				<div class="row">
+					<div class="col-md-6 col-12">
+						<div class="banner-content">
+														<h6>
+
+</h6>
+														<h1>
+
+The Cost of Cute</h1>
+															<p>
+
+Dogs and cats with extreme characteristics like flat faces, screw tails and folded ears are rising in popularity. But this comes with a serious, hidden cost to pets and owners. </p>
+														<div class="banner_cta_wrapper">
+							
+
+
+								
+						
+				  		
+							
+		
+				<div class="eight-col-width">
+				<a href="https://www.battersea.org.uk/what-we-do/animal-welfare-campaigning/cost-of-cute" target="_blank" class="btn btn-primary btn-light btn-md " data-ga-event="navigation_cta_click|cta_click" aria-label="Find out more">
+	      Find out more </a></div>
+			
+	 
+							</div>
+						</div>
+					</div>
+										<div class="col-md-6 order-1 order-md-2 slide-img hero-image-wrap no-pad-x">
+						<picture class="banner-pic"> 
+							<source media="(min-width:768px)" srcset="https://www.battersea.org.uk/sites/default/files/styles/webp/public/2026-04/Cost%20of%20Cute_Website%20hero%20image.png.webp?itok=Gu9o8H8p">
+							<img src="https://www.battersea.org.uk/sites/default/files/styles/webp/public/2026-04/Cost%20of%20Cute_Website%20her0%20image%202.png.webp?itok=O0elhmf2" class="banner-pic-img" alt="">
+						</picture>
+					</div>
+									</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+  </div>
+
+    </div>
+  
+
+
+    
+  
+  </div>
+</div>
+
+    </div>
+  </div>
+
+
+	
+			<div id="main-wrapper" class="layout-main-wrapper clearfix no-sidebar">
+	
+      
+		  		  <div id="main" class="container-fluid">
+		            <div class="row row-offcanvas row-offcanvas-left clearfix">
+				<main class="main-content col" id="content" role="main" data-region="content">
+					<section class="section ">
+					<a id="main-content" tabindex="-1"></a>
+																		  <section class="main-content-block region region-content">
+    <div data-drupal-messages-fallback class="hidden"></div><div id="block-my-battersea-content" class="block block-system block-system-main-block">
+  
+    
+      <div class="content">
+      
+
+<article class="node node--type-homepage-rebrand node--promoted node--view-mode-full clearfix">
+  <header>    
+	
+        
+	  </header> 
+  <div class="node__content clearfix"> 
+	      
+      <div class="field field--name-field-page-component field--type-entity-reference-revisions field--label-hidden field__items">
+              <div class="field__item">
+	<div id="section-c91b1763-a8a1-4dd3-b46c-f520fe485ef0" class="paragraph component-space pb-0 white paragraph--type--text-block paragraph--view-mode--default" data-component=text_block  style="background-color: #FFFFFF;" >
+						<div class="text-block-section eight-col-width" data-ga-event="link_click|link_click|body_text">
+					<div class="container">
+						<div class="row">
+							<div class="col" >
+																	<h2 class="story-block__heading">We&#039;re here for every dog and cat</h2>
+																<p>At Battersea we offer our love and expert care to dogs and cats who need us by rescuing, rehabilitating and rehoming animals at our centres, and by sharing our knowledge and resources with rescue organisations around the world. We do this because we want to help every dog and cat, everywhere.&nbsp;</p>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+</div>
+              <div class="field__item"><nav class="ab-nav-icons" aria-label="Quick links">
+    <ul class="ab-nav-icons-list">
+
+                                                                                                                                                                        <li class="ab-nav-icons-item">
+          
+  
+<a class="ab-nav-item tracklogoclicks" href="/what-we-do" aria-label="Go to What we do">
+  
+        <img src="/sites/default/files/2026-04/Homepage-What%20we%20do.png" alt="What we do">
+    
+    <span class="ab-nav-label">What we do</span>
+  
+</a>
+        </li>
+                        <li class="ab-nav-icons-item">
+          
+  
+<a class="ab-nav-item tracklogoclicks" href="/what-we-do/working-with-other-rescues" aria-label="Go to Working with other rescues">
+  
+        <img src="/sites/default/files/2026-04/Homepage-Collaboration.png" alt="Working with other rescues">
+    
+    <span class="ab-nav-label">Working with other rescues</span>
+  
+</a>
+        </li>
+                        <li class="ab-nav-icons-item">
+          
+  
+<a class="ab-nav-item tracklogoclicks" href="/what-we-do/animal-welfare-campaigning" aria-label="Go to Animal welfare campaigning ">
+  
+        <img src="/sites/default/files/2026-04/Homepage-Campaigning.png" alt="Animal welfare campaigning ">
+    
+    <span class="ab-nav-label">Animal welfare campaigning </span>
+  
+</a>
+        </li>
+                        <li class="ab-nav-icons-item">
+          
+  
+<a class="ab-nav-item tracklogoclicks" href="/what-we-do/caring-for-our-animals" aria-label="Go to Caring for our animals ">
+  
+        <img src="/sites/default/files/2026-04/Homepage-Pet%20advice.png" alt="Caring for our animals ">
+    
+    <span class="ab-nav-label">Caring for our animals </span>
+  
+</a>
+        </li>
+                        <li class="ab-nav-icons-item">
+          
+  
+<a class="ab-nav-item tracklogoclicks" href="/pet-advice" aria-label="Go to Pet advice">
+  
+        <img src="/sites/default/files/2026-04/Homepage-Caring%20for%20our%20animals.png" alt="Pet advice">
+    
+    <span class="ab-nav-label">Pet advice</span>
+  
+</a>
+        </li>
+                              
+  </ul>
+</nav></div>
+              <div class="field__item">
+
+
+	<div id="section-284d1cd1-daf3-42a3-85a3-090f4d3f7004" class="paragraph component-space additional-item off-white-1 paragraph--type--signpost-card paragraph--view-mode--default" data-component=signpost_card  style="background-color: #F5F5F5;" >
+					<div class="container">
+				<div class="twelve-col-width">
+					<div class="row">
+													<h2 class="component-heading-space">Rehoming with Battersea</h2>
+																	</div>
+					<div >
+						<div class="row mobile-slider-24981 gallery-grid-spaces" data-mobileslider="24981">
+																								<div class="col-md-3 my-3">
+
+										<a data-ga-event="card_click|card_click|card|Rehome a dog" href="https://www.battersea.org.uk/rehome/dogs" target="_self" class="text-decoration-none ">
+
+											<div class="card">
+												<div class="card-img-wrapper">
+													<img src="https://www.battersea.org.uk/sites/default/files/styles/webp/public/2025-06/Rehome%20dog%20-%20June%20-%20thumbnail.jpg.webp?itok=UrCgteev" class="card-img-top b-lazy" loading="lazy" alt="Chocolate Labrador sitting in a home"/>
+																									</div>
+												<div class="card-body d-flex flex-column">
+																										<h5 class="card-title">Rehome a dog</h5>
+													<p class="card-text mb-4">At Battersea, we make every effort to match you with the best dog for you.</p>
+																																																																																																																																				<button class="link link-cta btn-icon ">
+															Find out how
+																															<span><img src="https://www.battersea.org.uk/sites/default/files/2023-03/icon-arrow-right-blue.svg" alt="Chocolate Labrador sitting in a home" height="12" width="7"></span>
+																													</button>
+													
+												</div>
+											</div>
+										</a>
+									</div>
+																																<div class="col-md-3 my-3">
+
+										<a data-ga-event="card_click|card_click|card|Rehome a cat" href="https://www.battersea.org.uk/rehome/cats" target="_self" class="text-decoration-none ">
+
+											<div class="card">
+												<div class="card-img-wrapper">
+													<img src="https://www.battersea.org.uk/sites/default/files/styles/webp/public/2025-06/Rehome%20cat%20-%20June%20-%20thumbnail.jpg.webp?itok=R6TEI_gV" class="card-img-top b-lazy" loading="lazy" alt="Woman and her cat looking at a bottle "/>
+																									</div>
+												<div class="card-body d-flex flex-column">
+																										<h5 class="card-title">Rehome a cat</h5>
+													<p class="card-text mb-4">Rehoming a Battersea cat is truly life-changing – for you, and your new companion.</p>
+																																																																																																																																				<button class="link link-cta btn-icon ">
+															Find out how
+																															<span><img src="https://www.battersea.org.uk/sites/default/files/2023-03/icon-arrow-right-blue.svg" alt="Woman and her cat looking at a bottle " height="12" width="7"></span>
+																													</button>
+													
+												</div>
+											</div>
+										</a>
+									</div>
+																																<div class="col-md-3 my-3">
+
+										<a data-ga-event="card_click|card_click|card|Dogs in our care" href="https://www.battersea.org.uk/dogs/dog-rehoming-gallery" target="_self" class="text-decoration-none ">
+
+											<div class="card">
+												<div class="card-img-wrapper">
+													<img src="https://www.battersea.org.uk/sites/default/files/styles/webp/public/2025-06/Meets%20dogs%20-%20June%20-%20thumbnail.jpg.webp?itok=U1FXUEBv" class="card-img-top b-lazy" loading="lazy" alt="Two Greyhounds looking at the camera "/>
+																									</div>
+												<div class="card-body d-flex flex-column">
+																										<h5 class="card-title">Dogs in our care</h5>
+													<p class="card-text mb-4">Every rescue at Battersea has a unique character, quirks and lots of love to give. Meet some of the dogs currently in our care.</p>
+																																																																																																																																				<button class="link link-cta btn-icon ">
+															Meet the dogs
+																															<span><img src="https://www.battersea.org.uk/sites/default/files/2023-03/icon-arrow-right-blue.svg" alt="Two Greyhounds looking at the camera " height="12" width="7"></span>
+																													</button>
+													
+												</div>
+											</div>
+										</a>
+									</div>
+																																<div class="col-md-3 my-3">
+
+										<a data-ga-event="card_click|card_click|card|Cats in our care" href="https://www.battersea.org.uk/cats/cat-rehoming-gallery" target="_self" class="text-decoration-none ">
+
+											<div class="card">
+												<div class="card-img-wrapper">
+													<img src="https://www.battersea.org.uk/sites/default/files/styles/webp/public/2025-06/Meet%20cats2%20-%20June%20-%20thumbnail.jpg.webp?itok=7zIpTHhs" class="card-img-top b-lazy" loading="lazy" alt="Kitten on top of a scratching post"/>
+																									</div>
+												<div class="card-body d-flex flex-column">
+																										<h5 class="card-title">Cats in our care</h5>
+													<p class="card-text mb-4">Every rescue cat deserves a loving home. Meet some of the cats currently in our care.</p>
+																																																																																																																																				<button class="link link-cta btn-icon ">
+															Meet the cats
+																															<span><img src="https://www.battersea.org.uk/sites/default/files/2023-03/icon-arrow-right-blue.svg" alt="Kitten on top of a scratching post" height="12" width="7"></span>
+																													</button>
+													
+												</div>
+											</div>
+										</a>
+									</div>
+																					</div>
+											</div>
+											<div class="component-footer-cta">
+							
+								
+						
+							
+				  		
+		
+		
+	
+						</div>
+									</div>
+			</div>
+			</div>
+</div>
+              <div class="field__item">
+
+
+	<div id="section-50462a9b-823d-4fe8-9699-5a62e134fca9" class="paragraph component-space additional-item white paragraph--type--signpost-card paragraph--view-mode--default" data-component=signpost_card  style="background-color: #FFFFFF;" >
+					<div class="container">
+				<div class="twelve-col-width">
+					<div class="row">
+													<h2 class="component-heading-space">Get Involved</h2>
+																	</div>
+					<div >
+						<div class="row mobile-slider-13931 gallery-grid-spaces" data-mobileslider="13931">
+																								<div class="col-md-4 my-3">
+
+										<a data-ga-event="card_click|card_click|card|Battersea Academy" href="https://www.battersea.org.uk/what-we-do/working-with-other-rescues/battersea-academy" target="_self" class="text-decoration-none ">
+
+											<div class="card">
+												<div class="card-img-wrapper">
+													<img src="https://www.battersea.org.uk/sites/default/files/styles/webp/public/2024-06/People%20walking%20with%20dogs%20on%20lead%20-%20Linked%20Image.jpg.webp?itok=NzH4OoH-" class="card-img-top b-lazy" loading="lazy" alt="Battersea Academy"/>
+																									</div>
+												<div class="card-body d-flex flex-column">
+																										<h5 class="card-title">Battersea Academy</h5>
+													<p class="card-text mb-4">Our learning hub is for anyone working or volunteering in a shelter or rehoming organisation. </p>
+																																																																																																																																				<button class="link link-cta btn-icon ">
+															Discover more
+																															<span><img src="https://www.battersea.org.uk/sites/default/files/2023-03/icon-arrow-right-blue.svg" alt="Battersea Academy" height="12" width="7"></span>
+																													</button>
+													
+												</div>
+											</div>
+										</a>
+									</div>
+																																<div class="col-md-4 my-3">
+
+										<a data-ga-event="card_click|card_click|card|Help these eyes trust again" href="https://donate.battersea.org.uk/eyes-gen-dog" target="_self" class="text-decoration-none ">
+
+											<div class="card">
+												<div class="card-img-wrapper">
+													<img src="https://www.battersea.org.uk/sites/default/files/styles/webp/public/2026-04/kai-homepage-pod-image.jpg.webp?itok=0GxtwgNw" class="card-img-top b-lazy" loading="lazy" alt="Battersea dog, Kai looking directly to camera"/>
+																									</div>
+												<div class="card-body d-flex flex-column">
+																										<h5 class="card-title">Help these eyes trust again</h5>
+													<p class="card-text mb-4">Your regular support can give frightened dogs and cats a fresh start and a loving new home.</p>
+																																																																																																																																				<button class="link link-cta btn-icon ">
+															Give monthly now
+																															<span><img src="https://www.battersea.org.uk/sites/default/files/2023-03/icon-arrow-right-blue.svg" alt="Battersea dog, Kai looking directly to camera" height="12" width="7"></span>
+																													</button>
+													
+												</div>
+											</div>
+										</a>
+									</div>
+																																<div class="col-md-4 my-3">
+
+										<a data-ga-event="card_click|card_click|card|Enter our charity raffle" href="https://www.battersea.org.uk/support-us/other-ways-give/enter-our-raffle" target="_self" class="text-decoration-none ">
+
+											<div class="card">
+												<div class="card-img-wrapper">
+													<img src="https://www.battersea.org.uk/sites/default/files/styles/webp/public/2026-03/Kitten%20laying%20on%20steps.jpg.webp?itok=7M07WZQB" class="card-img-top b-lazy" loading="lazy" alt="Kitten laying on steps"/>
+																									</div>
+												<div class="card-body d-flex flex-column">
+																										<h5 class="card-title">Enter our charity raffle</h5>
+													<p class="card-text mb-4">Play our Spring Raffle today for your chance to win up to £10,000! Every ticket you buy will help us care for more animals like Benji this spring</p>
+																																																																																																																																				<button class="link link-cta btn-icon ">
+															Play today
+																															<span><img src="https://www.battersea.org.uk/sites/default/files/2023-03/icon-arrow-right-blue.svg" alt="Kitten laying on steps" height="12" width="7"></span>
+																													</button>
+													
+												</div>
+											</div>
+										</a>
+									</div>
+																					</div>
+											</div>
+									</div>
+			</div>
+			</div>
+</div>
+              <div class="field__item">
+	 
+      <div id="section-d59a1038-e633-4045-9908-60e919ab1cc0" class="paragraph component-space white promo2 paragraph--type--promos paragraph--view-mode--default" 
+     data-component=promos 
+            style="
+         background-color: #FFFFFF;                "
+     >
+			
+				
+		<div class="twelve-col-width">
+
+			<div class="slider-container1">
+				
+				<div class="slider-center img-right">
+										<div class="slide">
+						<div class="row">
+														<div class="col-md-6 col-12 content-part">
+								<div class="slide-content">
+																		<h2>Battersea&#039;s Teemill Store</h2>
+																			<p>We&#039;ve partnered with Teemill to launch an exclusive range of sustainable clothing and accessories. Whether you&#039;re team dog or team cat, this collection has something special for all animal lovers. And best of all, every item you purchase will help us continue our vital work to go all in for the dogs and cats who need us.</p>
+																											
+								
+						
+				  		
+							
+		
+				<div class="eight-col-width">
+				<a href="https://batterseateemillstore.co.uk/" target="_blank" class="btn btn-primary btn-light btn-md " data-ga-event="navigation_cta_click|cta_click" aria-label="Explore the range">
+	      Explore the range </a></div>
+			
+	
+																	</div>
+							</div>
+							<div class="col-md-6 col-12 image-part" style="background: url(https://www.battersea.org.uk/sites/default/files/styles/webp/public/2025-12/Teemill%20-%20promo.jpg.webp?itok=SWSApzsL) no-repeat center; background-size: cover;">
+							</div>
+							
+
+						</div>
+					</div>
+									</div>
+				<div class="paging1 "></div>
+			</div>
+
+				  </div>
+</div>
+              <div class="field__item">
+
+
+	<div id="section-e55f411f-b732-4fad-a99d-aec85d5792d7" class="paragraph component-space additional-item off-white-1 paragraph--type--signpost-card paragraph--view-mode--default" data-component=signpost_card  style="background-color: #F5F5F5;" >
+					<div class="container">
+				<div class="">
+					<div class="row">
+													<h2 class="component-heading-space">What&#039;s new</h2>
+																	</div>
+					<div  class="related-item" >
+						<div class="row mobile-slider-33206 gallery-grid-spaces" data-mobileslider="33206">
+																								<div class="col-md-4 my-3">
+
+										<a data-ga-event="card_click|card_click|card|For the Love of Dogs with Alison Hammond" href="https://www.battersea.org.uk/about-us/for-the-love-of-dogs" target="_self" class="text-decoration-none ">
+
+											<div class="card">
+												<div class="card-img-wrapper">
+													<img src="https://www.battersea.org.uk/sites/default/files/styles/webp/public/2026-05/Alison%20Hammon%20standing%20with%20her%20arms%20open%20and%20smiling%20under%20the%20Battersea%20dogs%20and%20cats%20home%20sign%20-%20lising%20deatails.jpg.webp?itok=B86G1rPT" class="card-img-top b-lazy" loading="lazy" alt="Alison Hammon standing with her arms open and smiling under the Battersea dogs and cats home sign"/>
+																									</div>
+												<div class="card-body d-flex flex-column">
+																										<h5 class="card-title">For the Love of Dogs with Alison Hammond</h5>
+													<p class="card-text mb-4">Our award-winning ITV show 'For the Love of Dogs'. Now available to stream on ITVX!</p>
+																																																																																																																																				<button class="link link-cta btn-icon ">
+															Start watching today
+																															<span><img src="https://www.battersea.org.uk/sites/default/files/2023-03/icon-arrow-right-blue.svg" alt="Alison Hammon standing with her arms open and smiling under the Battersea dogs and cats home sign" height="12" width="7"></span>
+																													</button>
+													
+												</div>
+											</div>
+										</a>
+									</div>
+																																<div class="col-md-4 my-3">
+
+										<a data-ga-event="card_click|card_click|card|Meet Bounce" href="https://www.battersea.org.uk/what-we-do/about-us/news/bounce-story" target="_self" class="text-decoration-none ">
+
+											<div class="card">
+												<div class="card-img-wrapper">
+													<img src="https://www.battersea.org.uk/sites/default/files/styles/webp/public/2026-04/A%20dog%20resting%20on%20green%20grass%2C%20with%20a%20bright%20yellow%20tennis%20ball%20nearby%20-%20listing%20details.jpg.webp?itok=ui73yYM2" class="card-img-top b-lazy" loading="lazy" alt="A dog resting on green grass, with a bright yellow tennis ball nearby"/>
+																									</div>
+												<div class="card-body d-flex flex-column">
+																										<h5 class="card-title">Meet Bounce</h5>
+													<p class="card-text mb-4">Young Mastiff Bounce arrived at Battersea, London, after being found as a stray by a local dog warden.</p>
+																																																																																																																																				<button class="link link-cta btn-icon ">
+															Read his story
+																															<span><img src="https://www.battersea.org.uk/sites/default/files/2023-03/icon-arrow-right-blue.svg" alt="A dog resting on green grass, with a bright yellow tennis ball nearby" height="12" width="7"></span>
+																													</button>
+													
+												</div>
+											</div>
+										</a>
+									</div>
+																																<div class="col-md-4 my-3">
+
+										<a data-ga-event="card_click|card_click|card|Duke&#039;s Story" href="https://www.battersea.org.uk/what-we-do/about-us/news/dukes-story" target="_self" class="text-decoration-none ">
+
+											<div class="card">
+												<div class="card-img-wrapper">
+													<img src="https://www.battersea.org.uk/sites/default/files/styles/webp/public/2026-04/Close%20up%20shot%20of%20a%20Bulldog%27s%20face%20in%20a%20medical%20cone.jpg.webp?itok=u0-_rxTC" class="card-img-top b-lazy" loading="lazy" alt="Close up shot of a Bulldog&#039;s face in a medical cone"/>
+																									</div>
+												<div class="card-body d-flex flex-column">
+																										<h5 class="card-title">Duke&#039;s Story</h5>
+													<p class="card-text mb-4">Duke the bulldog was diagnosed with several health issues related to his breed. These issues, including his screw tail, were making Duke's life really uncomfortable.  </p>
+																																																																																																																																				<button class="link link-cta btn-icon ">
+															Read his story
+																															<span><img src="https://www.battersea.org.uk/sites/default/files/2023-03/icon-arrow-right-blue.svg" alt="Close up shot of a Bulldog&#039;s face in a medical cone" height="12" width="7"></span>
+																													</button>
+													
+												</div>
+											</div>
+										</a>
+									</div>
+																					</div>
+													<div class="related-navs"></div>
+											</div>
+											<div class="component-footer-cta">
+							
+								
+						
+							
+				  		
+		
+		
+	
+						</div>
+									</div>
+			</div>
+			</div>
+</div>
+              <div class="field__item">
+<div id="section-1e9b0244-558a-4ab1-a54c-d5b7215f423f" class="paragraph component-space related-item white paragraph--type--article-dual-list paragraph--view-mode--default" style="background-color: #FFFFFF;"  data-component=article_dual_list>
+    		<div class="container">
+			<div class="twelve-col-width">
+				<div class="row card-list">
+									<div class="col-md-6 col-12 mt-3">
+						<div class="row">
+														<h2 class="component-heading-space">Dog advice</h2>
+																				</div>
+						<div class="row card-list">
+																				<div class="col-12 mt-3">
+								<a href="https://www.battersea.org.uk/pet-advice/dog-advice/poisonous-plants-for-dogs" data-ga-event="card_click|card_click|card|Plants that are poisonous to dogs" target="_self" class="text-decoration-none">
+									<div class="card">
+										<div class="card-horizontal">
+											<div class="img-square-wrapper slide-img">
+												<img src="https://www.battersea.org.uk/sites/default/files/styles/webp/public/2023-05/A%20brown%20dog%20stands%20in%20long%20grass%20-%20poisonous%20plants%20thumbnail.jpg.webp?itok=KxrSJKYH" alt="Plants that are poisonous to dogs" />
+																							</div>
+											<div class="card-body "><h4 class="card-title">Plants that are poisonous to dogs</h4>
+												<div class="category-section"><span> Health and wellbeing</span></div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+																										<div class="col-12 mt-3">
+								<a href="https://www.battersea.org.uk/pet-advice/dog-advice/cost-owning-dog" data-ga-event="card_click|card_click|card|The cost of owning a dog" target="_self" class="text-decoration-none">
+									<div class="card">
+										<div class="card-horizontal">
+											<div class="img-square-wrapper slide-img">
+												<img src="https://www.battersea.org.uk/sites/default/files/styles/webp/public/2023-05/Cost%20of%20owning%20a%20dog%20linked%20image%20-%20lady%20brushes%20shaggy%20dog%27s%20hair%20with%20colourful%20brush%20in%20house.jpg.webp?itok=dpGnEnOo" alt="The cost of owning a dog" />
+																							</div>
+											<div class="card-body "><h4 class="card-title">The cost of owning a dog</h4>
+												<div class="category-section"><span> Cost of living, Getting a pet</span></div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+																										<div class="col-12 mt-3">
+								<a href="https://www.battersea.org.uk/pet-advice/dog-advice/living-reactive-dog" data-ga-event="card_click|card_click|card|Living with a reactive dog" target="_self" class="text-decoration-none">
+									<div class="card">
+										<div class="card-horizontal">
+											<div class="img-square-wrapper slide-img">
+												<img src="https://www.battersea.org.uk/sites/default/files/styles/webp/public/2024-05/Small%20dog%20looking%20towards%20the%20camera%20-%20Listing%20details%20image.jpg.webp?itok=LasriD8N" alt="Living with a reactive dog" />
+																							</div>
+											<div class="card-body "><h4 class="card-title">Living with a reactive dog</h4>
+												<div class="category-section"><span> Behaviour, Training</span></div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+																		</div>
+												<div class="component-footer-cta">
+							
+								
+						
+							
+				  		
+		
+				<div class="eight-col-width">
+				<a href="https://www.battersea.org.uk/pet-advice/dog-advice" target="_self" class="link link-cta btn-icon btn-md " data-ga-event="navigation_cta_click|cta_click" aria-label="See all our dog advice">
+	      See all our dog advice <span><img src="https://www.battersea.org.uk/sites/default/files/2023-03/icon-arrow-right-blue.svg" alt="" height="12" width="7"></span></a></div>
+			
+	
+						</div>
+											</div>
+									<div class="col-md-6 col-12 mt-3">
+						<div class="row">
+														<h2 class="component-heading-space">Cat advice</h2>
+																				</div>
+						<div class="row card-list">
+																				<div class="col-12 mt-3">
+								<a href="https://www.battersea.org.uk/pet-advice/cat-advice/my-cat-happy" data-ga-event="card_click|card_click|card|Is my cat happy?" target="_self" class="text-decoration-none">
+									<div class="card">
+										<div class="card-horizontal">
+											<div class="img-square-wrapper slide-img">
+												<img src="https://www.battersea.org.uk/sites/default/files/styles/webp/public/2023-06/Is%20my%20cat%20happy%20linked%20imge%20-%20Black%20cat%20plays%20with%20rainbow%20toy%20on%20carpet.jpg.webp?itok=5YwZB57P" alt="Is my cat happy?" />
+																							</div>
+											<div class="card-body "><h4 class="card-title">Is my cat happy?</h4>
+												<div class="category-section"><span> Behaviour, Health and wellbeing</span></div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+																										<div class="col-12 mt-3">
+								<a href="https://www.battersea.org.uk/pet-advice/cat-advice/cost-owning-cat" data-ga-event="card_click|card_click|card|The cost of owning a cat" target="_self" class="text-decoration-none">
+									<div class="card">
+										<div class="card-horizontal">
+											<div class="img-square-wrapper slide-img">
+												<img src="https://www.battersea.org.uk/sites/default/files/styles/webp/public/2024-07/Person%20cuddling%20a%20black%20and%20white%20kitten%20-%20thumbnail.jpg.webp?itok=wZ0ufEjP" alt="The cost of owning a cat" />
+																							</div>
+											<div class="card-body "><h4 class="card-title">The cost of owning a cat</h4>
+												<div class="category-section"><span> Cost of living, Getting a pet</span></div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+																										<div class="col-12 mt-3">
+								<a href="https://www.battersea.org.uk/pet-advice/cat-advice/why-my-cat-going-toilet-around-house" data-ga-event="card_click|card_click|card|Why is my cat going to the toilet around the house?" target="_self" class="text-decoration-none">
+									<div class="card">
+										<div class="card-horizontal">
+											<div class="img-square-wrapper slide-img">
+												<img src="https://www.battersea.org.uk/sites/default/files/styles/webp/public/2024-03/Tuxedo%20cat%20looking%20out%20of%20a%20window%20-%20Thumbnail%20Linked%20Images.jpg.webp?itok=l733Yt00" alt="Why is my cat going to the toilet around the house?" />
+																							</div>
+											<div class="card-body "><h4 class="card-title">Why is my cat going to the toilet around the house?</h4>
+												<div class="category-section"><span> Behaviour, Health and wellbeing</span></div>
+											</div>
+										</div>
+									</div>
+								</a>
+							</div>
+																		</div>
+												<div class="component-footer-cta">
+							
+								
+						
+							
+				  		
+		
+				<div class="eight-col-width">
+				<a href="https://www.battersea.org.uk/pet-advice/cat-advice" target="_self" class="link link-cta btn-icon btn-md " data-ga-event="navigation_cta_click|cta_click" aria-label="See all our cat advice">
+	      See all our cat advice <span><img src="https://www.battersea.org.uk/sites/default/files/2023-03/icon-arrow-right-blue.svg" alt="" height="12" width="7"></span></a></div>
+			
+	
+						</div>
+											</div>
+								</div>
+			</div>
+		</div>
+    </div>
+</div>
+              <div class="field__item">  <div id="section-4bb9d317-a438-4497-9cb5-f6953e9c2b96" class="paragraph scoop-form-container component-space white paragraph--type--sign-up-component paragraph--view-mode--default" data-component=sign_up_component style="background-color: #FFFFFF;" >  
+    		<div class="scoop-form-section">
+					<div class="container">
+				<div class="row g-4 gx-md-3">
+					<div class="col-md-6 bg-light-blue text-center d-flex align-items-center justify-content-center">
+						<img src="https://www.battersea.org.uk/sites/default/files/2023-02/the-scoop.png" alt="Stay up to date with The Scoop" class="card-img b-lazy" loading="lazy" >
+					</div>
+					<div class="col-md-6 px-0 px-md-4 pe-md-0"> 
+						<div class="card-body form-card">
+							<h2 class="card-title mb-4">Stay up to date with The Scoop</h2>
+							<div class="card-text"><p>Sign up to receive Battersea emails and receive The Scoop straight to your inbox, our newsletter with all the latest news from behind-the-scenes at Battersea, including animal updates and more.</p>
+<p>By completing this form, you are confirming that you are 18 or over.</p>
+</div>
+							<div class="form">
+            <div class="field field--name-field-signup-webform field--type-webform field--label-hidden field__item"><div id="webform-submission-signup-form-paragraph-2326-form-ajax-content" tabindex="-1"><div id="webform-submission-signup-form-paragraph-2326-form-ajax" class="webform-ajax-form-wrapper" data-effect="fade" data-progress-type="throbber">
+<form class="webform-submission-form webform-submission-add-form webform-submission-signup-form-form webform-submission-signup-form-add-form webform-submission-signup-form-paragraph-2326-form webform-submission-signup-form-paragraph-2326-add-form signup-form js-webform-details-toggle webform-details-toggle" data-drupal-selector="webform-submission-signup-form-paragraph-2326-add-form" action="https://www.battersea.org.uk/" method="post" id="webform-submission-signup-form-paragraph-2326-add-form" accept-charset="UTF-8">
+  
+      <div class="form-area single-step-webform    ">
+        <div class="page-title">
+      <div class="content">
+        <h1 class="title">
+          <span class="field field--name-title field--type-string field--label-hidden">
+          
+          </span>
+        </h1>
+      </div>
+    </div>
+	    <div class="field--type-text-with-summary">
+    
+    </div>
+	   
+
+
+
+
+
+  <div class="col-md-6 col-sm-12 js-webform-type-textfield webform-type-textfield js-form-item js-form-type-textfield form-type-textfield js-form-item-first-name form-item-first-name mb-4">
+          <label for="edit-first-name" class="js-form-required form-required">First name</label> 
+                          <div>
+          <input class="form-control required" autocomplete="" pattern="^[A-Za-z\s\-]{1,40}$" data-webform-pattern-error="Letters, spaces, or hyphens only (max 40 chars)" data-drupal-selector="edit-first-name" data-msg-maxlength="First name field has a maximum length of 40." data-msg-required="First name field is required." data-msg-pattern="Letters, spaces, or hyphens only (max 40 chars)" type="text" id="edit-first-name" name="first_name" value="" size="60" maxlength="40" required="required" aria-describedby="edit-first-name--description" />
+</div>
+                      </div>
+
+
+
+
+
+
+  <div class="col-md-6 col-sm-12 js-webform-type-textfield webform-type-textfield js-form-item js-form-type-textfield form-type-textfield js-form-item-last-name form-item-last-name mb-4">
+          <label for="edit-last-name" class="js-form-required form-required">Last name</label> 
+                          <div>
+          <input class="form-control required" autocomplete="off" pattern="^[A-Za-z\s\-\&#039;]{1,80}$" data-webform-pattern-error="Letters, spaces, hyphens or apostrophes only (max 80 chars)" data-drupal-selector="edit-last-name" data-msg-maxlength="Last name field has a maximum length of 80." data-msg-required="Last name field is required." data-msg-pattern="Letters, spaces, hyphens or apostrophes only (max 80 chars)" type="text" id="edit-last-name" name="last_name" value="" size="60" maxlength="80" required="required" aria-describedby="edit-last-name--description" />
+</div>
+                      </div>
+
+
+
+
+
+
+  <div class="col-sm-12 js-webform-type-email webform-type-email js-form-item js-form-type-email form-type-email js-form-item-email-address form-item-email-address mb-4">
+          <label for="edit-email-address" class="js-form-required form-required">Email</label> 
+                          <div>
+          <input class="form-control form-email required" autocomplete="off" data-webform-required-error="Please enter Email Address." data-drupal-selector="edit-email-address" data-msg-maxlength="Email field has a maximum length of 254." data-msg-required="Please enter Email Address." data-msg-email="Email does not contain a valid email." type="email" id="edit-email-address" name="email_address" value="" size="60" maxlength="254" required="required" aria-describedby="edit-email-address--description" />
+</div>
+                      </div>
+
+
+  <input data-drupal-selector="edit-captcha-sid" type="hidden" name="captcha_sid" value="105941266" class="form-control" />
+<input data-drupal-selector="edit-captcha-token" type="hidden" name="captcha_token" value="PktVYCYOqGhEextLe5UDRvk7xCfvG_O2sjHOoXtx8V4" class="form-control" />
+  <input id="recaptcha-v3-token" class="recaptcha-v3-token form-control" data-recaptcha-v3-action="battersea_v3" data-recaptcha-v3-site-key="6LexWo4oAAAAAKqV2iimbnmtT-jk3BEJcJpqY_wO" data-drupal-selector="edit-captcha-response" type="hidden" name="captcha_response" value="" aria-describedby="recaptcha-v3-token--description" />
+<input data-drupal-selector="edit-is-recaptcha-v3" type="hidden" name="is_recaptcha_v3" value="1" class="form-control" />
+
+<div data-drupal-selector="edit-actions" class="form-actions webform-actions js-form-wrapper form-wrapper mb-3" id="edit-actions--2"><button class="webform-button--submit flexible-story-form__btn btn btn-primary btn-lg button button--primary js-form-submit form-submit" data-drupal-selector="edit-actions-submit" data-disable-refocus="true" type="submit" id="edit-actions-submit" name="op" value="SIGN UP">SIGN UP</button>
+
+</div>
+<input autocomplete="off" data-drupal-selector="form-1ygfzvoksvsuardryhkbzr0en9xp-v83z6ry-tygw4w" type="hidden" name="form_build_id" value="form-1ygFZVOksVsuARdRYHkbZR0en9Xp_v83z6Ry-tYgw4w" class="form-control" />
+<input data-drupal-selector="edit-webform-submission-signup-form-paragraph-2326-add-form" type="hidden" name="form_id" value="webform_submission_signup_form_paragraph_2326_add_form" class="form-control" />
+
+
+  </div>
+</form>
+</div></div></div>
+      </div>
+						</div>
+					</div>
+				</div>
+				<div class="row privacy-content">
+					<div class="col-md-12">
+						<h5>Your privacy rights&nbsp;</h5>
+<p>By subscribing to Battersea emails, you’ll receive news, updates about our animals, information about rehoming and how you can support Battersea with fundraising, volunteering, events and campaigning. Battersea will treat your information with respect and use it only to send you the emails you have requested unless you have previously supported Battersea.&nbsp;</p>
+<p>If you would like us not to contact you by post, or want to change the way we communicate with you at any time, please contact our <a href="https://www.battersea.org.uk/about-us/contact-us">Supporter Services team</a>. Further information about how we protect and use your personal data is available in our <a href="https://www.battersea.org.uk/privacy-policy-and-cookies-policy">Privacy Policy</a>.</p>
+
+					</div>
+				</div>
+			</div>
+				</div>
+      </div>
+
+</div>
+              <div class="field__item">
+<div id="section-b92822d6-388d-4597-9256-3a01666504a2" class="paragraph component-space additional-item white paragraph--type--partner-cards-links paragraph--view-mode--default" data-component=partner_cards_links style="background-color: #FFFFFF;" >  
+    		<div class="container">
+				<div class="row">
+										<h3 class="component-heading-space">In partnership with...</h3>
+									</div>
+				<div class="row gallery-grid-spaces">
+									<div class="col-6 col-md-3 my-3">
+						<a href="https://www.battersea.org.uk/support-us/business-partnerships/pedigree-and-whiskas" target="_blank" class="text-decoration-none">
+						<div class="card">
+							<div class="card-img-wrapper-fixed">
+							<img src="https://www.battersea.org.uk/sites/default/files/styles/webp/public/2025-01/Pedigree.jpg.webp?itok=6pVMcAdZ" class="card-img-top b-lazy" loading="lazy" alt="Pedigree" />
+							</div>
+							  <div class="card-body d-flex flex-column">
+								<h5 class="card-title">Pedigree</h5>
+							  </div>
+						</div>
+						</a>
+				  </div>
+									<div class="col-6 col-md-3 my-3">
+						<a href="https://www.battersea.org.uk/support-us/business-partnerships/pedigree-and-whiskas" target="_blank" class="text-decoration-none">
+						<div class="card">
+							<div class="card-img-wrapper-fixed">
+							<img src="https://www.battersea.org.uk/sites/default/files/styles/webp/public/2023-10/Whiskas.jpg.jpg.webp?itok=eJONbOPE" class="card-img-top b-lazy" loading="lazy" alt="Whiskas" />
+							</div>
+							  <div class="card-body d-flex flex-column">
+								<h5 class="card-title">Whiskas</h5>
+							  </div>
+						</div>
+						</a>
+				  </div>
+									<div class="col-6 col-md-3 my-3">
+						<a href="https://www.battersea.org.uk/support-us/business-partnerships/petplan" target="_blank" class="text-decoration-none">
+						<div class="card">
+							<div class="card-img-wrapper-fixed">
+							<img src="https://www.battersea.org.uk/sites/default/files/styles/webp/public/2025-01/Petplan.jpg.webp?itok=c7xITL3L" class="card-img-top b-lazy" loading="lazy" alt="Petplan" />
+							</div>
+							  <div class="card-body d-flex flex-column">
+								<h5 class="card-title">Petplan</h5>
+							  </div>
+						</div>
+						</a>
+				  </div>
+									<div class="col-6 col-md-3 my-3">
+						<a href="https://www.battersea.org.uk/support-us/business-partnerships/players-people%E2%80%99s-postcode-lottery" target="_blank" class="text-decoration-none">
+						<div class="card">
+							<div class="card-img-wrapper-fixed">
+							<img src="https://www.battersea.org.uk/sites/default/files/styles/webp/public/2025-01/People%27s%20Postcode%20Lottery.jpg.webp?itok=b3qePhsK" class="card-img-top b-lazy" loading="lazy" alt="People&#039;s Postcode Lottery" />
+							</div>
+							  <div class="card-body d-flex flex-column">
+								<h5 class="card-title">People&#039;s Postcode Lottery</h5>
+							  </div>
+						</div>
+						</a>
+				  </div>
+								</div>
+			</div>
+		</div>
+    </div>
+</div>
+          </div>
+  
+      </div>
+</article>
+    </div>
+  </div>
+
+  </section>
+
+					</section>
+				</main>
+								
+				
+							  </div>
+			</div>
+		      </div>
+
+	
+	
+    <footer class="site-footer" data-region="footer" data-component="site_footer">
+              <div class="container">
+                      <div class="site-footer__top clearfix">
+                <div class="col-lg-4 col-sm-12" data-region=footer_first>
+    <nav role="navigation" aria-labelledby="block-usefullinks-menu" id="block-usefullinks" class="block block-menu navigation menu--useful-links">
+            
+  <h2 class="visually-hidden" id="block-usefullinks-menu">Useful Links</h2>
+  
+
+        <div class="accordion-item">
+	<h5 class="accordion-header text-white" id="headingOne">
+		<button class="accordion-button h5" type="button" data-bs-toggle="collapse"
+			data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			Useful links <i class="fas fa-chevron-down down"></i><i class="fas fa-chevron-up up"></i>
+		</button>
+	</h5>
+	<div class="accordion" id="accordionExample">
+		<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+			data-bs-parent="#accordionExample">
+			<div class="">
+				<ul class="m-0 p-0 list-unstyled">
+											<li><a href="https://www.battersea.org.uk/about-us/jobs" data-ga-event="footer_link_click|link_click|Footer first" data-drupal-link-system-path="node/2181">Jobs</a></li>
+											<li><a href="https://www.battersea.org.uk/about-us/news" data-ga-event="footer_link_click|link_click|Footer first" data-drupal-link-system-path="node/786">News and blog</a></li>
+											<li><a href="https://www.battersea.org.uk/about-us/press" data-ga-event="footer_link_click|link_click|Footer first" data-drupal-link-system-path="node/2186">Press</a></li>
+											<li><a href="https://www.battersea.org.uk/about-us/lost-dogs-cats-line" target="_blank" data-ga-event="footer_link_click|link_click|Footer first" data-drupal-link-system-path="node/2956">Lost dogs and cats</a></li>
+											<li><a href="https://www.battersea.org.uk/support-us/fundraising/door-door-fundraising" data-ga-event="footer_link_click|link_click|Footer first" data-drupal-link-system-path="node/2601">Door to Door Fundraising</a></li>
+									</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+  </nav>
+
+  </div>
+
+                <div class="col-lg-4 col-sm-12" data-region=footer_second>
+    <nav role="navigation" aria-labelledby="block-footernavigationourpolicies-menu" id="block-footernavigationourpolicies" class="block block-menu navigation menu--our-policies">
+            
+  <h2 class="visually-hidden" id="block-footernavigationourpolicies-menu">Our Policies</h2>
+  
+
+        <div class="accordion-item">
+	<h5 class="accordion-header text-white" id="headingThree">
+		<button class="accordion-button h5" type="button" data-bs-toggle="collapse"
+			data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+			OUR POLICIES <i class="fas fa-chevron-down down"></i><i class="fas fa-chevron-up up"></i>
+		</button>
+	</h5>
+	<div class="accordion" id="accordionExampleThree">
+		<div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree"
+			data-bs-parent="#accordionExampleThree">
+			<div class="">
+				<ul class="m-0 p-0 list-unstyled">
+											<li><a href="https://www.battersea.org.uk/accessibility" data-ga-event="footer_link_click|link_click|Footer second" data-drupal-link-system-path="node/86">Accessibility</a></li>
+											<li><a href="https://www.battersea.org.uk/privacy-policy-and-cookies-policy" data-ga-event="footer_link_click|link_click|Footer second" data-drupal-link-system-path="node/3891">Privacy and Cookies policy</a></li>
+											<li><a href="https://www.battersea.org.uk/terms-and-conditions" data-ga-event="footer_link_click|link_click|Footer second" data-drupal-link-system-path="node/91">Terms and conditions</a></li>
+											<li><a href="https://www.battersea.org.uk/sitemap" data-ga-event="footer_link_click|link_click|Footer second" data-drupal-link-system-path="sitemap">Sitemap</a></li>
+									</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+  </nav>
+
+  </div>
+
+                <div class="col-lg-4 col-sm-12" data-region=footer_third>
+    <nav role="navigation" aria-labelledby="block-keepintouch-menu" id="block-keepintouch" class="block block-menu navigation menu--keep-in-touch">
+            
+  <h2 class="visually-hidden" id="block-keepintouch-menu">Keep In Touch</h2>
+  
+
+        <div class="accordion-item">
+	<h5 class="accordion-header text-white" id="headingTwo">
+		<button class="accordion-button h5" type="button" data-bs-toggle="collapse"
+			data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+			KEEP IN TOUCH <i class="fas fa-chevron-down down"></i><i class="fas fa-chevron-up up"></i>
+		</button>
+	</h5>
+	<div class="accordion" id="accordionExampleTwo">
+		<div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+			data-bs-parent="#accordionExampleTwo">
+			<div class="">
+				<ul class="m-0 p-0 list-unstyled">
+											<li><a href="https://www.battersea.org.uk/about-us/contact-us" data-ga-event="footer_link_click|link_click|Footer third" data-drupal-link-system-path="node/2716">Contact Us</a></li>
+											<li><a href="https://www.battersea.org.uk/user/login" data-ga-event="footer_link_click|link_click|Footer third" data-drupal-link-system-path="user/login">Login/Create an account</a></li>
+											<li><a href="https://www.battersea.org.uk/about-us/visit-us" data-ga-event="footer_link_click|link_click|Footer third" data-drupal-link-system-path="node/2191">How to find us</a></li>
+									</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+  </nav>
+
+  </div>
+
+            </div>
+          			<div class="site-footer__bottom">
+				<div class="footer-bottom">
+					<hr class="text-white mt-4 mb-0" />
+					<div class="row">
+						<div class="col social-media my-4">
+							<p class="m-0">
+								<span class="text-white pr-3 h6"><span class="d-block-desktop">Follow us</span>
+
+								 									<a href="https://www.facebook.com/Battersea/" target="_blank" class="social-icon" aria-label="facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+								 
+								 									<a href="https://twitter.com/battersea_" target="_blank" class="social-icon" aria-label="twitter"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" fill="#ffffff"></path></svg></a>
+								 
+								 									<a href="https://www.youtube.com/user/battersea" target="_blank" class="social-icon" aria-label="youtube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+								 
+								 									<a href="https://www.tiktok.com/@battersea?lang=en" target="_blank" class="social-icon ticktok" aria-label="ticktok"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 448 512"><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" fill="#ffffff"></path></svg></a>
+								 
+								 									<a href="https://www.instagram.com/battersea/" target="_blank" class="social-icon" aria-label="instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+								 
+								 									<a href="https://www.battersea.org.uk/stay-in-touch" target="_blank" class="social-icon" aria-label="mail"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+								 
+								</span>
+							</p>
+						</div>
+					</div>
+					<hr class="text-white m-0" />
+					<div class="d-flex copyrightt">
+												<div class="p-2 w-100 px-0"><span class="font-weight-500">©Battersea Dogs &amp; Cats Home</span><br />Registered charity no. 206394</div>
+																		<a href="https://www.fundraisingregulator.org.uk/validate?registrant=BATTERSEA+DOGS+AND+CATS+HOME" class="fr-digital-badge p-2 flex-shrink-1 ms-2" target="_blank" style="height: auto; width: 200px; text-decoration: none;">
+						<img src="https://www.fundraisingregulator.org.uk/fr-badge/2d43133a-a5a2-4d9a-bd9a-2f0bb19d553c/en/white" width="100%" alt="Fundraising Regulator badge with validation link" loading="lazy">
+						</a>
+											</div>
+				</div>
+			</div>
+        </div>
+          </footer>
+  </div>
+</div>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","pathPrefix":"","currentPath":"node\/4","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"eJyNklF24yAMRTfkwEcXxBEgY6WAGITtZPfFbqZJ6vS0P2DuexJYkoXWsAqCodzgHTXMjY3MNlEb7JdYuMxF9L494IoTJ8rhMcpkvPRQ3DwGL4UFvRkpbiHP2V9bAmasEAfL3KRVKMZCrcQaxpEuRzxyf_iKwglfiTUdaYhsIZ6kXWN__FFPKAIBxawTtRdZM3scHJTmJtAWpB8iYW5CHs0CkTw04mzO_2asV-0W9fmlaPyz9ab97i97N7JK2Cb2g-MYoQjZyO5dO649Q190b293Qfyff69MupqvZur7bzqfn6VvBStQIXTjJNrXufSkd6LmXGYbSSb0Q8VblczypgNziKjuDPOz4fEw9GurmwwUMtvQOE4lYkP9Ax_kKg3TZzcWwlX0vqrEfo44rGgSBkiY530o1IqnDZw2chprHyLMvtvspurbruAMlwPEiD2qKY8NKIoSWPBXU-MQ4s-228gd9L1N3-EZFhBXqTQlFPJczIY_AMxwf3E","theme":"my_battersea","theme_token":null},"ajaxTrustedUrl":{"\/search\/site\/%2A":true,"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true,"\/home?ajax_form=1":true},"clientside_validation_jquery":{"validate_all_ajax_forms":1,"force_validate_on_blur":false,"force_html5_validation":false,"messages":{"required":"This field is required.","remote":"Please fix this field.","email":"Please enter a valid email address.","url":"Please enter a valid URL.","date":"Please enter a valid date.","dateISO":"Please enter a valid date (ISO).","number":"Please enter a valid number.","digits":"Please enter only digits.","equalTo":"Please enter the same value again.","maxlength":"Please enter no more than {0} characters.","minlength":"Please enter at least {0} characters.","rangelength":"Please enter a value between {0} and {1} characters long.","range":"Please enter a value between {0} and {1}.","max":"Please enter a value less than or equal to {0}.","min":"Please enter a value greater than or equal to {0}.","step":"Please enter a multiple of {0}."}},"collapsiblock":{"active_pages":false,"slide_speed":200,"cookie_lifetime":null,"switcher_enabled":null,"switcher_class":null},"battersea_rehoming":{"animalType":null},"better_exposed_filters":{"autosubmit_exclude_textfield":true},"search_api_autocomplete":{"search_global":{"auto_submit":true,"min_length":3}},"battersea":{"track_status":"yes","map_event":"TheScoopSubmission"},"ajax":{"edit-actions-submit":{"callback":"::submitAjaxForm","event":"click","effect":"fade","speed":500,"progress":{"type":"throbber","message":""},"disable-refocus":true,"url":"\/home?ajax_form=1","httpMethod":"POST","dialogType":"ajax","submit":{"_triggering_element_name":"op","_triggering_element_value":"SIGN UP"}},"edit-captcha-response":{"callback":"recaptcha_v3_ajax_callback","event":"change","url":"\/home?ajax_form=1","httpMethod":"POST","dialogType":"ajax","submit":{"_triggering_element_name":"captcha_response"}}},"user":{"uid":0,"permissionsHash":"cbe33cf9ab70b2ca15bb25f1282518a90885eae10b43a782030f9a495b54f3c9"}}</script>
+<script src="https://www.battersea.org.uk/core/assets/vendor/jquery/jquery.min.js?v=4.0.0"></script>
+<script src="https://www.battersea.org.uk/sites/default/files/js/js_0_jNsbH3wPN3L5dg3POOSa2D46pGR5c3G2NXVZ4reU8.js?scope=footer&amp;delta=1&amp;language=en&amp;theme=my_battersea&amp;include=eJyNkFtywyAMRTdkw0cXxAgsYyWAKMhOsvtCmqZ5NJP-GHN0pBHXggiWimAoCexRwyps6mojyWCvxcx5zVWfjxtccOFIyd92mYTH1ordMXjMXHEyM4Xecj_9b8VjwgJhsMxSpUA2Fkoh1jDPdHzGPrCFMFY5hbbJ4AJhkkoTmg0CTSDEyew-Vywn7Tb1_adoxv-ql9p7P59zSSqiLDwNjkOAXMkGdnvtuLQJ7aNb0M2C8DN_5hKHeDLXWB-fVNBBFreA2T60Z_YB1S_DdC_cXoY2rbjFQCbTo3ccc0BB_YIPBzQRPURMq-57qQOOHYydjHPhtnuammZ7VV9OBTs4PkEM2LpETShAoaoKG76VhH173kstYq3gn-vnDB_hDjaorlAWVcmnNZuOvwAmrilq"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.21.0/dist/jquery.validate.min.js"></script>
+<script src="https://www.battersea.org.uk/sites/default/files/js/js_WE2NrbRUMg6qtgZh8aQxTGh9qH_L_YXm41c0H8Ysgck.js?scope=footer&amp;delta=3&amp;language=en&amp;theme=my_battersea&amp;include=eJyNkFtywyAMRTdkw0cXxAgsYyWAKMhOsvtCmqZ5NJP-GHN0pBHXggiWimAoCexRwyps6mojyWCvxcx5zVWfjxtccOFIyd92mYTH1ordMXjMXHEyM4Xecj_9b8VjwgJhsMxSpUA2Fkoh1jDPdHzGPrCFMFY5hbbJ4AJhkkoTmg0CTSDEyew-Vywn7Tb1_adoxv-ql9p7P59zSSqiLDwNjkOAXMkGdnvtuLQJ7aNb0M2C8DN_5hKHeDLXWB-fVNBBFreA2T60Z_YB1S_DdC_cXoY2rbjFQCbTo3ccc0BB_YIPBzQRPURMq-57qQOOHYydjHPhtnuammZ7VV9OBTs4PkEM2LpETShAoaoKG76VhH173kstYq3gn-vnDB_hDjaorlAWVcmnNZuOvwAmrilq"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
+<script src="https://www.battersea.org.uk/modules/contrib/collapsiblock/theme/dist/collapsiblock.js?tf2yvi" type="module"></script>
+<script src="https://www.battersea.org.uk/sites/default/files/js/js_f1fBcAPRODOHpFsOnPOKxvfE5Y7N-8unTr_oY8L6LXA.js?scope=footer&amp;delta=6&amp;language=en&amp;theme=my_battersea&amp;include=eJyNkFtywyAMRTdkw0cXxAgsYyWAKMhOsvtCmqZ5NJP-GHN0pBHXggiWimAoCexRwyps6mojyWCvxcx5zVWfjxtccOFIyd92mYTH1ordMXjMXHEyM4Xecj_9b8VjwgJhsMxSpUA2Fkoh1jDPdHzGPrCFMFY5hbbJ4AJhkkoTmg0CTSDEyew-Vywn7Tb1_adoxv-ql9p7P59zSSqiLDwNjkOAXMkGdnvtuLQJ7aNb0M2C8DN_5hKHeDLXWB-fVNBBFreA2T60Z_YB1S_DdC_cXoY2rbjFQCbTo3ccc0BB_YIPBzQRPURMq-57qQOOHYydjHPhtnuammZ7VV9OBTs4PkEM2LpETShAoaoKG76VhH173kstYq3gn-vnDB_hDjaorlAWVcmnNZuOvwAmrilq"></script>
+<script src="https://www.battersea.org.uk/webform/javascript/signup_form/custom.js?tf2yvi&amp;tf2yvi"></script>
+    
+    <!-- Back to top button -->
+	              <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button">
+    <i class="fas fa-chevron-up"></i>
+    </a>
+        
+      </body>
+</html>

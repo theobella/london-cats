@@ -16,25 +16,30 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 // Ensure images directory exists relative to project root (assuming script is in scripts/)
 const IMAGES_DIR = path.resolve(__dirname, '../public/cats');
 
-async function downloadImage(url, filename) {
+async function downloadImage(url, filename, forceRefresh = false) {
     if (!url || url.includes('placekitten')) return 'cats/default.jpg';
 
     try {
         const filepath = path.join(IMAGES_DIR, filename);
 
-        // If file exists and size > 0, skip download to be faster/polite?
-        // But for "Fix", let's re-download if it's missing or just blindly return path if exists.
-        // Step 611 confirmed they exist.
-        // Let's just return the path to be safe and avoid 403 blocks during re-download if Battersea started blocking again.
-
-        // Check if exists
-        // Note: fs/promises access throws if not exists
+        // Check if file exists already
+        let fileExists = false;
         try {
             await fs.access(filepath);
-            // It exists.
-            return `/cats/${filename}`;
+            fileExists = true;
         } catch {
-            // Not exists, download.
+            // Not exists
+        }
+
+        if (fileExists && !forceRefresh) {
+            // File exists and no force refresh requested — skip download
+            return `/cats/${filename}`;
+        }
+
+        if (fileExists && forceRefresh) {
+            // Delete stale file before re-downloading
+            await fs.unlink(filepath);
+            console.log(`Force-refreshing image: ${filename}`);
         }
 
         const response = await axios.get(url, {
@@ -46,8 +51,6 @@ async function downloadImage(url, filename) {
         return `/cats/${filename}`;
     } catch (err) {
         console.error(`Failed to download image ${url}:`, err.message);
-        // If download fails (e.g. 403), check if we have a stale file?
-        // If not, use placeholder.
         return 'https://placekitten.com/300/300';
     }
 }
@@ -62,7 +65,7 @@ const CP_CONFIG = SOURCES.CATS_PROTECTION_SOUTH_LONDON;
 
 
 
-async function scrapeBattersea() {
+async function scrapeBattersea(existingCatsMap = new Map()) {
     try {
         console.log('Fetching Battersea...');
         const { data } = await axios.get(SOURCES.BATTERSEA.url, { headers: HEADERS });
@@ -70,66 +73,97 @@ async function scrapeBattersea() {
         const $ = cheerio.load(data);
         const cats = [];
 
-        // Strategy: Find ALL unique cat profile links, then visit each.
-        // This avoids missing 'Reserved' cats that might not have standard .card markup.
+        // Strategy: Find ALL unique cat profile links (now absolute URLs), then visit each.
         const links = new Set();
+        const isProfileLink = (url) =>
+            url.includes('/cats/cat-rehoming-gallery/') &&
+            !url.endsWith('/cat-rehoming-gallery') &&
+            !url.endsWith('/cat-rehoming-gallery/');
 
-        $('a[href*="/cats/cat-rehoming-gallery/"]').each((_, el) => {
-            let href = $(el).attr('href');
-            if (href) {
-                const fullLink = href.startsWith('http') ? href : 'https://www.battersea.org.uk' + href;
-                links.add(fullLink);
+        const addLinks = ($ctx, ctx) => {
+            $ctx('a[href*="/cats/cat-rehoming-gallery/"]').each((_, el) => {
+                let href = $ctx(el).attr('href');
+                if (href) {
+                    const fullLink = href.startsWith('http') ? href : 'https://www.battersea.org.uk' + href;
+                    if (isProfileLink(fullLink)) links.add(fullLink);
+                }
+            });
+        };
+
+        // Page 1 from server-rendered HTML
+        addLinks($, data);
+        console.log(`Page 1: ${links.size} cat links found.`);
+
+        // Paginate via Drupal Views AJAX to get remaining pages
+        // js-view-dom-id CSS class holds the correct ID for the AJAX pagination endpoint
+        const domIdMatch = data.match(/js-view-dom-id-([a-f0-9]+)/) ||
+                           data.match(/views_dom_id:([a-f0-9]+)/) ||
+                           data.match(/view-dom-id-([a-f0-9]+)/);
+        if (domIdMatch) {
+            const viewDomId = domIdMatch[1];
+            console.log(`Paginating Drupal view (dom_id: ${viewDomId.substring(0, 12)}...)`);
+
+            let page = 1;
+            let hasMore = true;
+            while (hasMore) {
+                try {
+                    const ajaxUrl = `https://www.battersea.org.uk/views/ajax?_wrapper_format=drupal_ajax&view_name=new_cat_listing&view_display_id=block_1&view_args=&view_path=%2Fnode%2F5101&view_base_path=&view_dom_id=${viewDomId}&pager_element=0&page=${page}&_drupal_ajax=1`;
+                    const { data: ajaxData } = await axios.get(ajaxUrl, { headers: HEADERS });
+
+                    let html = '';
+                    // Response may be a JSON array OR an object with numeric keys
+                    const ajaxCommands = Array.isArray(ajaxData) ? ajaxData : Object.values(ajaxData);
+                    const insertCmd = ajaxCommands.find(c => c && c.command === 'insert' && c.data);
+                    if (insertCmd) html = insertCmd.data;
+
+                    if (!html) { hasMore = false; break; }
+
+                    const $p = cheerio.load(html);
+                    const prevSize = links.size;
+                    addLinks($p, html);
+                    const added = links.size - prevSize;
+                    console.log(`AJAX page ${page}: +${added} links (total: ${links.size})`);
+                    if (added === 0) { hasMore = false; } else { page++; await new Promise(r => setTimeout(r, 300)); }
+                } catch (err) {
+                    console.log(`AJAX pagination stopped at page ${page}: ${err.message}`);
+                    hasMore = false;
+                }
             }
-        });
+        } else {
+            console.log('Could not find Drupal view_dom_id — using single-page results only.');
+        }
 
-        // FALLBACK: Scan for Reserved cats that have NO link (e.g. Shadow)
-        // These are visible in the listing but skipped by link-based logic.
+        // FALLBACK: Scan for Reserved cats with no link visible in server-side HTML
         const fallbackCats = [];
         $('.card').each((_, el) => {
             const name = $(el).find('.card-title').text().trim();
             const cardText = $(el).text().trim();
             const isReserved = cardText.includes('Reserved');
 
-            // Check if this card has a link we already found
             let linkHref = $(el).attr('href');
             if (!linkHref) linkHref = $(el).find('a').attr('href');
             if (!linkHref) linkHref = $(el).parent('a').attr('href');
             const link = linkHref ? (linkHref.startsWith('http') ? linkHref : 'https://www.battersea.org.uk' + linkHref) : null;
-
             const hasKnownLink = link && links.has(link);
 
             if (!hasKnownLink && isReserved && name) {
                 console.log(`Found Linkless Reserved Cat: ${name}`);
-
                 let image = $(el).find('img').attr('src');
                 if (!image) image = $(el).find('img').attr('data-src');
-
                 let ageVal = 'Unknown';
                 const ageMatch = cardText.match(/Age:?\s*(.*?)(?:\n|$)/i);
                 if (ageMatch) ageVal = ageMatch[1].trim();
-
                 const idSlug = name.toLowerCase().replace(/[^a-z0-9]+/g, '-');
                 const stableId = `bat-${idSlug}`;
-
                 fallbackCats.push({
-                    id: stableId,
-                    name,
-                    age: ageVal,
-                    breed: 'Domestic Short-hair',
-                    coloring: 'Unknown',
-                    gender: 'Unknown',
-                    location: 'Battersea (London)',
-                    sourceType: 'Shelter',
-                    sourceId: 'battersea',
-                    preferences: [],
-                    description: 'Reserved - No details available.',
-                    status: 'Reserved',
-                    image: image,
-                    PENDING_IMAGE_DOWNLOAD: true,
+                    id: stableId, name, age: ageVal,
+                    breed: 'Domestic Short-hair', coloring: 'Unknown', gender: 'Unknown',
+                    location: 'Battersea (London)', sourceType: 'Shelter', sourceId: 'battersea',
+                    preferences: [], description: 'Reserved - No details available.', status: 'Reserved',
+                    image, PENDING_IMAGE_DOWNLOAD: true,
                     originalImage: image ? (image.startsWith('http') ? image : 'https://www.battersea.org.uk' + image) : '',
-                    dateListed: new Date().toISOString(),
-                    dateReserved: new Date().toISOString(),
-                    link: 'https://www.battersea.org.uk/cats/cat-rehoming-gallery' // Generic link
+                    dateListed: new Date().toISOString(), dateReserved: new Date().toISOString(),
+                    link: 'https://www.battersea.org.uk/cats/cat-rehoming-gallery'
                 });
             }
         });
@@ -139,15 +173,8 @@ async function scrapeBattersea() {
         // Add fallback cats to main list
         cats.push(...fallbackCats);
 
-        const linkArray = [...links];
-        for (let i = 0; i < linkArray.length; i++) {
-            // ... existing loop ...
-        }
-        // NOTE: The previous replacement ended at the start of the loop.
-        // I need to target the end of the function to add the image loop.
-        // But I can't target "end of function" easily with replace_file_content unless I see it.
-        // So I will start by merging the array.
 
+        const linkArray = [...links];
         for (let i = 0; i < linkArray.length; i++) {
             const link = linkArray[i];
 
@@ -245,7 +272,13 @@ async function scrapeBattersea() {
                     originalImage = realUrl;
                     const ext = 'jpg';
                     const filename = `${stableId}.${ext}`;
-                    localImage = await downloadImage(realUrl, filename);
+                    // Force re-download if the image URL has changed since last scrape
+                    const existingCat = existingCatsMap.get(stableId);
+                    const imageUrlChanged = existingCat && existingCat.originalImage && existingCat.originalImage !== realUrl;
+                    if (imageUrlChanged) {
+                        console.log(`Image URL changed for ${name}: ${existingCat.originalImage} -> ${realUrl}`);
+                    }
+                    localImage = await downloadImage(realUrl, filename, imageUrlChanged);
                 }
 
                 cats.push({
@@ -633,7 +666,7 @@ async function main() {
         console.log('No existing data found, starting fresh.');
     }
 
-    let batterseaCats = await scrapeBattersea();
+    let batterseaCats = await scrapeBattersea(existingCatsMap);
 
     if (batterseaCats.length === 0) {
         console.log('Scrape failed or empty, looking for restored data...');
