@@ -2,10 +2,9 @@
 import axios from 'axios';
 import * as cheerio from 'cheerio';
 import fs from 'fs/promises';
-import { createWriteStream, existsSync } from 'fs';
-import { pipeline } from 'stream/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import sharp from 'sharp';
 
 const HEADERS = {
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
@@ -15,6 +14,15 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // Ensure images directory exists relative to project root (assuming script is in scripts/)
 const IMAGES_DIR = path.resolve(__dirname, '../public/cats');
+
+async function shrinkImage(input, filepath) {
+    const data = await sharp(input)
+        .rotate() // apply EXIF orientation before metadata is stripped
+        .resize({ width: 800, withoutEnlargement: true })
+        .jpeg({ quality: 80, mozjpeg: true })
+        .toBuffer();
+    await fs.writeFile(filepath, data);
+}
 
 async function downloadImage(url, filename, forceRefresh = false) {
     if (!url || url.includes('placekitten')) return 'cats/default.jpg';
@@ -43,11 +51,12 @@ async function downloadImage(url, filename, forceRefresh = false) {
         }
 
         const response = await axios.get(url, {
-            responseType: 'stream',
+            responseType: 'arraybuffer',
             headers: HEADERS
         });
 
-        await pipeline(response.data, createWriteStream(filepath));
+        // Shelters serve camera originals (up to 10MB); cards only need ~800px
+        await shrinkImage(response.data, filepath);
         return `/cats/${filename}`;
     } catch (err) {
         console.error(`Failed to download image ${url}:`, err.message);
@@ -766,12 +775,23 @@ async function main() {
                 // Usually reserved -> adopted. Keep reserved date for "Time to Reserve" metric.
             }
 
+            // Hotlink the shelter's photo so we stop hosting a copy
+            if (existingCat.originalImage) existingCat.image = existingCat.originalImage;
+
             finalCats.push(existingCat);
         }
     });
 
     await fs.writeFile(outputPath, JSON.stringify(finalCats, null, 2));
     console.log(`Saved ${finalCats.length} cats to ${outputPath}`);
+
+    // Delete images no cat points at any more (old index-based names, adopted cats)
+    const inUse = new Set(finalCats
+        .filter(c => c.image?.startsWith('/cats/'))
+        .map(c => path.basename(c.image.split('?')[0])));
+    for (const f of await fs.readdir(IMAGES_DIR)) {
+        if (!inUse.has(f)) await fs.unlink(path.join(IMAGES_DIR, f));
+    }
 
     // Update Metadata for "Last Updated" UI
     const metaPath = path.join(__dirname, '../src/data/meta.json');
