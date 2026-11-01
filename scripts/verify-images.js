@@ -24,6 +24,9 @@ async function verifyImages() {
                 continue;
             }
 
+            // Adopted cats hotlink the shelter's image
+            if (cat.image.startsWith('http')) continue;
+
             // Strip query params (e.g. ?v=2)
             const cleanPath = cat.image.split('?')[0];
 
